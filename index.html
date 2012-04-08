@@ -56,23 +56,26 @@
           </header>
 
           <div id="animation">
+
+              <div id="clock">&nbsp;</div>
               <ul id="bar">
                   <li class="designer_side">
                       <div class="show-number"></div>
+                      <div class="show-side">Think about Design</div>
                   </li>
                   <li class="developer_side">
                       <div class="show-number"></div>
+                      <div class="show-side">Think about Code</div>
                   </li>
               </ul>
           </div>
 
           <article>
-                <div id="thinking_me">&nbsp;</div>
-                <div>
+                <div class="design">
                     <h2>I love to design</h2>
-                    <p>I've been an artist my whole life and I've been creating <a href="/test">designs</a> for <strong>web</strong> and print for more than 14 years.</p>
+                    <p>I've been an artist my whole life and I've been designing for <strong>web</strong> and <strong>print</strong> for more than 14 years.</p>
                 </div>
-                <div>
+                <div class="development">
                     <h2>I'm down with Dev</h2>
                     <p>I enjoy developing websites using semantic, accessiblity standard HTML/CSS, JavasScript & JQuery.</p>
                 </div>
@@ -85,7 +88,7 @@
           <header>
               <h2>Areas of Expertise</h2>
           </header>
-          <nav class="section-nav">
+          <nav class="section-nav nav-but">
               <ul>
                   <li class="up"><div class="up-arrow"></div></li>
                   <li class="down"><div class="down-arrow"></div></li>
@@ -138,7 +141,7 @@
           <header>
               <h2>About Terence</h2>
           </header>
-          <nav class="section-nav">
+          <nav class="section-nav nav-but">
               <ul>
                   <li class="up"><div class="up-arrow"></div></li>
                   <li class="down"><div class="down-arrow"></div></li>
@@ -192,7 +195,8 @@
           <header>
             <h2>Recent Work</h2>
           </header>
-          <nav class="section-nav">
+
+          <nav class="section-nav nav-but">
               <ul>
                   <li class="up"><div class="up-arrow"></div></li>
                   <li class="down"><div class="down-arrow"></div></li>
@@ -200,7 +204,22 @@
               </ul>
           </nav>
 
-          <div class="tagline"></div>
+          <nav id="project_filter" class="nav-but">
+            <ul>
+              <li>web</li>
+              <li>print</li>
+              <li>identity</li>
+              <li>illustration</li>
+              <li>miscellaneous</li>
+            </ul>
+          </nav>
+
+          <ul id="projects">
+             <li>
+               <div class="thumb"></div>
+               <div class="title"></div>
+             </li>
+          </ul>
 
       </div>
   </div>
@@ -211,7 +230,7 @@
               <h2>Where to Find Me</h2>
               <p></p>
             </header>
-            <nav class="section-nav">
+            <nav class="section-nav nav-but">
                 <ul>
                     <li class="up"><div class="up-arrow"></div></li>
                     <li class="down"><div class="down-arrow"></div></li>
@@ -222,7 +241,7 @@
             <div class="tagline"></div>
 
             <article>
-                <p>Admittedly, I'm a creature of habit. Here's where to find me.<br />
+                <p>Admittedly, I'm a creature of habit. Here's where to find me.
                 <strong>Note: I multitask (a lot)</strong>.</p>
             </article>
 

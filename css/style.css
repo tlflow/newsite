@@ -246,24 +246,28 @@ blockquote {
 .testimonial .quoter .company {
   font-weight: bold;
 }
-nav.section-nav ul {
-  width: 100%;
+.nav-but ul {
+  /*width: 100%;*/
+
 }
-nav.section-nav ul li {
+.nav-but ul li {
   float: left;
-  width: 29%;
-  height: 28px;
   text-align: center;
   background-color: #323339;
   color: #919191;
-  text-transform: uppercase;
   font: 0.6em/1em "myriad-pro", arial, sans-serif;
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05), 0 1px 0 rgba(255, 255, 255, 0.12) inset, 0 -9px 9px rgba(0, 0, 0, 0.3) inset;
+  border: 1px solid rgba(0, 0, 0, 0.51);
 }
-nav.section-nav ul li * {
+.nav-but ul li * {
   margin: 10px auto;
 }
-nav.section-nav ul li.up {
+.section-nav ul li {
+  width: 29%;
+  height: 28px;
+  text-transform: uppercase;
+}
+.section-nav ul li.up {
   -webkit-border-top-right-radius: 0;
   -webkit-border-bottom-right-radius: 0;
   -webkit-border-bottom-left-radius: 5px;
@@ -279,11 +283,10 @@ nav.section-nav ul li.up {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  width: 25%;
-  border: 1px solid rgba(0, 0, 0, 0.51);
   border-right: 1px solid #666666;
+  width: 25%;
 }
-nav.section-nav ul li.down {
+.section-nav ul li.down {
   -webkit-border-top-right-radius: 5px;
   -webkit-border-bottom-right-radius: 5px;
   -webkit-border-bottom-left-radius: 0;
@@ -299,11 +302,10 @@ nav.section-nav ul li.down {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.51);
   border-left: 1px solid #31343b;
   width: 25%;
 }
-nav.section-nav ul li.top {
+.section-nav ul li.top {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -311,7 +313,6 @@ nav.section-nav ul li.top {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   margin-left: 20px;
-  border: 1px solid rgba(0, 0, 0, 0.51);
   padding-top: 8px;
   height: 20px;
   text-indent: 2px;
@@ -410,6 +411,9 @@ body {
   background: -moz-linear-gradient(center bottom, #272727 0%, #31343b 100%);
   border-bottom: 1px solid #666666;
   padding: 0;
+  top: 0;
+  position: fixed;
+  z-index: 2000;
 }
 #navigation #logo {
   position: absolute;
@@ -417,6 +421,7 @@ body {
   top: -10px;
   height: 100px;
   width: 90px;
+  z-index: 10000;
 }
 #navigation #logo img {
   width: 80%;
@@ -504,13 +509,12 @@ body {
   background-color: #60bcd6;
   color: #ffffff;
   border-top: 1px solid #1a1a1a;
-  /*background-image: url(/images/layout/terence-drawing.png), url(/images/layout/grey.tile.bkg.jpg) ;*/
-
-  /*background-position: center bottom, center center;*/
-
-  /*background-repeat: no-repeat, repeat;*/
-
-  background: url(/images/layout/grey.tile.bkg.jpg) repeat center center transparent;
+  border-bottom: 1px solid #1a1a1a;
+  background-image: url(/images/layout/thinking-me.png), url(/images/layout/grey.tile.bkg.jpg);
+  background-position: center bottom, 0 0;
+  background-repeat: no-repeat, repeat;
+  padding: 60px 0 0;
+  position: relative;
 }
 #intro a {
   color: #e8a240;
@@ -551,20 +555,32 @@ body {
   text-align: center;
   margin-bottom: 20px;
 }
-#intro #thinking_me {
-  position: absolute;
-  background: url(/images/layout/terence-drawing.png) no-repeat center center transparent;
-  height: 347px;
-  width: 324px;
-  z-index: 10;
-}
 #intro #animation {
   display: inline;
   float: left;
   overflow: hidden;
   width: 940px;
   margin: 0 10px;
-  margin: 10px 0;
+  margin: 20px 0 0  ;
+  background: url(/images/layout/thinkcloud.png) no-repeat center top transparent;
+  padding-top: 40px;
+  height: 180px;
+  position: relative;
+}
+#intro #animation #clock {
+  position: absolute;
+  top: -7px;
+  z-index: 200;
+  height: 150px;
+  width: 150px;
+  background: url(/images/layout/clock-animation.gif) no-repeat center center;
+  left: 400px;
+}
+#intro #animation #clock #clock_hands {
+  width: 75px;
+  height: 75px;
+  background: url(/images/layout/clock-hands.gif) no-repeat center center;
+  margin: 48px auto;
 }
 #intro #animation ul {
   width: 800px;
@@ -573,33 +589,72 @@ body {
 }
 #intro #animation ul li {
   display: block;
-  height: 100px;
-  width: 300px;
+  height: 75px;
+  width: 275px;
   position: relative;
-  opacity: 0.75;
 }
-#intro #animation ul li .show-number {
-  padding: 10px;
-  font: 24px/28px "Georgia", "Times Roman", Times, sans-serif;
-  color: #666666;
+#intro #animation ul li .show-number,
+#intro #animation ul li .show-side {
+  padding: 5px;
+  font: 21px/24px "myriad-pro", arial, sans-serif;
   font-style: italic;
+  text-transform: uppercase;
 }
 #intro #animation ul li.designer_side {
   float: right;
   right: 400px;
   background-color: #4c92d6;
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 40px;
+  -webkit-border-top-left-radius: 40px;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 40px;
+  -moz-border-radius-topleft: 40px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 40px;
+  border-top-left-radius: 40px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
-#intro #animation ul li.designer_side .show-number {
+#intro #animation ul li.designer_side .show-number,
+#intro #animation ul li.designer_side .show-side {
   text-align: left;
+  float: left;
+  width: 100%;
+  color: #60bcd6;
+  margin-left: 15px;
 }
 #intro #animation ul li.developer_side {
   float: left;
   background-color: #e8a240;
+  -webkit-border-top-right-radius: 40px;
+  -webkit-border-bottom-right-radius: 40px;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topright: 40px;
+  -moz-border-radius-bottomright: 40px;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 0;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
   left: 400px;
 }
-#intro #animation ul li.developer_side .show-number {
+#intro #animation ul li.developer_side .show-number,
+#intro #animation ul li.developer_side .show-side {
   float: right;
   text-align: right;
+  color: #f2efa9;
+  width: 100%;
+  margin-right: 15px;
 }
 #intro article {
   display: inline;
@@ -607,6 +662,11 @@ body {
   overflow: hidden;
   width: 940px;
   margin: 0 10px;
+  position: relative;
+  padding: 85px 0 18px;
+  background-image: url(/images/layout/badge-2.png), url(/images/layout/badge-1.png);
+  background-position: 60px top, 780px top;
+  background-repeat: no-repeat, no-repeat;
   display: inline-block;
   overflow: hidden;
   width: 979.9999999999999px;
@@ -615,13 +675,29 @@ body {
 #intro article h2 {
   text-shadow: 0 2px #090909;
   text-transform: capitalize;
+  font-size: 28px;
+  font-weight: 900;
+  margin-bottom: 10px;
+  color: #f5eeed;
 }
 #intro article div {
   display: inline;
   float: left;
   overflow: hidden;
-  width: 460px;
+  width: 380px;
   margin: 0 10px;
+}
+#intro article .design p,
+#intro article .development p {
+  width: 80%;
+}
+#intro article .development p,
+#intro article .development h2 {
+  text-align: right;
+  float: right;
+}
+#intro article .development {
+  margin-left: 190px;
 }
 #skills {
   background: #f5eeed;
@@ -629,7 +705,7 @@ body {
   background: -ms-linear-gradient(bottom, #dedede, #f5eeed);
   background: -moz-linear-gradient(center bottom, #dedede 0%, #f5eeed 100%);
   border-bottom: 10px solid #cecece;
-  border-top: 10px solid #e5dedd;
+  border-top: 10px solid #eae4e3;
 }
 #skills header {
   display: inline;
@@ -643,7 +719,7 @@ body {
   font-weight: lighter;
   text-align: center;
 }
-#skills nav {
+#skills .section-nav {
   display: inline;
   float: left;
   overflow: hidden;
@@ -723,7 +799,7 @@ body {
 #about header p {
   text-align: center;
 }
-#about nav {
+#about .section-nav {
   display: inline;
   float: left;
   overflow: hidden;
@@ -838,12 +914,23 @@ body {
   width: 780px;
   margin: 0 10px;
 }
-#work nav {
+#work .section-nav {
   display: inline;
   float: left;
   overflow: hidden;
   width: 140px;
   margin: 0 10px;
+}
+#work #project_filter,
+#work #projects {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 940px;
+  margin: 0 10px;
+}
+#work #project_filter ul li {
+  width: 20%;
 }
 #find-me {
   background: #f5eeed;
@@ -859,7 +946,7 @@ body {
   width: 780px;
   margin: 0 10px;
 }
-#find-me nav {
+#find-me .section-nav {
   display: inline;
   float: left;
   overflow: hidden;
