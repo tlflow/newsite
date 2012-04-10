@@ -433,19 +433,12 @@ body{
 
         #clock {
           position: absolute;
-          top: -7px;
+          top: 3px;
           z-index: 200;
           height: 150px;
           width: 150px;
           background: url(/images/layout/clock-animation.gif) no-repeat center center;
           left: 400px;
-
-          #clock_hands {
-            width: 75px;
-            height: 75px;
-            background: url(/images/layout/clock-hands.gif) no-repeat center center;
-            margin: 48px auto;
-          }
         }
 
         ul {
@@ -727,8 +720,78 @@ body{
       .column(12);
     }
 
-    #project_filter ul li {
-       width: 20%;
+    #project_filter {
+
+       ul {
+         li {
+           height: 22px;
+           padding-top: 5px;
+           border-right: 1px solid #999;
+           border-left: 1px solid #111;
+           border-top: none;
+           border-bottom: none;
+
+           a{
+             padding: 0 10px;
+             color: @light-beige;
+             text-decoration: none;
+           }
+
+           a:hover{
+             color: @orange;
+           }
+         }
+
+         li:first-child {
+           .border-radius(0, 0, 5px, 5px);
+         }
+         li:last-child {
+           .border-radius(5px, 5px, 0, 0);
+         }
+       }
+    }
+
+    #projects {
+      padding: 18px 0;
+      margin: 0;
+      .column(12);
+        .row(12);
+
+          li {
+            .column(4,12);
+            margin: 0 10px 20px 10px;
+
+            div {
+              margin: 0 auto;
+            }
+
+            div.thumb {
+              background: @gray;
+              height: 165px;
+            }
+
+            div.title {
+              background: @dark-gray;
+              .border-radius(0, 5px, 5px, 0);
+              height: 20px;
+              padding: 10px;
+              text-alignt: left;
+              color: @white;
+              font: .6em/1em "myriad-pro", arial, sans-serif;
+              .drop-shadow(0, 5px, 5px, 0.25);
+
+              a {
+                text-decoration: none;
+                color: @green;
+                text-align: right;
+              }
+
+              a:hover {
+                color: @ming-blue;
+              }
+
+            }
+          }
     }
 
 }
@@ -745,91 +808,72 @@ body{
         .column(2);
     }
 
-    article {
-        .column(6);
-        font-size: 18px;
-        font-weight: lighter;
-        line-height: 24px;
-    }
+    #spend-time {
 
-    aside {
-        .column(6);
+      ul{
+        .column(12);
+          .row(12);
 
-        ul {
-            list-style: none;
-            margin: 80px 0 0;
-            padding: 0;
+            li{
+              .column(6,12);
 
-            li {
-                border-bottom: 1px dotted #999999;
-                float: left;
-                height: 50px;
-                margin-bottom: 10px;
-                padding-bottom: 10px;
-                width: 100%;
+              .css-chart {
+                position:relative;
+                width: 100px;
+                height: 100px;
+
+                .pie {
+                  background-color: @dark-gray;
+              		border-color: @dark-gray;
+                  position: absolute;
+                  width: 100px;
+                  height: 100px;
+                  clip: rect(0,50px,100px,0);
+                  border-radius:100px;
+                }
+
+                .half-left {
+                  -moz-transform:rotate(0deg) !important;
+                  -webkit-transform:rotate(0deg) !important;
+                  -o-transform:rotate(0deg) !important;
+                  transform:rotate(0deg) !important;
+                }
+
+                .inner {
+              		position: absolute;
+              		width: 50px;
+              		height: 50px;
+              		top: 25px;
+              		left: 25px;
+                }
+
+                .pie.inner {
+                  background-color: @charcoal;
+                  border-color: @charcoal;
+                  border-radius:100px;
+                  clip: auto;
+                  width: 50px;
+                  height: 50px;
+                  padding-top: 10px;
+                  font-size: 21px;
+                  font-weight: bold;
+                  color: #85A80B;
+                }
+
+              }
+
             }
 
+        #post_tweets .pie.half-right{
+          .rotation(-105deg);
         }
-
-        span.piechart {
-            float: left;
-            display: block;
-            height: 50px;
-            width: 50px;
-            background: url(/images/layout/charts.sprite.png) transparent;
-            background-position: 0 0;
-            background-repeat: no-repeat;
-            border: none;
-
-
-            &.percent_5 {
-                background-position: -25px -25px;
-            }
-
-            &.percent_10 {
-                background-position: -100px -25px;
-            }
-
-            &.percent_25 {
-                background-position: -172px -25px;
-            }
-
-            &.percent_40 {
-                background-position: -150px 0;
-            }
-
-            &.percent_50 {
-                background-position: -25px -100px;
-            }
-
-            &.percent_65 {
-                background-position: -50px -50px;
-            }
-
-            &.percent_75 {
-                background-position: -50px -100px;
-            }
-
-            &.percent_100 {
-                background-position: -50px -150px;
-            }
-
+        #post_tweets .pie.subject{
+          background-color: red;
+          border-color: red;
+          .rotation(75deg);
         }
+      }
 
-        span.text {
-            float: left;
-            margin-left: 10px;
-            padding-top: 10px;
-        }
-
-        span.number {
-            float: left;
-            margin-left: 10px;
-            padding-top: 10px;
-            font-size: 21px;
-            font-weight: bold;
-            color: #85A80B;
-        }
     }
 }
 
