@@ -238,7 +238,7 @@ body{
     font: 1.2em/1.5em Arial,Helvetica,sans-serif;
 }
 
-#navigation, #intro, #about, #skills, #work, #find-me, #page-footer {
+#navigation, #intro, #about, #skills, #work, #resources, #page-footer {
     float: left;
     width: 100%;
     padding: 40px 0;
@@ -650,30 +650,6 @@ body{
         }
     }
 
-    #extra {
-        .column(12);
-            .row(12);
-                div {
-                    .column(4,12);
-                        text-align: center;
-                        .rounded(15px);
-                        background-color: @charcoal - #202020;
-                        height: 150px;
-                        margin-bottom: 20px;
-                        .bordered(#333,#333,#444,#333);
-                        color: @white;
-                        font-family: "myriad-pro", Arial, sans-serif;
-
-                    span {
-                        font-size: 48px;
-                        display: block;
-                        margin: 30px 0 10px;
-                        line-height: 52px;
-                    }
-
-                }
-    }
-
     aside {
         .column(4);
 
@@ -692,7 +668,7 @@ body{
                 li, p {
                     font-size: 72.6%;
                 }
-                     
+
                 li {
                     border-bottom: 1px dotted @white;
                     padding: 5px 0;
@@ -702,6 +678,195 @@ body{
         }
     }
 
+    #spend-time {
+
+      ul{
+        .column(12);
+          .row(12);
+
+            li{
+              .column(6,12);
+              margin-bottom: 20px;
+
+              .topic {
+                float: left;
+                width: 350px;
+                text-indent: 20px;
+                padding-top: 35px;
+              }
+
+              .css-chart {
+                float: left;
+                position:relative;
+                width: 100px;
+                height: 100px;
+
+                .pie {
+                  background-color: @dark-gray;
+              		border-color: @dark-gray;
+                  position: absolute;
+                  width: 100px;
+                  height: 100px;
+                  clip: rect(0,50px,100px,0);
+                  border-radius:100px;
+                }
+
+                .pie.subject {
+                  left: 1px;
+                }
+
+                .half-left {
+                  -moz-transform:rotate(0deg) !important;
+                  -webkit-transform:rotate(0deg) !important;
+                  -o-transform:rotate(0deg) !important;
+                  transform:rotate(0deg) !important;
+                }
+
+                .inner {
+              		position: absolute;
+              		width: 50px;
+              		height: 50px;
+              		top: 25px;
+              		left: 25px;
+                }
+
+                .inner span {
+                  position: relative;
+                  top: 10px;
+                  font-size: 18px;
+                  text-align: center;
+                  display: block;
+                  text-transform: uppercase;
+                }
+
+                .pie.inner {
+                  background-color: @charcoal;
+                  border-color: @charcoal;
+                  border-radius:100px;
+                  clip: auto;
+                  width: 50px;
+                  height: 50px;
+                }
+
+              }
+
+            }
+
+            #post_social{
+              @chart-accent-color: @green;
+              .half-right{
+                .rotation(-105deg);
+              }
+              .subject{
+                background-color: @chart-accent-color;
+                border-color: @chart-accent-color;
+                .rotation(75deg);
+              }
+              .inner span{
+                color: @chart-accent-color;
+              }
+            }
+            #travel{
+              @chart-accent-color: @blue;
+              .half-right{
+                .rotation(-105deg);
+              }
+              .subject{
+                background-color: @chart-accent-color;
+                border-color: @chart-accent-color;
+                .rotation(75deg);
+              }
+              .inner span{
+                color: @chart-accent-color;
+              }
+            }
+            #read_feeds{
+              @chart-accent-color: @red;
+              .half-right{
+                .rotation(-105deg);
+              }
+              .subject{
+                background-color: @chart-accent-color;
+                border-color: @chart-accent-color;
+                .rotation(75deg);
+              }
+              .inner span{
+                color: @chart-accent-color;
+              }
+            }
+            #get_snacks{
+              @chart-accent-color: @orange;
+              .half-right{
+                .rotation(-105deg);
+              }
+              .subject{
+                background-color: @chart-accent-color;
+                border-color: @chart-accent-color;
+                .rotation(75deg);
+              }
+              .inner span{
+                color: @chart-accent-color;
+              }
+            }
+            #check_gmail{
+              @chart-accent-color: @green;
+              .half-right{
+                .rotation(-105deg);
+              }
+              .subject{
+                background-color: @chart-accent-color;
+                border-color: @chart-accent-color;
+                .rotation(75deg);
+              }
+              .inner span{
+                color: @chart-accent-color;
+              }
+            }
+            #read_gmail{
+              @chart-accent-color: @blue;
+              .half-right{
+                .rotation(-105deg);
+              }
+              .subject{
+                background-color: @chart-accent-color;
+                border-color: @chart-accent-color;
+                .rotation(75deg);
+              }
+              .inner span{
+                color: @chart-accent-color;
+              }
+            }
+            #design_something{
+              @chart-accent-color: @red;
+              .half-right{
+                .rotation(-105deg);
+              }
+              .subject{
+                background-color: @chart-accent-color;
+                border-color: @chart-accent-color;
+                .rotation(75deg);
+              }
+              .inner span{
+                color: @chart-accent-color;
+              }
+            }
+            #develop_something{
+              @chart-accent-color: @orange;
+              .half-right{
+                .rotation(-105deg);
+              }
+              .subject{
+                background-color: @chart-accent-color;
+                border-color: @chart-accent-color;
+                .rotation(75deg);
+              }
+              .inner span{
+                color: @chart-accent-color;
+              }
+            }
+
+      }
+    }
 }
   
 #work {
@@ -723,18 +888,22 @@ body{
     #project_filter {
 
        ul {
+         padding: 0 0 30px 35px;
+
          li {
-           height: 22px;
-           padding-top: 5px;
+           height: 30px;
+           padding-top: 15px;
            border-right: 1px solid #999;
            border-left: 1px solid #111;
            border-top: none;
            border-bottom: none;
+           width: 18%;
 
            a{
              padding: 0 10px;
              color: @light-beige;
              text-decoration: none;
+             font-size: 14px;
            }
 
            a:hover{
@@ -752,6 +921,7 @@ body{
     }
 
     #projects {
+      margin-top: 10px;
       padding: 18px 0;
       margin: 0;
       .column(12);
@@ -796,7 +966,7 @@ body{
 
 }
 
-#find-me{
+#resources{
     .gradient(@light-beige, @dark-beige, @light-beige);  
     border-bottom: 10px solid @dark-beige - #101010;
 
@@ -807,74 +977,31 @@ body{
     .section-nav {
         .column(2);
     }
-
-    #spend-time {
-
-      ul{
+    
+    #library {
         .column(12);
-          .row(12);
+            .row(12);
+                div {
+                    .column(4,12);
+                        text-align: center;
+                        .rounded(15px);
+                        background-color: @charcoal - #202020;
+                        height: 150px;
+                        margin-bottom: 20px;
+                        .bordered(#333,#333,#444,#333);
+                        color: @white;
+                        font-family: "myriad-pro", Arial, sans-serif;
 
-            li{
-              .column(6,12);
+                    span {
+                        font-size: 48px;
+                        display: block;
+                        margin: 30px 0 10px;
+                        line-height: 52px;
+                    }
 
-              .css-chart {
-                position:relative;
-                width: 100px;
-                height: 100px;
-
-                .pie {
-                  background-color: @dark-gray;
-              		border-color: @dark-gray;
-                  position: absolute;
-                  width: 100px;
-                  height: 100px;
-                  clip: rect(0,50px,100px,0);
-                  border-radius:100px;
                 }
-
-                .half-left {
-                  -moz-transform:rotate(0deg) !important;
-                  -webkit-transform:rotate(0deg) !important;
-                  -o-transform:rotate(0deg) !important;
-                  transform:rotate(0deg) !important;
-                }
-
-                .inner {
-              		position: absolute;
-              		width: 50px;
-              		height: 50px;
-              		top: 25px;
-              		left: 25px;
-                }
-
-                .pie.inner {
-                  background-color: @charcoal;
-                  border-color: @charcoal;
-                  border-radius:100px;
-                  clip: auto;
-                  width: 50px;
-                  height: 50px;
-                  padding-top: 10px;
-                  font-size: 21px;
-                  font-weight: bold;
-                  color: #85A80B;
-                }
-
-              }
-
-            }
-
-        #post_tweets .pie.half-right{
-          .rotation(-105deg);
-        }
-        #post_tweets .pie.subject{
-          background-color: red;
-          border-color: red;
-          .rotation(75deg);
-        }
-      }
-
     }
+    
 }
 
 #page-footer {

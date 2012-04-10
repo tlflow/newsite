@@ -329,7 +329,7 @@ body {
 #about,
 #skills,
 #work,
-#find-me,
+#resources,
 #page-footer {
   float: left;
   width: 100%;
@@ -340,14 +340,14 @@ body {
 #about header h1,
 #skills header h1,
 #work header h1,
-#find-me header h1,
+#resources header h1,
 #page-footer header h1,
 #navigation header h2,
 #intro header h2,
 #about header h2,
 #skills header h2,
 #work header h2,
-#find-me header h2,
+#resources header h2,
 #page-footer header h2 {
   font-family: "proxima-nova", arial, sans-serif;
   letter-spacing: -2px;
@@ -361,7 +361,7 @@ body {
 #about header h1,
 #skills header h1,
 #work header h1,
-#find-me header h1,
+#resources header h1,
 #page-footer header h1 {
   font-size: 64px;
   line-height: 64px;
@@ -373,7 +373,7 @@ body {
 #about header h2,
 #skills header h2,
 #work header h2,
-#find-me header h2,
+#resources header h2,
 #page-footer header h2 {
   font-size: 42px;
   line-height: 42px;
@@ -385,21 +385,21 @@ body {
 #about header h3,
 #skills header h3,
 #work header h3,
-#find-me header h3,
+#resources header h3,
 #page-footer header h3,
 #navigation header h4,
 #intro header h4,
 #about header h4,
 #skills header h4,
 #work header h4,
-#find-me header h4,
+#resources header h4,
 #page-footer header h4,
 #navigation header h5,
 #intro header h5,
 #about header h5,
 #skills header h5,
 #work header h5,
-#find-me header h5,
+#resources header h5,
 #page-footer header h5 {
   font-weight: bold;
 }
@@ -828,46 +828,6 @@ body {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
-#about #extra {
-  display: inline;
-  float: left;
-  overflow: hidden;
-  width: 940px;
-  margin: 0 10px;
-  display: inline-block;
-  overflow: hidden;
-  width: 979.9999999999999px;
-  margin: 0 -10px;
-}
-#about #extra div {
-  display: inline;
-  float: left;
-  overflow: hidden;
-  width: 300px;
-  margin: 0 10px;
-  text-align: center;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  background-color: #020202;
-  height: 150px;
-  margin-bottom: 20px;
-  border-top: solid 1px #333333;
-  border-left: solid 1px #333333;
-  border-right: solid 1px #333333;
-  border-bottom: solid 1px #444444;
-  color: #ffffff;
-  font-family: "myriad-pro", Arial, sans-serif;
-}
-#about #extra div span {
-  font-size: 48px;
-  display: block;
-  margin: 30px 0 10px;
-  line-height: 52px;
-}
 #about aside {
   display: inline;
   float: left;
@@ -893,6 +853,198 @@ body {
 #about aside .inner div li {
   border-bottom: 1px dotted #ffffff;
   padding: 5px 0;
+}
+#about #spend-time ul {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 940px;
+  margin: 0 10px;
+  display: inline-block;
+  overflow: hidden;
+  width: 979.9999999999999px;
+  margin: 0 -10px;
+}
+#about #spend-time ul li {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 460px;
+  margin: 0 10px;
+  margin-bottom: 20px;
+}
+#about #spend-time ul li .topic {
+  float: left;
+  width: 350px;
+  text-indent: 20px;
+  padding-top: 35px;
+}
+#about #spend-time ul li .css-chart {
+  float: left;
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+#about #spend-time ul li .css-chart .pie {
+  background-color: #1a1a1a;
+  border-color: #1a1a1a;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  clip: rect(0, 50px, 100px, 0);
+  border-radius: 100px;
+}
+#about #spend-time ul li .css-chart .pie.subject {
+  left: 1px;
+}
+#about #spend-time ul li .css-chart .half-left {
+  -moz-transform: rotate(0deg) !important;
+  -webkit-transform: rotate(0deg) !important;
+  -o-transform: rotate(0deg) !important;
+  transform: rotate(0deg) !important;
+}
+#about #spend-time ul li .css-chart .inner {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 25px;
+  left: 25px;
+}
+#about #spend-time ul li .css-chart .inner span {
+  position: relative;
+  top: 10px;
+  font-size: 18px;
+  text-align: center;
+  display: block;
+  text-transform: uppercase;
+}
+#about #spend-time ul li .css-chart .pie.inner {
+  background-color: #222222;
+  border-color: #222222;
+  border-radius: 100px;
+  clip: auto;
+  width: 50px;
+  height: 50px;
+}
+#about #spend-time ul #post_social .half-right {
+  -webkit-transform: rotate(-105deg);
+  -moz-transform: rotate(-105deg);
+  transform: rotate(-105deg);
+}
+#about #spend-time ul #post_social .subject {
+  background-color: #97e87d;
+  border-color: #97e87d;
+  -webkit-transform: rotate(75deg);
+  -moz-transform: rotate(75deg);
+  transform: rotate(75deg);
+}
+#about #spend-time ul #post_social .inner span {
+  color: #97e87d;
+}
+#about #spend-time ul #travel .half-right {
+  -webkit-transform: rotate(-105deg);
+  -moz-transform: rotate(-105deg);
+  transform: rotate(-105deg);
+}
+#about #spend-time ul #travel .subject {
+  background-color: #60bcd6;
+  border-color: #60bcd6;
+  -webkit-transform: rotate(75deg);
+  -moz-transform: rotate(75deg);
+  transform: rotate(75deg);
+}
+#about #spend-time ul #travel .inner span {
+  color: #60bcd6;
+}
+#about #spend-time ul #read_feeds .half-right {
+  -webkit-transform: rotate(-105deg);
+  -moz-transform: rotate(-105deg);
+  transform: rotate(-105deg);
+}
+#about #spend-time ul #read_feeds .subject {
+  background-color: #d84f5f;
+  border-color: #d84f5f;
+  -webkit-transform: rotate(75deg);
+  -moz-transform: rotate(75deg);
+  transform: rotate(75deg);
+}
+#about #spend-time ul #read_feeds .inner span {
+  color: #d84f5f;
+}
+#about #spend-time ul #get_snacks .half-right {
+  -webkit-transform: rotate(-105deg);
+  -moz-transform: rotate(-105deg);
+  transform: rotate(-105deg);
+}
+#about #spend-time ul #get_snacks .subject {
+  background-color: #e8a240;
+  border-color: #e8a240;
+  -webkit-transform: rotate(75deg);
+  -moz-transform: rotate(75deg);
+  transform: rotate(75deg);
+}
+#about #spend-time ul #get_snacks .inner span {
+  color: #e8a240;
+}
+#about #spend-time ul #check_gmail .half-right {
+  -webkit-transform: rotate(-105deg);
+  -moz-transform: rotate(-105deg);
+  transform: rotate(-105deg);
+}
+#about #spend-time ul #check_gmail .subject {
+  background-color: #97e87d;
+  border-color: #97e87d;
+  -webkit-transform: rotate(75deg);
+  -moz-transform: rotate(75deg);
+  transform: rotate(75deg);
+}
+#about #spend-time ul #check_gmail .inner span {
+  color: #97e87d;
+}
+#about #spend-time ul #read_gmail .half-right {
+  -webkit-transform: rotate(-105deg);
+  -moz-transform: rotate(-105deg);
+  transform: rotate(-105deg);
+}
+#about #spend-time ul #read_gmail .subject {
+  background-color: #60bcd6;
+  border-color: #60bcd6;
+  -webkit-transform: rotate(75deg);
+  -moz-transform: rotate(75deg);
+  transform: rotate(75deg);
+}
+#about #spend-time ul #read_gmail .inner span {
+  color: #60bcd6;
+}
+#about #spend-time ul #design_something .half-right {
+  -webkit-transform: rotate(-105deg);
+  -moz-transform: rotate(-105deg);
+  transform: rotate(-105deg);
+}
+#about #spend-time ul #design_something .subject {
+  background-color: #d84f5f;
+  border-color: #d84f5f;
+  -webkit-transform: rotate(75deg);
+  -moz-transform: rotate(75deg);
+  transform: rotate(75deg);
+}
+#about #spend-time ul #design_something .inner span {
+  color: #d84f5f;
+}
+#about #spend-time ul #develop_something .half-right {
+  -webkit-transform: rotate(-105deg);
+  -moz-transform: rotate(-105deg);
+  transform: rotate(-105deg);
+}
+#about #spend-time ul #develop_something .subject {
+  background-color: #e8a240;
+  border-color: #e8a240;
+  -webkit-transform: rotate(75deg);
+  -moz-transform: rotate(75deg);
+  transform: rotate(75deg);
+}
+#about #spend-time ul #develop_something .inner span {
+  color: #e8a240;
 }
 #work {
   background: #f5eeed;
@@ -923,18 +1075,23 @@ body {
   width: 940px;
   margin: 0 10px;
 }
+#work #project_filter ul {
+  padding: 0 0 30px 35px;
+}
 #work #project_filter ul li {
-  height: 22px;
-  padding-top: 5px;
+  height: 30px;
+  padding-top: 15px;
   border-right: 1px solid #999;
   border-left: 1px solid #111;
   border-top: none;
   border-bottom: none;
+  width: 18%;
 }
 #work #project_filter ul li a {
   padding: 0 10px;
   color: #f5eeed;
   text-decoration: none;
+  font-size: 14px;
 }
 #work #project_filter ul li a:hover {
   color: #e8a240;
@@ -974,6 +1131,7 @@ body {
   background-clip: padding-box;
 }
 #work #projects {
+  margin-top: 10px;
   padding: 18px 0;
   margin: 0;
   display: inline;
@@ -1035,28 +1193,28 @@ body {
 #work #projects li div.title a:hover {
   color: #4c92d6;
 }
-#find-me {
+#resources {
   background: #f5eeed;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #dedede), color-stop(1, #f5eeed));
   background: -ms-linear-gradient(bottom, #dedede, #f5eeed);
   background: -moz-linear-gradient(center bottom, #dedede 0%, #f5eeed 100%);
   border-bottom: 10px solid #cecece;
 }
-#find-me header {
+#resources header {
   display: inline;
   float: left;
   overflow: hidden;
   width: 780px;
   margin: 0 10px;
 }
-#find-me .section-nav {
+#resources .section-nav {
   display: inline;
   float: left;
   overflow: hidden;
   width: 140px;
   margin: 0 10px;
 }
-#find-me #spend-time ul {
+#resources #library {
   display: inline;
   float: left;
   overflow: hidden;
@@ -1067,63 +1225,34 @@ body {
   width: 979.9999999999999px;
   margin: 0 -10px;
 }
-#find-me #spend-time ul li {
+#resources #library div {
   display: inline;
   float: left;
   overflow: hidden;
-  width: 460px;
+  width: 300px;
   margin: 0 10px;
+  text-align: center;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: #020202;
+  height: 150px;
+  margin-bottom: 20px;
+  border-top: solid 1px #333333;
+  border-left: solid 1px #333333;
+  border-right: solid 1px #333333;
+  border-bottom: solid 1px #444444;
+  color: #ffffff;
+  font-family: "myriad-pro", Arial, sans-serif;
 }
-#find-me #spend-time ul li .css-chart {
-  position: relative;
-  width: 100px;
-  height: 100px;
-}
-#find-me #spend-time ul li .css-chart .pie {
-  background-color: #1a1a1a;
-  border-color: #1a1a1a;
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  clip: rect(0, 50px, 100px, 0);
-  border-radius: 100px;
-}
-#find-me #spend-time ul li .css-chart .half-left {
-  -moz-transform: rotate(0deg) !important;
-  -webkit-transform: rotate(0deg) !important;
-  -o-transform: rotate(0deg) !important;
-  transform: rotate(0deg) !important;
-}
-#find-me #spend-time ul li .css-chart .inner {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  top: 25px;
-  left: 25px;
-}
-#find-me #spend-time ul li .css-chart .pie.inner {
-  background-color: #222222;
-  border-color: #222222;
-  border-radius: 100px;
-  clip: auto;
-  width: 50px;
-  height: 50px;
-  padding-top: 10px;
-  font-size: 21px;
-  font-weight: bold;
-  color: #85A80B;
-}
-#find-me #spend-time ul #post_tweets .pie.half-right {
-  -webkit-transform: rotate(-105deg);
-  -moz-transform: rotate(-105deg);
-  transform: rotate(-105deg);
-}
-#find-me #spend-time ul #post_tweets .pie.subject {
-  background-color: red;
-  border-color: red;
-  -webkit-transform: rotate(75deg);
-  -moz-transform: rotate(75deg);
-  transform: rotate(75deg);
+#resources #library div span {
+  font-size: 48px;
+  display: block;
+  margin: 30px 0 10px;
+  line-height: 52px;
 }
 #page-footer {
   background-color: #202020;
