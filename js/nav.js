@@ -1,112 +1,64 @@
 $(document).ready(function() {
 
-    // Lightbox effect
-
-    $("#triggers img[rel]").bind('click', function(){
-        $(this).overlay({effect: 'apple'});
-    });
-
-    // CHANGE OPACITY OF DRAWINGS IN INTRO SECTION AS USER SCROLLS DOWN
-    
-    $(window).scroll(function () {
-        $("#drawings").animate({opacity:0.15}, 1000, 'linear')
-    });
-
     // ADD "SELECTED" CLASS TO WHICHEVER BUTTON IN NAV IS PRESSED
 
-    $('nav ul li a').click(function(e) {
-        e.preventDefault();
+    $('.main-nav ul li a').bind({
+        click: function(e){
+            e.preventDefault();
 
-        if($(this).attr("class")=="anchorLink"){
-            $('nav ul li a').removeClass("selected");
-            ($(this)).addClass("selected");
+            var self = $(this);
+            $(".main-nav ul li a").removeClass("selected");
+            self.addClass("selected");
         }
-
     });
 
     //HIDE/SHOW CONTACT AREA WHEN CONTACT BUTTON IS PRESSED
 
-    $("#contact_info").hide();
+//    $("#contact_info").hide();
 
-    $('#contact_button').bind({
+    $('.contact-nav .email').bind({
         click: function(e){
             e.preventDefault();
-            if($(this).attr("class")=="collapsed") {
-                $("#contact").animate({height: '400px'}), 11000, 'linear';
-                $(this).removeClass('collapsed').animate({top: '+=365px'}), 30000, 'linear';
-                $(this).find(".icon").replaceWith("<span class=\"icon\">A</span>");
-                setTimeout($("#contact_info").fadeIn(), 3000);
+
+            var self = $(this);
+           
+            if(self.hasClass("collapsed")){
+                $("#contact")
+                    .animate(
+                        { height: '400px' }, {
+                        duration: 1000,
+                        easing: 'easeInExpo'
+                        });
+                $("#navigation")
+                    .css("position","relative");
+                self
+                    .removeClass("collapsed")
+                    .find(".iconic")
+                    .removeClass("plus")
+                    .addClass("minus");
+//                setTimeout($("#contact_info").fadeIn(), 3000);
             } else {
-                $("#contact").animate({height: '35px'}), 11000, 'linear';
-                $(this)
-                    .addClass('collapsed')
-                    .find(".icon").replaceWith("<span class=\"icon\">@</span>");
-                $("#contact_info").fadeOut('fast', function() { /*animation completed*/ });
-                $(this).animate({top: '-=365px'}), 30000, 'linear';
+                $("#contact")
+                    .animate(
+                        { height: '0px' }, {
+                        duration: 1000,
+                        easing: 'easeOutExpo'
+                        });
+                self
+                    .addClass("collapsed")
+                    .find(".iconic")
+                    .removeClass("minus")
+                    .addClass("plus");
+//                $("#contact_info").fadeOut('fast', function() { /*animation completed*/ });
+                $("#navigation")
+                    .css("position","relative");
             }
         }
 
     });
 
-    // MOUSE EVENTS FOR FAVORITES BUTTON
 
-    $("#favorites").bind({
-        click: function(e){
-            e.preventDefault();
-            document.location.href="/favorites";
-        },
-        mouseenter: function(e){
-            $(this).css()
-        },
-        mouseleave: function(e){
 
-        }
-    });
-
-    // CLICK EVENTS FOR BUTTONS IN ABOUT TERENCE SECTION
-
-    $('.resource-item').each(function(){
-
-        var getClass = $(this).find('span').attr('class'); // get class from child span
-        var removeIconClass = getClass.substr(5, getClass.length); // removes icon and returns the other class name
-
-        var self = $(this);
-
-        self.bind({
-
-            click: function(e){
-
-                e.preventDefault();
-                document.location.href = "/"+removeIconClass+"/";
-
-            },
-            mouseenter: function(e){
-
-                e.preventDefault();
-                if(removeIconClass=="sketch"){
-                    $(this).css("background-color","#97BE0D");
-                } else if(removeIconClass=="photoblog"){
-                    $(this).css("background-color","#C63F4F");
-                } else if(removeIconClass=="experiments"){
-                    $(this).css("background-color","#736E87");
-                } else if(removeIconClass=="icons"){
-                    $(this).css("background-color","#E8A240");
-                } else if(removeIconClass=="wallpapers"){
-                    $(this).css("background-color","#D84F5F");
-                } else if(removeIconClass=="miscellaneous"){
-                    $(this).css("background-color","#1D9ACA");
-                }
-                $(this).css("cursor","pointer");
-            },
-            mouseleave: function(e){
-
-                e.preventDefault();
-                $(this).css("background-color","#2B78BF");
-            }
-
-        });
-
-    });
 
     // RECENT WORKS SECTION
 
@@ -165,7 +117,7 @@ $(document).ready(function() {
             recentWork.filterProjects();
         }
 
-    }
+    };
 
     recentWork._init();
 

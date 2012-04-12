@@ -12,10 +12,12 @@
   <!-- Scripts -->
 	<!--[if lt IE 9]><script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
-        <script type="text/javascript" src="http://cdn.jquerytools.org/1.2.6/full/jquery.tools.min.js"></script>
-        <!--<script type="text/javascript" src="js/jquery.anchor.js"></script>-->
-        <script type="text/javascript" src="js/nav.js"></script>
+        <!--<script type="text/javascript" src="http://cdn.jquerytools.org/1.2.6/full/jquery.tools.min.js"></script>-->
 
+        <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.8.18.custom.min.js"></script>
+        <script type="text/javascript" src="js/jquery.anchor.js"></script>
+        <script type="text/javascript" src="js/nav.js"></script>
         <script type="text/javascript" src="js/raphael-min.js"></script>
         <script type="text/javascript" src="js/my.skills-chart.js"></script>
         <script type="text/javascript" src="js/intro-animation.js"></script>
@@ -23,36 +25,42 @@
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
 <body>
+  <div id="contact">
+    <div class="container">
+      <form id="hi_form">
+          <label>First Name</label><input name="hi_name" id="hi_firstname">
+          <label>Last Name</label><input name="hi_name" id="hi_lastname">
+          <label>Comment</label><textarea name="hi_message" id="hi_message"></textarea>
+      </form>
+    </div>
+  </div>
   <div id="navigation">
       <div class="container">
           <div id="logo"><a href="#"><img src="/images/layout/new-tf-icon.png"></a></div>
           <nav class="main-nav">
             <ul>
-                <li class="selected"><a href="#">welcome</a></li>
-                <li><a href="#">expertise</a></li>
-                <li><a href="#">recent work</a></li>
-                <li><a href="#">about me</a></li>
-                <li><a href="#">resources</a></li>
+                <li><a href="#welcome" rel="" class="anchorLink selected" id="welcome_button">welcome</a></li>
+                <li><a href="#skills" rel="" class="anchorLink" id="skills_button">expertise</a></li>
+                <li><a href="#work" rel="" class="anchorLink" id="work_button">recent work</a></li>
+                <li><a href="#about" rel="" class="anchorLink" id="about_button">about me</a></li>
+                <li><a href="#resources" rel="" class="anchorLink" id="resources_button">resources</a></li>
               </ul>
           </nav>
 
           <nav class="contact-nav">
-              <div class="email"><a href="#">email me</a></div>
+              <div class="email collapsed">
+                <a href="/"><span class="iconic plus"></span> email me</a>
+              </div>
               <div class="social"><a href="#">social</a></div>
-              <!--<ul class="social">
-                  <li>facebook</li>
-                  <li>twitter</li>
-                  <li>linked-in</li>
-                  <li>about.me</li>
-              </ul>-->
           </nav>
       </div>
   </div>
 
   <div id="intro">
+      <a name="welcome" id="welcomeAnchor"></a>
       <div class="container">
           <header>
-            <h1><span>i am a</span>designer &amp; developer</h1>
+            <h1><span>i am a</span>design &amp; developer</h1>
             <p>I create visually-stunning and functional websites, but I also love <br />creating branding solutions and print design as well.</p>
           </header>
 
@@ -85,6 +93,7 @@
   </div>
 
   <div id="skills">
+      <a name="skills" id="skillsAnchor"></a>
       <div class="container">
           <header>
               <h2>Areas of Expertise</h2>
@@ -103,7 +112,7 @@
 
           <article class="maincolumn">
                 <h3>Terence: the Professional</h3>
-                <blockquote>I'm a self-taught designer and web developer. I design awesome, engaging interfaces and concepts for the web and print.</blockquote>
+                <blockquote>I am a self-taught designer and web developer that creates awesome, engaging interfaces and concepts for the web and print. I have a keen eye for design, but also a wealth of tech-savvy know-how.</blockquote>
                 <p>I'm a web developer and multimedia designer offering design services for both web and print mediums. Based out of my busy home studio in Cornelius, NC, I work with a constant growing client base consisting of corporations, other web developers, design firms, non-profit organizations and retail businesses.</p>
                 <p>I like to think of myself as an intuitive, creative thinker and problem-solver. My passion is helping others achieve their goals using development and design and the web just happens to be my preferred medium. My business-like approach to creativity and design result in an array of media representation that is specifically meaningful and relevant to my clients and their consumer base.</p>
 
@@ -111,7 +120,7 @@
 
                 <div>
                     <h5>Web Design / Development</h5>
-                    <p>Solid working knowledge with HTML5, XHTML, CSS standards compliant design; experience designing for integrated language and script platforms such as JavaScript, JQuery, PHP, and ASP.</p>
+                    <p>Solid working knowledge with HTML5, XHTML, CSS standards compliant design; experience designing for integrated language and script platforms such as JavaScript, JQuery, and PHP.</p>
                 </div>
                 <div>
                     <h5>Print and Brand Identities</h5>
@@ -138,6 +147,7 @@
   </div>
 
   <div id="about">
+      <a name="about" id="aboutAnchor"></a>
       <div class="container">
           <header>
               <h2>About Terence</h2>
@@ -205,7 +215,7 @@
                     <div class="pie half-left"></div>
                     <div class="pie inner"><span>5%</span></div>
                   </div>
-                  <div class="topic">catching up on RSS Feeds &amp; blogs</div>
+                  <div class="topic">catching up on RSS feeds &amp; blogs</div>
                 </li>
                 <li id="get_snacks">
                   <div class="css-chart">
@@ -259,6 +269,7 @@
   </div>
 
   <div id="work">
+      <a name="work" id="workAnchor"></a>
       <div class="container">
           <header>
             <h2>Recent Work</h2>
@@ -325,6 +336,7 @@
   </div>
 
   <div id="resources">
+        <a name="resources" id="resourcesAnchor"></a>
         <div class="container">
             <header>
               <h2>Resources</h2>
