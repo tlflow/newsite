@@ -280,10 +280,17 @@ body{
     height: 10px;
 }
 
+#masthead {
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+}
+
 #contact {
+  float: left;
   width: 100%;
   background: @dark-gray;
-  height: 35px;
+  height: 1px;
 }
 
 #navigation {
@@ -291,9 +298,7 @@ body{
   .gradient(@pale-black, #272727, @pale-black);
   border-bottom: 1px solid @gray;
   padding: 0;
-  top: 0;
-  position: fixed;
-  z-index: 2000;
+  bottom: 0;
 
   #logo {
     position: absolute;
@@ -444,6 +449,7 @@ body{
           height: 150px;
           width: 150px;
           background: url(/images/layout/clock-animation.gif) no-repeat center center;
+          /*background: url(/images/layout/clock.png) no-repeat center center;*/
           left: 400px;
         }
 
@@ -547,8 +553,10 @@ body{
     
 #skills {
     .gradient(@light-beige, @dark-beige, @light-beige);
+    background: url(/images/layout/bg_page-diamond.gif) repeat center center transparent;
     border-bottom: 10px solid @dark-beige - #101010;
     border-top: 10px solid #eae4e3;
+    padding-bottom: 0;
 
     header{
         .column(10);
@@ -604,6 +612,18 @@ body{
     aside {
         .column(4);
 
+    }
+
+    #process {
+      .column(12);
+      background: url(/images/layout/terence-drawing.png) no-repeat right bottom transparent;
+      height: 347px;
+
+      #process_diagram {
+        .column(8);
+        background: red;
+        height: 300px;
+      }
     }
 
 }
@@ -770,12 +790,12 @@ body{
             #post_social{
               @chart-accent-color: @green;
               .half-right{
-                .rotation(-105deg);
+                .rotation(-178deg);
               }
               .subject{
                 background-color: @chart-accent-color;
                 border-color: @chart-accent-color;
-                .rotation(75deg);
+                .rotation(2deg);
               }
               .inner span, .topic{
                 color: @chart-accent-color;
@@ -784,12 +804,12 @@ body{
             #travel{
               @chart-accent-color: @blue;
               .half-right{
-                .rotation(-105deg);
+                .rotation(-175deg);
               }
               .subject{
                 background-color: @chart-accent-color;
                 border-color: @chart-accent-color;
-                .rotation(75deg);
+                .rotation(5deg);
               }
               .inner span, .topic{
                 color: @chart-accent-color;
@@ -798,12 +818,12 @@ body{
             #read_feeds{
               @chart-accent-color: @red;
               .half-right{
-                .rotation(-105deg);
+                .rotation(-140deg);
               }
               .subject{
                 background-color: @chart-accent-color;
                 border-color: @chart-accent-color;
-                .rotation(75deg);
+                .rotation(40deg);
               }
               .inner span, .topic{
                 color: @chart-accent-color;
@@ -826,12 +846,12 @@ body{
             #check_gmail{
               @chart-accent-color: @green;
               .half-right{
-                .rotation(-105deg);
+                .rotation(-140deg);
               }
               .subject{
                 background-color: @chart-accent-color;
                 border-color: @chart-accent-color;
-                .rotation(75deg);
+                .rotation(40deg);
               }
               .inner span, .topic{
                 color: @chart-accent-color;
@@ -854,12 +874,12 @@ body{
             #design_something{
               @chart-accent-color: @red;
               .half-right{
-                .rotation(-105deg);
+                .rotation(-40deg);
               }
               .subject{
                 background-color: @chart-accent-color;
                 border-color: @chart-accent-color;
-                .rotation(75deg);
+                .rotation(140deg);
               }
               .inner span, .topic{
                 color: @chart-accent-color;
@@ -868,12 +888,12 @@ body{
             #develop_something{
               @chart-accent-color: @orange;
               .half-right{
-                .rotation(-105deg);
+                .rotation(-40deg);
               }
               .subject{
                 background-color: @chart-accent-color;
                 border-color: @chart-accent-color;
-                .rotation(75deg);
+                .rotation(140deg);
               }
               .inner span, .topic{
                 color: @chart-accent-color;
@@ -998,24 +1018,31 @@ body{
         .column(12);
             .row(12);
                 div {
-                    .column(4,12);
-                        text-align: center;
-                        .rounded(15px);
-                        background-color: @charcoal - #202020;
-                        height: 150px;
-                        margin-bottom: 20px;
-                        .bordered(#333,#333,#444,#333);
-                        color: @white;
-                        font-family: "myriad-pro", Arial, sans-serif;
+                  .column(4,12);
+                  .rounded(15px);
+                  .bordered(#333,#333,#444,#333);
+                  text-align: center;
+                  background-color: @charcoal - #202020;
+                  height: 150px;
+                  margin-bottom: 20px;
+                  color: @white;
+                  font-family: "myriad-pro", Arial, sans-serif;
 
-                    span {
-                        font-size: 48px;
-                        display: block;
-                        margin: 30px 0 10px;
-                        line-height: 52px;
-                    }
+                  a {
+                    text-decoration: none;
+                    color: #fff;
+                  }
 
+                  span {
+                    font-size: 48px;
+                    display: block;
+                    margin: 30px 0 10px;
+                    line-height: 52px;
+                  }
                 }
+
+                div:nth-child(odd) a:hover {color: @orange;}
+                div:nth-child(even) a:hover {color: @blue;}
     }
     
 }
@@ -1104,9 +1131,6 @@ body{
     }
 
 }
-
-
-
 
 
 

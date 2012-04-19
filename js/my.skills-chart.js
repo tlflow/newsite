@@ -9,18 +9,20 @@ window.onload = function () {
     navpanel.attr({
        fill: "#E0DAD9",
        "stroke-width": 0,
+       "stroke-opacity": 0,
        opacity: 1
     });
 
     // CREATE NAVBAR FOR CHART
 
-    
+
     function navbutton(buttonName,buttonLocation,buttonColor,buttonTitle,buttontextY){
         var butt = paper.path(""+buttonLocation+"");
 
         butt.attr({
            fill: ""+buttonColor+"",
            "stroke-width": 0,
+           "stroke-opacity": 0,
            opacity: .5
         });
 
@@ -30,6 +32,7 @@ window.onload = function () {
         this.buttonLocation = buttonLocation;
         this.buttonColor=buttonColor;
         this.buttonTitle=buttonTitle;
+
 
         // show text
 
@@ -41,6 +44,33 @@ window.onload = function () {
            'font-size': 14,
             fill: "#ffffff"
         });
+
+
+        butt.hover(
+            function mouseover(){
+
+                var self = this;
+
+                // get box number from path
+                var boxname = buttonName.split("_");
+
+                self.attr({opacity: 1});
+
+                // turn opacity of matching box
+                $("#box"+boxname[1]+"_base").css({opacity: 1});
+                $("#box"+boxname[1]+"_back").css({opacity: 1});
+
+            },
+
+            function mouseout(){
+                // reset opacity
+                var self = this;
+                self.attr({opacity: .5});
+
+                $("#box1_base, #box2_base, #box3_base, #box4_base, #box5_base").css({opacity: .5});
+                $("#box1_back, #box2_back, #box3_back, #box4_back, #box5_back").css({opacity: .25});
+            }
+        )
 
 
     } 
@@ -68,6 +98,7 @@ window.onload = function () {
         back.attr({
            fill: ""+backColor+"",
            "stroke-width": 0,
+//           "stroke-opacity": 0,
            opacity: .25
         });
 
@@ -80,6 +111,7 @@ window.onload = function () {
         base.attr({
            fill: ""+baseColor+"",
            "stroke-width": 0,
+           "stroke-opacity": 0,
            opacity: .5
         });
 
@@ -93,6 +125,7 @@ window.onload = function () {
         top.attr({
            fill: ""+topColor+"",
            "stroke-width": 0,
+           "stroke-opacity": 0,
            opacity: 1
         });
 
@@ -104,10 +137,12 @@ window.onload = function () {
         var lines = paper.path("M "+startposX+" "+startposY+" m 20 10 l 0 "+height+", M "+startposX+" "+startposY+" m 40 "+height+" l 20 10, M "+startposX+" "+startposY+" m 40 "+height+" l 20 10, M "+startposX+" "+startposY+" m 0 "+height+" l 40 0, M "+startposX+" "+startposY+" m 40 0 l 0 "+height+"");
 
         lines.attr({
-           "stroke-width": 0
+           "stroke-width": 0,
+           "stroke-opacity": 0
         });
 
         lines.node.id = ""+boxName+"_faceline";
+
 
         // show text
 
@@ -116,10 +151,14 @@ window.onload = function () {
         var text = paper.text(positionText,280, ""+title+"");
         text.attr({
            'text-anchor': 'right',
-           'font-size': 14,
+           'font-size': 12,
             fill: "#ffffff",
             rotation: -90
         });
+
+        // rotate -90 degrees
+        text.transform("...r-90");
+
 
         // properties of box to cube
 
@@ -152,54 +191,7 @@ window.onload = function () {
     $("#chart_holder text").removeAttr('style');
 
 
-    // JQUERY MouseOver commands
-
-    $("path").hover(
-      function overBox() {
-
-            // get box name from path
-            var tryme = $(this).attr("id");
-            var boxname = tryme.split("_");
-
-            // if user uses navbar (like he should)
-            if(boxname[0]=="butt"){
-                $(this).css({opacity: 1});
-
-                // turn opacity of matching boxname
-                $("#box"+boxname[1]+"_base").css({opacity: 1});
-                $("#box"+boxname[1]+"_back").css({opacity: 1});
-            }
-
-            // if user mouseover chart items instead still change opacity
-            $("#"+boxname[0]+"_base").css({opacity: 1});
-            $("#"+boxname[0]+"_back").css({opacity: 1});
-
-      },
-      function notoverBox() {
-
-            // get box name from path
-            var pathName = $(this).attr("id");
-            var boxname = pathName.split("_");
-
-            var realboxname = boxname[0];
 
 
-            // if user uses navbar (like he should)
-            if(boxname[0]=="butt"){
-                $(this).css({opacity: .5});
-
-                // turn opacity of matching boxname
-                $("#box"+boxname[1]+"_base").css({opacity: .5});
-                $("#box"+boxname[1]+"_back").css({opacity: .25});
-
-            }
-
-            // if user mouseover chart items instead still change opacity
-            $("#box"+boxname[1]+"_base").css({opacity: .5});
-            $("#box"+boxname[1]+"_back").css({opacity: .25});
-
-
-      }
-    );
 
 };

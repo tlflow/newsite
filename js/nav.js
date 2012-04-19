@@ -29,14 +29,14 @@ $(document).ready(function() {
                         duration: 1000,
                         easing: 'easeInExpo'
                         });
-                $("#navigation")
-                    .css("position","relative");
+//                $("#navigation")
+//                    .css("position","relative");
                 self
                     .removeClass("collapsed")
                     .find(".iconic")
                     .removeClass("plus")
                     .addClass("minus");
-//                setTimeout($("#contact_info").fadeIn(), 3000);
+                setTimeout($("#hi_form").fadeIn(), 1000);
             } else {
                 $("#contact")
                     .animate(
@@ -49,9 +49,9 @@ $(document).ready(function() {
                     .find(".iconic")
                     .removeClass("minus")
                     .addClass("plus");
-//                $("#contact_info").fadeOut('fast', function() { /*animation completed*/ });
-                $("#navigation")
-                    .css("position","relative");
+                $("#hi_form").fadeOut('fast', function() { /*animation completed*/ });
+//                $("#navigation")
+//                    .css("position","relative");
             }
         }
 
