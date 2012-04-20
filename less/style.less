@@ -338,7 +338,6 @@ body{
                       text-decoration: none;
                       color: @gray + #333;
                       font: .7em/1em "myriad-pro", arial, sans-serif;
-                      /*height: 25px;*/
                       height: 31px;
 
                       &:hover {
@@ -356,7 +355,24 @@ body{
                   border-right: 1px solid @dark-gray;
                   .box-shadow(inset 0 -30px 20px @dark-gray);
                   color: @white;
+                  background-color: @gray;
+                  .transition-duration(1s);
               }
+
+              li a#work_button.selected, li a#resources_button.selected {
+                border-left: 1px solid @dark-gray;
+                color: @black;
+                background-color: @light-beige;
+                .box-shadow(inset 0 -30px 20px @dark-beige);
+              }
+
+              li a#skills_button.selected {
+                border-left: 1px solid @dark-gray;
+                color: @black;
+                background: url(/images/layout/bg_page-diamond.gif) repeat center center transparent;
+                .box-shadow(inset 0 -5px 5px @dark-beige);
+              }
+
           }
       }
 

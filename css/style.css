@@ -463,8 +463,6 @@ body {
   text-decoration: none;
   color: #999999;
   font: 0.7em/1em "myriad-pro", arial, sans-serif;
-  /*height: 25px;*/
-
   height: 31px;
 }
 #navigation nav.main-nav ul li a:hover {
@@ -481,6 +479,27 @@ body {
   -moz-box-shadow: inset 0 -30px 20px #1a1a1a;
   box-shadow: inset 0 -30px 20px #1a1a1a;
   color: #ffffff;
+  background-color: #666666;
+  -moz-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+}
+#navigation nav.main-nav ul li a#work_button.selected,
+#navigation nav.main-nav ul li a#resources_button.selected {
+  border-left: 1px solid #1a1a1a;
+  color: #000000;
+  background-color: #f5eeed;
+  -webkit-box-shadow: inset 0 -30px 20px #dedede;
+  -moz-box-shadow: inset 0 -30px 20px #dedede;
+  box-shadow: inset 0 -30px 20px #dedede;
+}
+#navigation nav.main-nav ul li a#skills_button.selected {
+  border-left: 1px solid #1a1a1a;
+  color: #000000;
+  background: url(/images/layout/bg_page-diamond.gif) repeat center center transparent;
+  -webkit-box-shadow: inset 0 -5px 5px #dedede;
+  -moz-box-shadow: inset 0 -5px 5px #dedede;
+  box-shadow: inset 0 -5px 5px #dedede;
 }
 #navigation nav.contact-nav {
   float: right;

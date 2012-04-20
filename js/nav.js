@@ -14,7 +14,7 @@ $(document).ready(function() {
 
     //HIDE/SHOW CONTACT AREA WHEN CONTACT BUTTON IS PRESSED
 
-//    $("#contact_info").hide();
+    $("#hi_form").hide();
 
     $('.contact-nav .email').bind({
         click: function(e){
@@ -29,8 +29,6 @@ $(document).ready(function() {
                         duration: 1000,
                         easing: 'easeInExpo'
                         });
-//                $("#navigation")
-//                    .css("position","relative");
                 self
                     .removeClass("collapsed")
                     .find(".iconic")
@@ -50,8 +48,6 @@ $(document).ready(function() {
                     .removeClass("minus")
                     .addClass("plus");
                 $("#hi_form").fadeOut('fast', function() { /*animation completed*/ });
-//                $("#navigation")
-//                    .css("position","relative");
             }
         }
 
