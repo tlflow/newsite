@@ -179,13 +179,10 @@ blockquote {
 .nav-but {
 
     ul {
-        /*width: 100%;*/
 
         li {
             float: left;
             text-align: center;
-            /*background-color: #323339;*/
-            /*color: #919191;*/
             font: .6em/1em "myriad-pro", arial, sans-serif;
             box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05), 0 1px 0 rgba(255, 255, 255, 0.12) inset, 0 -9px 9px rgba(0, 0, 0, 0.3) inset;
             border: 1px solid rgba(0, 0, 0, 0.51);
@@ -207,6 +204,12 @@ blockquote {
       width: 29%;
       height: 28px;
       text-transform: uppercase;
+      cursor: pointer;
+
+      a, a:visited {
+        text-decoration: none;
+        color: @black
+      }
     }
 
     li.up{
@@ -224,8 +227,11 @@ blockquote {
       height: 20px;
       text-indent: 2px;
     }
+
   }
 }
+
+#about .section-nav ul li.top a {color: @gray}
 
 /* -------- PAGE TEMPLATE --------- */
 
@@ -352,25 +358,30 @@ body{
                             
               li a.selected {
                   border-left: 1px solid @gray;
-                  border-right: 1px solid @dark-gray;
-                  .box-shadow(inset 0 -30px 20px @dark-gray);
+                  border-right: 1px solid @gray;
+                  .box-shadow(inset 0 -5px 5px @dark-gray);
                   color: @white;
-                  background-color: @gray;
-                  .transition-duration(1s);
+                  background-color: @charcoal;
+
               }
 
               li a#work_button.selected, li a#resources_button.selected {
-                border-left: 1px solid @dark-gray;
                 color: @black;
                 background-color: @light-beige;
                 .box-shadow(inset 0 -30px 20px @dark-beige);
               }
 
+              li a#welcome_button.selected {
+                color: @white;
+                text-shadow: 0 2px #090909;
+                background: url(/images/layout/grey.tile.bkg.jpg) repeat 0 0 transparent;
+                .box-shadow(0 0 0 @black);
+              }
+
               li a#skills_button.selected {
-                border-left: 1px solid @dark-gray;
                 color: @black;
                 background: url(/images/layout/bg_page-diamond.gif) repeat center center transparent;
-                .box-shadow(inset 0 -5px 5px @dark-beige);
+                .box-shadow(0 0 0 @black);
               }
 
           }
@@ -414,6 +425,11 @@ body{
     padding: 60px 0 0;
     position: relative;
 
+    #welcomeAnchor {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
 
     header{
         .column(12);
@@ -465,7 +481,6 @@ body{
           height: 150px;
           width: 150px;
           background: url(/images/layout/clock-animation.gif) no-repeat center center;
-          /*background: url(/images/layout/clock.png) no-repeat center center;*/
           left: 400px;
         }
 

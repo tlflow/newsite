@@ -246,17 +246,9 @@ blockquote {
 .testimonial .quoter .company {
   font-weight: bold;
 }
-.nav-but ul {
-  /*width: 100%;*/
-
-}
 .nav-but ul li {
   float: left;
   text-align: center;
-  /*background-color: #323339;*/
-
-  /*color: #919191;*/
-
   font: 0.6em/1em "myriad-pro", arial, sans-serif;
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05), 0 1px 0 rgba(255, 255, 255, 0.12) inset, 0 -9px 9px rgba(0, 0, 0, 0.3) inset;
   border: 1px solid rgba(0, 0, 0, 0.51);
@@ -268,6 +260,12 @@ blockquote {
   width: 29%;
   height: 28px;
   text-transform: uppercase;
+  cursor: pointer;
+}
+.section-nav ul li a,
+.section-nav ul li a:visited {
+  text-decoration: none;
+  color: #000000;
 }
 .section-nav ul li.up {
   -webkit-border-top-right-radius: 0;
@@ -316,6 +314,9 @@ blockquote {
   padding-top: 8px;
   height: 20px;
   text-indent: 2px;
+}
+#about .section-nav ul li.top a {
+  color: #666666;
 }
 /* -------- PAGE TEMPLATE --------- */
 body {
@@ -474,32 +475,35 @@ body {
 }
 #navigation nav.main-nav ul li a.selected {
   border-left: 1px solid #666666;
-  border-right: 1px solid #1a1a1a;
-  -webkit-box-shadow: inset 0 -30px 20px #1a1a1a;
-  -moz-box-shadow: inset 0 -30px 20px #1a1a1a;
-  box-shadow: inset 0 -30px 20px #1a1a1a;
+  border-right: 1px solid #666666;
+  -webkit-box-shadow: inset 0 -5px 5px #1a1a1a;
+  -moz-box-shadow: inset 0 -5px 5px #1a1a1a;
+  box-shadow: inset 0 -5px 5px #1a1a1a;
   color: #ffffff;
-  background-color: #666666;
-  -moz-transition-duration: 1s;
-  -webkit-transition-duration: 1s;
-  transition-duration: 1s;
+  background-color: #222222;
 }
 #navigation nav.main-nav ul li a#work_button.selected,
 #navigation nav.main-nav ul li a#resources_button.selected {
-  border-left: 1px solid #1a1a1a;
   color: #000000;
   background-color: #f5eeed;
   -webkit-box-shadow: inset 0 -30px 20px #dedede;
   -moz-box-shadow: inset 0 -30px 20px #dedede;
   box-shadow: inset 0 -30px 20px #dedede;
 }
+#navigation nav.main-nav ul li a#welcome_button.selected {
+  color: #ffffff;
+  text-shadow: 0 2px #090909;
+  background: url(/images/layout/grey.tile.bkg.jpg) repeat 0 0 transparent;
+  -webkit-box-shadow: 0 0 0 #000000;
+  -moz-box-shadow: 0 0 0 #000000;
+  box-shadow: 0 0 0 #000000;
+}
 #navigation nav.main-nav ul li a#skills_button.selected {
-  border-left: 1px solid #1a1a1a;
   color: #000000;
   background: url(/images/layout/bg_page-diamond.gif) repeat center center transparent;
-  -webkit-box-shadow: inset 0 -5px 5px #dedede;
-  -moz-box-shadow: inset 0 -5px 5px #dedede;
-  box-shadow: inset 0 -5px 5px #dedede;
+  -webkit-box-shadow: 0 0 0 #000000;
+  -moz-box-shadow: 0 0 0 #000000;
+  box-shadow: 0 0 0 #000000;
 }
 #navigation nav.contact-nav {
   float: right;
@@ -557,6 +561,11 @@ body {
 #intro a:hover {
   color: #97e87d;
 }
+#intro #welcomeAnchor {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 #intro header {
   display: inline;
   float: left;
@@ -609,8 +618,6 @@ body {
   height: 150px;
   width: 150px;
   background: url(/images/layout/clock-animation.gif) no-repeat center center;
-  /*background: url(/images/layout/clock.png) no-repeat center center;*/
-
   left: 400px;
 }
 #intro #animation ul {

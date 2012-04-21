@@ -53,6 +53,82 @@ $(document).ready(function() {
 
     });
 
+    // SECTION NAV AND MAIN NAV BUTTON SCROLLING PAGE FUNCTIONALITY
+
+    $('.section-nav li.up, .section-nav li.down, a.anchorLink').each(function() {
+
+         // self = what button is pressed
+         var self = $(this);
+
+         self.bind({
+             click: function(e){
+                 e.preventDefault();
+
+                 // get what sections are before and/or after (if any)
+
+                 var displayCurrent = self.closest('.display').attr("id");
+
+                 var displayBefore, displayAfter, elementClick, destination;
+
+                 switch(displayCurrent)
+                 {
+                    case "skills":
+                        displayBefore = "intro";
+                        displayAfter = "about";
+                        break;
+                    case "about":
+                        displayBefore="skills";
+                        displayAfter="work";
+                        break;
+                    case "work":
+                        displayBefore="about";
+                        displayAfter="resources";
+                        break;
+                    case "resources":
+                        displayBefore="work";
+                        break;
+                 }
+
+                 // get section based on what button is pressed
+
+                 if(self.attr("class")==="up"){
+                     // up arrow pressed - go to section before
+                     elementClick="#"+displayBefore;
+                 } else if(self.attr("class")==="down") {
+                     // down arrow pressed - go to section after
+                    elementClick="#"+displayAfter;
+                 } else {
+                    // anchorLink button is pressed (like main nav)
+                    elementClick=self.attr("href");
+                 }
+
+             // scrolling part
+                 if (elementClick==="#welcome"){
+                     // -40 to account for welcome section top padding
+                     destination = -40;
+                 } else {
+                    destination = $(elementClick).offset().top;
+                 }
+
+                 // scrolling animation
+                 $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination}, 1000, function() {
+                    window.location.hash = elementClick;
+                 });
+
+             },
+
+             mouseenter: function(e){
+                 e.preventDefault();
+                 // lights up
+             },
+
+             mouseleave: function(e){
+                 e.preventDefault();
+                 // greys out
+             }
+
+         });
+    });
 
 
 
