@@ -22,13 +22,13 @@
     <favorites_list name="twigkit-semantic.gs-7228976" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.43930635">
+    <splitter split-orientation="horizontal" split-proportion="0.47971144">
       <split-first>
         <leaf>
           <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="20" column="76" selection-start="889" selection-end="1030" vertical-scroll-proportion="0.5071315">
+                <state line="297" column="17" selection-start="13525" selection-end="13525" vertical-scroll-proportion="0.02435312">
                   <folding />
                 </state>
               </provider>
@@ -37,7 +37,7 @@
           <file leaf-file-name="raphael-circles.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/raphael-circles.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="5" column="48" selection-start="203" selection-end="203" vertical-scroll-proportion="-3.2">
+                <state line="5" column="48" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -50,34 +50,25 @@
           <file leaf-file-name="style.less" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/less/style.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="482" column="86" selection-start="10054" selection-end="10054" vertical-scroll-proportion="358.15384">
+                <state line="482" column="86" selection-start="10054" selection-end="10054" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="nav.js" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="nav.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/nav.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="97" column="13" selection-start="3142" selection-end="3142" vertical-scroll-proportion="0.0">
+                <state line="121" column="22" selection-start="4061" selection-end="4061" vertical-scroll-proportion="0.02346041">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="circles.js" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/js/circles.js">
+          <file leaf-file-name="charts.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/js/charts.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="16" column="57" selection-start="517" selection-end="517" vertical-scroll-proportion="0.40829346">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="my.skills-chart.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js/my.skills-chart.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="17" column="30" selection-start="0" selection-end="5336" vertical-scroll-proportion="0.0">
+                <state line="242" column="129" selection-start="7338" selection-end="7338" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -99,7 +90,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/.idea/.name" />
         <option value="$PROJECT_DIR$/css/iconic_stroke.css" />
         <option value="$PROJECT_DIR$/fonts/iconic_stroke/iconic_stroke.css" />
         <option value="$PROJECT_DIR$/js/intro-animation.js" />
@@ -108,13 +98,14 @@
         <option value="$PROJECT_DIR$/js/jqury.anchor.js" />
         <option value="$PROJECT_DIR$/../testsite/index.html" />
         <option value="$PROJECT_DIR$/js/raphael-min.js" />
-        <option value="$PROJECT_DIR$/js/my.skills-chart.js" />
         <option value="$PROJECT_DIR$/js/jquery.anchor.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/nav.js" />
         <option value="$PROJECT_DIR$/less/style.less" />
         <option value="$PROJECT_DIR$/raphael-circles.html" />
         <option value="$PROJECT_DIR$/js/circles.js" />
+        <option value="$PROJECT_DIR$/js/my.skills-chart.js" />
+        <option value="$PROJECT_DIR$/js/charts.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -149,17 +140,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Favorites" />
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -258,6 +238,17 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -267,8 +258,8 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../testsite" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -319,14 +310,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="816" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25377426" sideWeight="0.9892578" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15312725" sideWeight="0.99609375" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -336,8 +327,8 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32908913" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -436,49 +427,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/jquery.anchor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="17" selection-start="707" selection-end="1040" vertical-scroll-proportion="0.7653959">
-          <folding />
-        </state>
+        <state line="43" column="17" selection-start="707" selection-end="1040" vertical-scroll-proportion="0.7653959" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/nav.js">
+    <entry file="file://$PROJECT_DIR$/js/circles.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="13" selection-start="3142" selection-end="3142" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="52" column="48" selection-start="35" selection-end="1980" vertical-scroll-proportion="0.81014025" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/less/style.less">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="482" column="86" selection-start="10054" selection-end="10054" vertical-scroll-proportion="358.15384">
+        <state line="297" column="17" selection-start="13525" selection-end="13525" vertical-scroll-proportion="0.02435312">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/raphael-circles.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="48" selection-start="203" selection-end="203" vertical-scroll-proportion="-3.2">
+        <state line="5" column="48" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/less/style.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="482" column="86" selection-start="10054" selection-end="10054" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/nav.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="121" column="22" selection-start="4061" selection-end="4061" vertical-scroll-proportion="0.02346041">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/js/charts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="76" selection-start="889" selection-end="1030" vertical-scroll-proportion="0.5071315">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/my.skills-chart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="30" selection-start="0" selection-end="5336" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/circles.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="57" selection-start="517" selection-end="517" vertical-scroll-proportion="0.40829346">
+        <state line="242" column="129" selection-start="7338" selection-end="7338" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
