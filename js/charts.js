@@ -23,7 +23,7 @@ window.onload = function () {
            fill: ""+buttonColor+"",
            "stroke-width": 0,
            "stroke-opacity": 0,
-           opacity: .5
+           opacity: 0.5
         });
 
         butt.node.id = ""+buttonName+"";
@@ -65,10 +65,10 @@ window.onload = function () {
             function mouseout(){
                 // reset opacity
                 var self = this;
-                self.attr({opacity: .5});
+                self.attr({opacity: 0.5});
 
-                $("#box1_base, #box2_base, #box3_base, #box4_base, #box5_base").css({opacity: .5});
-                $("#box1_back, #box2_back, #box3_back, #box4_back, #box5_back").css({opacity: .25});
+                $("#box1_base, #box2_base, #box3_base, #box4_base, #box5_base").css({opacity: 0.5});
+                $("#box1_back, #box2_back, #box3_back, #box4_back, #box5_back").css({opacity: 0.25});
             }
         )
 
@@ -192,19 +192,19 @@ window.onload = function () {
 
    // ---------------------------------------------------  Spend Time Doing Pie Charts ----------------------------------------------- //
 
-    var paper = Raphael("piecharts", 940, 800);
+    var paper_piechart = Raphael("piecharts", 940, 800);
 
     function Piechart(posX,posY,pointX,pointY,pieceRadius,pieceColor,fullcircleRadius,fullcircleColor,innercircleRadius,innercircleColor, chartPercentage, chartText){
-        var piece,posX,posY,pointX,pointY,pieceRadius,pieceColor;
-        var fullcircle,fullcircleRadius,fullcircleColor;
-        var innercircle,innercircleRadius,innercircleColor;
-
+//        var piece,posX,posY,pointX,pointY,pieceRadius,pieceColor;
+//        var fullcircle,fullcircleRadius,fullcircleColor;
+//        var innercircle,innercircleRadius,innercircleColor;
+        var innercircle, piece,fullcircle;
         var shownumber, showtext;
 
-        fullcircle = paper.circle(posX, posY, fullcircleRadius);
+        fullcircle = paper_piechart.circle(posX, posY, fullcircleRadius);
         fullcircle.attr("fill", fullcircleColor);
 
-        piece = paper.path("M "+posX+" "+posY+" " + //position from the center of circle x y
+        piece = paper_piechart.path("M "+posX+" "+posY+" " + //position from the center of circle x y
             "l -"+pieceRadius+", 0 " + // draw starting line x,y
             "a"+pieceRadius+","+pieceRadius+" 0 0,0 "+pointX+","+pointY+" " + //arc -- starting arc
             "z" // complete the path
@@ -215,17 +215,16 @@ window.onload = function () {
         // move based on x,y coords. and rotate 166 degrees
         //piece.transform("t45,-85r166");
 
-        innercircle = paper.circle(posX, posY, innercircleRadius);
+        innercircle = paper_piechart.circle(posX, posY, innercircleRadius);
         innercircle.attr("fill", innercircleColor);
 
-        shownumber = paper.text(posX,posY, chartPercentage);
+        shownumber = paper_piechart.text(posX,posY, chartPercentage);
         shownumber.attr({
            'font-size': 20,
             fill: pieceColor
         });
 
-        showtext = paper.text(posX+100,posY, chartText);
-        showtext.node.class = "piechart_text";
+        showtext = paper_piechart.text(posX+100,posY, chartText);
         showtext.attr({
             'text-anchor': 'start',
             'font-size': 18,
@@ -243,21 +242,21 @@ window.onload = function () {
     chart2 =new Piechart(600,100,104.8,76,80,'#817C96',80,'#1a1a1a',45,'#222','30%','Developing Mind-Blowing Work');
 
     //chart3 = 15%
-    chart3 =new Piechart(100,300,32.8,64.8,80,'#1D9ACA',80,'#1a1a1a',45,'#222','15%','Something goes here');
+    chart3 =new Piechart(100,300,32.8,64.8,80,'#1D9ACA',80,'#1a1a1a',45,'#222','15%','Learning Something Useful');
 
     // chart = 10%
     chart4 =new Piechart(600,300,1.6,13.6,80,'#97BE0D',80,'#1a1a1a',45,'#222','10%','Being Inspired');
 
     // chart = 6%
-    chart5 =new Piechart(100,500,.8,8,80,'#C63F4F',80,'#1a1a1a',45,'#222','6%','Travel');
+    chart5 =new Piechart(100,500,0.8,8,80,'#C63F4F',80,'#1a1a1a',45,'#222','6%','Travel');
 
     // chart = 5%
-    chart6 =new Piechart(600,500,.8,8,80,'#817C96',80,'#1a1a1a',45,'#222','5%','Checking email');
+    chart6 =new Piechart(600,500,0.8,8,80,'#817C96',80,'#1a1a1a',45,'#222','5%','Checking E-mail');
 
     // chart = 2%
-    chart7 =new Piechart(100,700,.8,8,80,'#1D9ACA',80,'#1a1a1a',45,'#222','2%','Reading RSS Feeds & Blogs');
+    chart7 =new Piechart(100,700,0.8,8,80,'#1D9ACA',80,'#1a1a1a',45,'#222','2%','Reading RSS Feeds & Blogs');
 
     // chart = 2%
-    chart8 =new Piechart(600,700,.8,8,80,'#97BE0D',80,'#1a1a1a',45,'#222','2%','Visiting Facebook & Twitter');
+    chart8 =new Piechart(600,700,0.8,8,80,'#97BE0D',80,'#1a1a1a',45,'#222','2%','Catching Up on Social Media');
 
 };

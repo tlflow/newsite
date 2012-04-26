@@ -28,16 +28,7 @@
           <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="297" column="17" selection-start="13525" selection-end="13525" vertical-scroll-proportion="0.02435312">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="raphael-circles.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/raphael-circles.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="5" column="48" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0">
+                <state line="38" column="17" selection-start="1719" selection-end="1719" vertical-scroll-proportion="0.016718913">
                   <folding />
                 </state>
               </provider>
@@ -50,25 +41,25 @@
           <file leaf-file-name="style.less" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/less/style.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="482" column="86" selection-start="10054" selection-end="10054" vertical-scroll-proportion="0.0">
+                <state line="441" column="25" selection-start="8997" selection-end="8997" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="nav.js" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="nav.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/nav.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="121" column="22" selection-start="4061" selection-end="4061" vertical-scroll-proportion="0.02346041">
+                <state line="121" column="22" selection-start="4061" selection-end="4061" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="charts.js" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="charts.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/charts.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="242" column="129" selection-start="7338" selection-end="7338" vertical-scroll-proportion="0.0">
+                <state line="113" column="56" selection-start="3219" selection-end="3219" vertical-scroll-proportion="0.8200837">
                   <folding />
                 </state>
               </provider>
@@ -100,12 +91,12 @@
         <option value="$PROJECT_DIR$/js/raphael-min.js" />
         <option value="$PROJECT_DIR$/js/jquery.anchor.js" />
         <option value="$PROJECT_DIR$/js/nav.js" />
-        <option value="$PROJECT_DIR$/less/style.less" />
         <option value="$PROJECT_DIR$/raphael-circles.html" />
         <option value="$PROJECT_DIR$/js/circles.js" />
         <option value="$PROJECT_DIR$/js/my.skills-chart.js" />
-        <option value="$PROJECT_DIR$/js/charts.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/less/style.less" />
+        <option value="$PROJECT_DIR$/js/charts.js" />
       </list>
     </option>
   </component>
@@ -140,6 +131,16 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -238,16 +239,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Favorites" />
     </panes>
   </component>
@@ -309,15 +300,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="816" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="22" width="1920" height="1116" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15312725" sideWeight="0.99609375" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15713522" sideWeight="0.99609375" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -435,33 +426,35 @@
         <state line="52" column="48" selection-start="35" selection-end="1980" vertical-scroll-proportion="0.81014025" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="297" column="17" selection-start="13525" selection-end="13525" vertical-scroll-proportion="0.02435312">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/raphael-circles.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="48" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/less/style.less">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="482" column="86" selection-start="10054" selection-end="10054" vertical-scroll-proportion="0.0" />
+        <state line="38" column="17" selection-start="1719" selection-end="1719" vertical-scroll-proportion="0.016718913">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/nav.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="22" selection-start="4061" selection-end="4061" vertical-scroll-proportion="0.02346041">
+        <state line="121" column="22" selection-start="4061" selection-end="4061" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/less/style.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="441" column="25" selection-start="8997" selection-end="8997" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/charts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="242" column="129" selection-start="7338" selection-end="7338" vertical-scroll-proportion="0.0">
+        <state line="113" column="56" selection-start="3219" selection-end="3219" vertical-scroll-proportion="0.8200837">
           <folding />
         </state>
       </provider>

@@ -481,6 +481,7 @@ body {
   box-shadow: inset 0 -5px 5px #1a1a1a;
   color: #ffffff;
   background-color: #222222;
+  text-shadow: none;
 }
 #navigation nav.main-nav ul li a#work_button.selected,
 #navigation nav.main-nav ul li a#resources_button.selected {
