@@ -14,7 +14,7 @@ $(document).ready(function() {
 
     //HIDE/SHOW CONTACT AREA WHEN CONTACT BUTTON IS PRESSED
 
-    $("#hi_form").hide();
+    $("#say_hi").hide();
 
     $('.contact-nav .email').bind({
         click: function(e){
@@ -33,8 +33,10 @@ $(document).ready(function() {
                     .removeClass("collapsed")
                     .find(".iconic")
                     .removeClass("plus")
-                    .addClass("minus");
-                setTimeout($("#hi_form").fadeIn(), 1000);
+                    .addClass("minus")
+                    .css('padding-top', '5px')
+                    .css('margin-top', '0');
+                setTimeout($("#say_hi").fadeIn(), 1000);
             } else {
                 $("#contact")
                     .animate(
@@ -46,8 +48,10 @@ $(document).ready(function() {
                     .addClass("collapsed")
                     .find(".iconic")
                     .removeClass("minus")
-                    .addClass("plus");
-                $("#hi_form").fadeOut('fast', function() { /*animation completed*/ });
+                    .addClass("plus")
+                    .css('padding-top', '0')
+                    .css('margin-top', '-5px');
+                $("#say_hi").fadeOut('fast', function() { /*animation completed*/ });
             }
         }
 

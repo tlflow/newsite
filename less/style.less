@@ -55,18 +55,18 @@ cursor: pointer;
 
 
 .pill-button(@top-border: @gray, @background: @charcoal, @link: @white, @hover: @ming-blue){
-.box-shadow(inset 0 -9px 9px @pale-black);
-.cta-button();
-border: 1px solid rgba(0,0,0,0.51);
-border-top: 1px solid @top-border;
-background-color: @background;
-color: @gray + #333;
+  .box-shadow(inset 0 -9px 9px @pale-black);
+  .cta-button();
+  border: 1px solid rgba(0,0,0,0.51);
+  border-top: 1px solid @top-border;
+  background-color: @background;
+  color: @gray + #333;
 }
 
 .inset-button(@background: #1a1a1a, @link: @white, @hover: @ming-blue){
-.cta-button();
-border: 1px solid #333;
-background-color: @background;
+  .cta-button();
+  border: 1px solid #333;
+  background-color: @background;
 }
 
 .colorscheme(@background: @blue, @text: @white, @link: @orange ,@hover: @green) {
@@ -297,6 +297,112 @@ body{
   width: 100%;
   background: @dark-gray;
   height: 1px;
+
+  #say_hi {
+    padding-top: 20px;
+    font: 12px/14px "Arial", sans-serif;
+
+    h2, h3 {
+      font: 28px/30px "proxima-nova", arial, sans-serif;
+      font-weight: normal;
+    }
+
+    h3 {
+      font-size: 18px;
+      line-height: 21px;
+      color: @gray
+    }
+
+    #contact_form {
+      .column(7);
+      .row(7);
+      background: #c6c6c6;
+      height: 300px;
+
+      h2,p {
+        margin-top:15px;
+        padding-left: 15px;
+      }
+
+      label {
+        .column(2,7);
+        text-align: right;
+        margin-top: 10px;
+        font-weight: bold;
+      }
+
+      label:after {
+        content:":";
+      }
+
+      textarea.full, input.full {
+        .column(5,7);
+        margin-top: 10px;
+        border: none;
+        background: @white;
+      }
+
+      input.dotted-line {
+        border: none;
+        border-bottom: 1px dashed #999;
+        background: none;
+        height: 22px;
+      }
+
+      input.cta {
+        .rounded(5px);
+        .box-shadow(inset 0 -9px 9px @pale-black);
+        margin-left: 20px;
+        padding-top: 8px;
+        height: 20px;
+        text-indent: 2px;
+        border: 1px solid rgba(0,0,0,0.51);
+        color: @gray + #333;
+      }
+    }
+
+    #reach {
+      .column(5);
+      color: @white;
+
+      .inner {
+        width: 90%;
+        margin: 10px auto;
+
+        li {
+          margin-top:13px;
+
+          span {
+            display: inline-block;
+            text-indent: -999em;
+            width: 20px;
+            height: 16px;
+            background: url(/images/layout/icons/size16x16/facebook_16.png) no-repeat left center transparent;
+          }
+
+          span.email, span.mobile {
+            width: 50px;
+            color: #C6C6C6;
+            background: none;
+            text-indent: 0;
+          }
+
+          span:after {
+            content:":";
+          }
+
+        }
+
+        hr {
+          border: none;
+          border-bottom: 1px solid @gray;
+          margin: 20px 0 30px;
+          width: 80%;
+        }
+
+      }
+    }
+  }
 }
 
 #navigation {
@@ -404,6 +510,15 @@ body{
               a {
                   color: @gray + #333;
                   font: 12px/14px "myriad-pro", arial, sans-serif;
+
+                  span.iconic {
+                    display: inline-block;
+                    width: 15px;
+                    height: 10px;
+                    vertical-align: middle;
+                    margin-top: -5px;
+                  }
+
               }
 
           }

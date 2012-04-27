@@ -27,11 +27,32 @@
   <div id="masthead">
     <div id="contact">
         <div class="container">
-          <form id="hi_form">
-              <label>First Name</label><input name="hi_name" id="hi_firstname">
-              <label>Last Name</label><input name="hi_name" id="hi_lastname">
-              <label>Comment</label><textarea name="hi_message" id="hi_message"></textarea>
-          </form>
+          <div id="say_hi">
+            <form id="contact_form">
+              <h2>Stopping by to say "hi"?</h2>
+              <p>Feel free to contact me with any comment, request, joke, or criticism. I will get back to you as soon as possible.</p>
+              <label for="comment_message">Comment</label><textarea name="comment_message" id="comment_message" cols="40" rows="6" class="full"></textarea>
+              <label for="comment_firstname">First Name</label><input name="comment_name" id="comment_firstname" class="full dotted-line">
+              <label for="comment_lastname">Last Name</label><input name="comment_name" id="comment_lastname" class="full dotted-line">
+              <input type="submit" class="cta">
+            </form>
+            <div id="reach">
+              <div class="inner">
+                <h3>More Options</h2>
+                <ul>
+                  <li><span class="email">E-mail</span> me@terenceflowers.net</li>
+                  <li><span class="mobile">Mobile</span> +1 704 464 4743</li>
+                  <hr>
+                  <li><span class="facebook">Facebook</span> facebook.com/terenceflowers</li>
+                  <li><span class="twitter">Twitter</span> twitter.com/terenceflowers</li>
+                  <li><span class="google">Google Plus</span> google.com/terenceflowers</li>
+                  <li><span class="linkedin">LinkedIn</span> linkedin.com/terenceflowers</li>
+                  <li><span class="pinterest">Pinterest</span> pinterest.com/terenceflowers</li>
+                  <li><span class="dribbble">Dribbble</span> dribble.com/terenceflowers</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -49,7 +70,7 @@
           </nav>
 
           <nav class="contact-nav">
-              <div class="contact collapsed">
+              <div class="email collapsed">
                 <a href="/"><span class="iconic plus"></span> contact me</a>
               </div>
               <div class="social"><a href="#">social</a></div>
