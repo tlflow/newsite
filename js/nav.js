@@ -25,7 +25,7 @@ $(document).ready(function() {
             if(self.hasClass("collapsed")){
                 $("#contact")
                     .animate(
-                        { height: '400px' }, {
+                        { height: '360px' }, {
                         duration: 1000,
                         easing: 'easeInExpo'
                         });
@@ -34,8 +34,10 @@ $(document).ready(function() {
                     .find(".iconic")
                     .removeClass("plus")
                     .addClass("minus")
-                    .css('padding-top', '5px')
-                    .css('margin-top', '0');
+                    .css({
+                        'padding-top': '5px',
+                        'margin-top': '0'
+                    });
                 setTimeout($("#say_hi").fadeIn(), 1000);
             } else {
                 $("#contact")
@@ -49,8 +51,10 @@ $(document).ready(function() {
                     .find(".iconic")
                     .removeClass("minus")
                     .addClass("plus")
-                    .css('padding-top', '0')
-                    .css('margin-top', '-5px');
+                    .css({
+                        'padding-top': '0',
+                        'margin-top': '-5px'
+                    });
                 $("#say_hi").fadeOut('fast', function() { /*animation completed*/ });
             }
         }

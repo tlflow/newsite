@@ -317,7 +317,7 @@ body{
       .column(7);
       .row(7);
       background: #c6c6c6;
-      height: 300px;
+      height: 320px;
 
       h2,p {
         margin-top:15px;
@@ -329,6 +329,7 @@ body{
         text-align: right;
         margin-top: 10px;
         font-weight: bold;
+        padding-top: 10px;
       }
 
       label:after {
@@ -339,7 +340,11 @@ body{
         .column(5,7);
         margin-top: 10px;
         border: none;
-        background: @white;
+      }
+
+      textarea {
+        background-color: #bcbcbc;
+        .box-shadow(inset 0 10px 4px #bababa);
       }
 
       input.dotted-line {
@@ -350,14 +355,18 @@ body{
       }
 
       input.cta {
-        .rounded(5px);
-        .box-shadow(inset 0 -9px 9px @pale-black);
-        margin-left: 20px;
-        padding-top: 8px;
-        height: 20px;
-        text-indent: 2px;
+        .rounded(2px);
+        .box-shadow(inset 0 -20px 20px @pale-black);
+        padding-top: 5px;
+        width: 60px;
+        height: 30px;
         border: 1px solid rgba(0,0,0,0.51);
-        color: @gray + #333;
+        color: @white;
+        background-color: @gray;
+        text-align: center;
+        position: relative;
+        top: 20px;
+        left: 495px;
       }
     }
 
@@ -497,30 +506,44 @@ body{
           float: right;
           position: relative;
           top: 8px;
-          width: 200px;
+          width: 100px;
 
-          div {
-              .rounded(5px);
-              .inset-button();
-              float: left;
-              margin-right: 5px;
-              padding-top: 2px;
-              height: 1.0em;
-              
-              a {
-                  color: @gray + #333;
-                  font: 12px/14px "myriad-pro", arial, sans-serif;
+          .email {
+            .rounded(5px);
+            .inset-button();
+            float: left;
+            margin-right: 5px;
+            padding-top: 2px;
+            height: 1.0em;
 
-                  span.iconic {
-                    display: inline-block;
-                    width: 15px;
-                    height: 10px;
-                    vertical-align: middle;
-                    margin-top: -5px;
-                  }
+            a {
+              color: @white;
+              font: 12px/14px "myriad-pro", arial, sans-serif;
 
+              span.iconic {
+                display: inline-block;
+                width: 15px;
+                height: 10px;
+                vertical-align: middle;
+                margin-top: -5px;
               }
 
+            }
+
+            a:hover {
+              color: @ming-blue;
+            }
+
+          }
+
+          .email.collapsed {
+            a {
+              color: @gray + #333;
+            }
+
+            a:hover {
+              color: @ming-blue;
+            }
           }
 
       }
@@ -1079,7 +1102,8 @@ body{
            border-top: none;
            border-bottom: none;
            width: 18%;
-           background: url(/images/layout/nav-seperator.gif) right center transparent;
+           /*background: url(/images/layout/nav-seperator.gif) right center transparent;*/
+           .gradient(@pale-black, @pale-black, @charcoal);
 
            a{
              padding: 0 10px;

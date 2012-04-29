@@ -192,7 +192,7 @@ window.onload = function () {
 
    // ---------------------------------------------------  Spend Time Doing Pie Charts ----------------------------------------------- //
 
-    var paper_piechart = Raphael("piecharts", 940, 800);
+    var paper_piechart = Raphael("piecharts", 960, 800);
 
     function Piechart(posX,posY,pointX,pointY,pieceRadius,pieceColor,fullcircleRadius,fullcircleColor,innercircleRadius,innercircleColor, chartPercentage, chartText){
 //        var piece,posX,posY,pointX,pointY,pieceRadius,pieceColor;

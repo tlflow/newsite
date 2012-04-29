@@ -28,7 +28,7 @@
           <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="36" column="45" selection-start="2076" selection-end="2076" vertical-scroll-proportion="0.3042789">
+                <state line="237" column="30" selection-start="12058" selection-end="12058" vertical-scroll-proportion="0.6703645">
                   <folding />
                 </state>
               </provider>
@@ -41,7 +41,7 @@
           <file leaf-file-name="style.less" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/less/style.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="356" column="16" selection-start="6645" selection-end="6646" vertical-scroll-proportion="0.68292683">
+                <state line="1106" column="46" selection-start="24323" selection-end="24323" vertical-scroll-proportion="0.4542683">
                   <folding />
                 </state>
               </provider>
@@ -50,7 +50,7 @@
           <file leaf-file-name="nav.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/nav.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="37" column="41" selection-start="1108" selection-end="1108" vertical-scroll-proportion="0.0">
+                <state line="39" column="23" selection-start="1158" selection-end="1158" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -59,7 +59,7 @@
           <file leaf-file-name="charts.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/charts.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="113" column="56" selection-start="3219" selection-end="3219" vertical-scroll-proportion="0.0">
+                <state line="194" column="48" selection-start="5494" selection-end="5494" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -93,10 +93,10 @@
         <option value="$PROJECT_DIR$/raphael-circles.html" />
         <option value="$PROJECT_DIR$/js/circles.js" />
         <option value="$PROJECT_DIR$/js/my.skills-chart.js" />
-        <option value="$PROJECT_DIR$/js/charts.js" />
         <option value="$PROJECT_DIR$/js/nav.js" />
-        <option value="$PROJECT_DIR$/less/style.less" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/charts.js" />
+        <option value="$PROJECT_DIR$/less/style.less" />
       </list>
     </option>
   </component>
@@ -433,28 +433,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/nav.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="41" selection-start="1108" selection-end="1108" vertical-scroll-proportion="0.0">
+        <state line="39" column="23" selection-start="1158" selection-end="1158" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/charts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="56" selection-start="3219" selection-end="3219" vertical-scroll-proportion="0.0">
+        <state line="194" column="48" selection-start="5494" selection-end="5494" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="45" selection-start="2076" selection-end="2076" vertical-scroll-proportion="0.3042789">
+        <state line="237" column="30" selection-start="12058" selection-end="12058" vertical-scroll-proportion="0.6703645">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/less/style.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="356" column="16" selection-start="6645" selection-end="6646" vertical-scroll-proportion="0.68292683">
+        <state line="1106" column="46" selection-start="24323" selection-end="24323" vertical-scroll-proportion="0.4542683">
           <folding />
         </state>
       </provider>
