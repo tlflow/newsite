@@ -328,8 +328,9 @@ body{
         .column(2,7);
         text-align: right;
         margin-top: 10px;
-        font-weight: bold;
+        font-weight: normal;
         padding-top: 10px;
+        font-family: "Arial Black", arial, sans-serif;
       }
 
       label:after {
@@ -352,6 +353,8 @@ body{
         border-bottom: 1px dashed #999;
         background: none;
         height: 22px;
+        text-indent: 20px;
+        background: url(/images/layout/icons/size16x16/pencil.png) no-repeat left center transparent;
       }
 
       input.cta {
@@ -381,12 +384,22 @@ body{
         li {
           margin-top:13px;
 
+          a {
+            color: @light-beige;
+            text-decoration: none;
+          }
+
+          a:hover {
+            color: @green;
+            text-decoration: underline;
+          }
+
           span {
             display: inline-block;
             text-indent: -999em;
             width: 20px;
             height: 16px;
-            background: url(/images/layout/icons/size16x16/facebook_16.png) no-repeat left center transparent;
+            background: url(/images/layout/icons/size16x16/facebook.png) no-repeat left center transparent;
           }
 
           span.email, span.mobile {
@@ -399,6 +412,23 @@ body{
           span:after {
             content:":";
           }
+
+          span.twitter {
+            background: url(/images/layout/icons/size16x16/twitter.png) no-repeat left center transparent;
+          }
+
+          span.linkedin{
+            background: url(/images/layout/icons/size16x16/linkedin.png) no-repeat left center transparent;
+          }
+
+          span.dribbble{
+            background: url(/images/layout/icons/size16x16/dribble.png) no-repeat left center transparent;
+          }
+
+          span.tumblr{
+            background: url(/images/layout/icons/size16x16/tumblr.png) no-repeat left center transparent;
+          }
+
 
         }
 
@@ -786,7 +816,7 @@ body{
     #process {
       .column(12);
       background: url(/images/layout/terence-drawing.png) no-repeat right bottom transparent;
-      height: 347px;
+      height: 387px;
 
       #process_diagram {
         .column(8);

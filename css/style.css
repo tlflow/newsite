@@ -464,8 +464,9 @@ body {
   margin: 0 10px;
   text-align: right;
   margin-top: 10px;
-  font-weight: bold;
+  font-weight: normal;
   padding-top: 10px;
+  font-family: "Arial Black", arial, sans-serif;
 }
 #contact #say_hi #contact_form label:after {
   content: ":";
@@ -491,6 +492,8 @@ body {
   border-bottom: 1px dashed #999;
   background: none;
   height: 22px;
+  text-indent: 20px;
+  background: url(/images/layout/icons/size16x16/pencil.png) no-repeat left center transparent;
 }
 #contact #say_hi #contact_form input.cta {
   -webkit-border-radius: 2px;
@@ -528,12 +531,20 @@ body {
 #contact #say_hi #reach .inner li {
   margin-top: 13px;
 }
+#contact #say_hi #reach .inner li a {
+  color: #f5eeed;
+  text-decoration: none;
+}
+#contact #say_hi #reach .inner li a:hover {
+  color: #97e87d;
+  text-decoration: underline;
+}
 #contact #say_hi #reach .inner li span {
   display: inline-block;
   text-indent: -999em;
   width: 20px;
   height: 16px;
-  background: url(/images/layout/icons/size16x16/facebook_16.png) no-repeat left center transparent;
+  background: url(/images/layout/icons/size16x16/facebook.png) no-repeat left center transparent;
 }
 #contact #say_hi #reach .inner li span.email,
 #contact #say_hi #reach .inner li span.mobile {
@@ -544,6 +555,18 @@ body {
 }
 #contact #say_hi #reach .inner li span:after {
   content: ":";
+}
+#contact #say_hi #reach .inner li span.twitter {
+  background: url(/images/layout/icons/size16x16/twitter.png) no-repeat left center transparent;
+}
+#contact #say_hi #reach .inner li span.linkedin {
+  background: url(/images/layout/icons/size16x16/linkedin.png) no-repeat left center transparent;
+}
+#contact #say_hi #reach .inner li span.dribbble {
+  background: url(/images/layout/icons/size16x16/dribble.png) no-repeat left center transparent;
+}
+#contact #say_hi #reach .inner li span.tumblr {
+  background: url(/images/layout/icons/size16x16/tumblr.png) no-repeat left center transparent;
 }
 #contact #say_hi #reach .inner hr {
   border: none;
@@ -969,7 +992,7 @@ body {
   width: 940px;
   margin: 0 10px;
   background: url(/images/layout/terence-drawing.png) no-repeat right bottom transparent;
-  height: 347px;
+  height: 387px;
 }
 #skills #process #process_diagram {
   display: inline;

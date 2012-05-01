@@ -1,16 +1,19 @@
 $(document).ready(function() {
 
     // ADD "SELECTED" CLASS TO WHICHEVER BUTTON IN NAV IS PRESSED
-
+/*
     $('.main-nav ul li a').bind({
         click: function(e){
             e.preventDefault();
 
-            var self = $(this);
+
+
+            self = $(this);
             $(".main-nav ul li a").removeClass("selected");
             self.addClass("selected");
         }
     });
+*/
 
     //HIDE/SHOW CONTACT AREA WHEN CONTACT BUTTON IS PRESSED
 
@@ -110,6 +113,14 @@ $(document).ready(function() {
                     elementClick=self.attr("href");
                  }
 
+
+             // change main nav based on what button pressed
+                 // remove .selected from all buttons
+                 $(".main-nav ul li a").removeClass("selected");
+                 // find which main nav button should be highlighted
+                 $("a[href^='"+elementClick+"']").addClass("selected");
+
+
              // scrolling part
                  if (elementClick==="#welcome"){
                      // -40 to account for welcome section top padding
@@ -118,9 +129,11 @@ $(document).ready(function() {
                     destination = $(elementClick).offset().top;
                  }
 
+
                  // scrolling animation
                  $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination}, 1000, function() {
                     window.location.hash = elementClick;
+
                  });
 
              },
