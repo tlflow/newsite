@@ -991,17 +991,10 @@ body {
   overflow: hidden;
   width: 940px;
   margin: 0 10px;
-  background: url(/images/layout/terence-drawing.png) no-repeat right bottom transparent;
+  background-image: url(/images/layout/terence-drawing.png);
+  background-position: left bottom;
+  background-repeat: no-repeat;
   height: 387px;
-}
-#skills #process #process_diagram {
-  display: inline;
-  float: left;
-  overflow: hidden;
-  width: 620px;
-  margin: 0 10px;
-  background: red;
-  height: 300px;
 }
 #about {
   background-color: #222222;
