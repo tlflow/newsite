@@ -64,6 +64,31 @@ $(document).ready(function() {
 
     });
 
+    // SECTION NAV AND MAIN NAV BUTTON SCROLLING PAGE FUNCTIONALITY (FOR THE PEOPLE THAT LIKE TO SCROLL)
+
+     $(window).scroll(function () {
+
+         var scroller;
+
+         scroller = document.body.scrollTop;
+
+         if((scroller > 0) && (scroller < 880)){
+            $(".main-nav ul li a").removeClass("selected");
+            $('#welcome_button').addClass('selected');
+         } else if((scroller > 880) && (scroller < 2318)){
+            $(".main-nav ul li a").removeClass("selected");
+            $('#skills_button').addClass('selected');
+         } else if((scroller > 2318) && (scroller < 3043)){
+            $(".main-nav ul li a").removeClass("selected");
+            $('#about_button').addClass('selected');
+         } else if(scroller > 3043){
+            $(".main-nav ul li a").removeClass("selected");
+            $('#work_button').addClass('selected');
+         }
+     });
+
+
+
     // SECTION NAV AND MAIN NAV BUTTON SCROLLING PAGE FUNCTIONALITY
 
     $('.section-nav li.up, .section-nav li.down, a.anchorLink').each(function() {
@@ -95,9 +120,9 @@ $(document).ready(function() {
                         displayBefore="about";
                         displayAfter="resources";
                         break;
-                    case "resources":
-                        displayBefore="work";
-                        break;
+//                    case "resources":
+//                        displayBefore="work";
+//                        break;
                  }
 
                  // get section based on what button is pressed
@@ -113,22 +138,14 @@ $(document).ready(function() {
                     elementClick=self.attr("href");
                  }
 
-
-             // change main nav based on what button pressed
-                 // remove .selected from all buttons
-                 $(".main-nav ul li a").removeClass("selected");
-                 // find which main nav button should be highlighted
-                 $("a[href^='"+elementClick+"']").addClass("selected");
-
-
              // scrolling part
                  if (elementClick==="#welcome"){
                      // -40 to account for welcome section top padding
                      destination = -40;
                  } else {
                     destination = $(elementClick).offset().top;
+                    //console.log(destination);
                  }
-
 
                  // scrolling animation
                  $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination}, 1000, function() {
@@ -150,7 +167,6 @@ $(document).ready(function() {
 
          });
     });
-
 
 
     // RECENT WORKS SECTION

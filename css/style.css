@@ -378,7 +378,7 @@ body {
 #page-footer header h2 {
   font-size: 42px;
   line-height: 42px;
-  font-weight: 900;
+  font-weight: normal;
   text-indent: 10px;
 }
 #navigation header h3,
@@ -626,9 +626,6 @@ body {
 #navigation nav.main-nav ul li a.selected {
   border-left: 1px solid #666666;
   border-right: 1px solid #666666;
-  -webkit-box-shadow: inset 0 -5px 5px #1a1a1a;
-  -moz-box-shadow: inset 0 -5px 5px #1a1a1a;
-  box-shadow: inset 0 -5px 5px #1a1a1a;
   color: #ffffff;
   background-color: #222222;
   text-shadow: none;
@@ -637,24 +634,15 @@ body {
 #navigation nav.main-nav ul li a#resources_button.selected {
   color: #000000;
   background-color: #f5eeed;
-  -webkit-box-shadow: inset 0 -30px 20px #dedede;
-  -moz-box-shadow: inset 0 -30px 20px #dedede;
-  box-shadow: inset 0 -30px 20px #dedede;
 }
 #navigation nav.main-nav ul li a#welcome_button.selected {
   color: #ffffff;
   text-shadow: 0 2px #090909;
   background: url(/images/layout/grey.tile.bkg.jpg) repeat 0 0 transparent;
-  -webkit-box-shadow: 0 0 0 #000000;
-  -moz-box-shadow: 0 0 0 #000000;
-  box-shadow: 0 0 0 #000000;
 }
 #navigation nav.main-nav ul li a#skills_button.selected {
   color: #000000;
   background: url(/images/layout/bg_page-diamond.gif) repeat center center transparent;
-  -webkit-box-shadow: 0 0 0 #000000;
-  -moz-box-shadow: 0 0 0 #000000;
-  box-shadow: 0 0 0 #000000;
 }
 #navigation nav.contact-nav {
   float: right;
@@ -912,7 +900,8 @@ body {
   background: url(/images/layout/bg_page-diamond.gif) repeat center center transparent;
   border-bottom: 10px solid #cecece;
   border-top: 10px solid #eae4e3;
-  padding-bottom: 0;
+  /*padding-bottom: 0;*/
+
 }
 #skills header {
   display: inline;
@@ -1084,206 +1073,6 @@ body {
   border-bottom: 1px dotted #ffffff;
   padding: 5px 0;
 }
-#about #spend-time ul {
-  display: inline;
-  float: left;
-  overflow: hidden;
-  width: 940px;
-  margin: 0 10px;
-  display: inline-block;
-  overflow: hidden;
-  width: 979.9999999999999px;
-  margin: 0 -10px;
-}
-#about #spend-time ul li {
-  display: inline;
-  float: left;
-  overflow: hidden;
-  width: 460px;
-  margin: 0 10px;
-  margin-bottom: 20px;
-}
-#about #spend-time ul li .topic {
-  float: left;
-  width: 350px;
-  text-indent: 20px;
-  padding-top: 35px;
-}
-#about #spend-time ul li .css-chart {
-  float: left;
-  position: relative;
-  width: 100px;
-  height: 100px;
-}
-#about #spend-time ul li .css-chart .pie {
-  background-color: #1a1a1a;
-  border-color: #1a1a1a;
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  clip: rect(0, 50px, 100px, 0);
-  border-radius: 100px;
-}
-#about #spend-time ul li .css-chart .pie.subject {
-  left: 1px;
-}
-#about #spend-time ul li .css-chart .half-left {
-  -moz-transform: rotate(0deg) !important;
-  -webkit-transform: rotate(0deg) !important;
-  -o-transform: rotate(0deg) !important;
-  transform: rotate(0deg) !important;
-}
-#about #spend-time ul li .css-chart .inner {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  top: 25px;
-  left: 25px;
-}
-#about #spend-time ul li .css-chart .inner span {
-  position: relative;
-  top: 10px;
-  font-size: 18px;
-  text-align: center;
-  display: block;
-  text-transform: uppercase;
-}
-#about #spend-time ul li .css-chart .pie.inner {
-  background-color: #222222;
-  border-color: #222222;
-  border-radius: 100px;
-  clip: auto;
-  width: 50px;
-  height: 50px;
-}
-#about #spend-time ul #post_social .half-right {
-  -webkit-transform: rotate(-178deg);
-  -moz-transform: rotate(-178deg);
-  transform: rotate(-178deg);
-}
-#about #spend-time ul #post_social .subject {
-  background-color: #97e87d;
-  border-color: #97e87d;
-  -webkit-transform: rotate(2deg);
-  -moz-transform: rotate(2deg);
-  transform: rotate(2deg);
-}
-#about #spend-time ul #post_social .inner span,
-#about #spend-time ul #post_social .topic {
-  color: #97e87d;
-}
-#about #spend-time ul #travel .half-right {
-  -webkit-transform: rotate(-175deg);
-  -moz-transform: rotate(-175deg);
-  transform: rotate(-175deg);
-}
-#about #spend-time ul #travel .subject {
-  background-color: #60bcd6;
-  border-color: #60bcd6;
-  -webkit-transform: rotate(5deg);
-  -moz-transform: rotate(5deg);
-  transform: rotate(5deg);
-}
-#about #spend-time ul #travel .inner span,
-#about #spend-time ul #travel .topic {
-  color: #60bcd6;
-}
-#about #spend-time ul #read_feeds .half-right {
-  -webkit-transform: rotate(-140deg);
-  -moz-transform: rotate(-140deg);
-  transform: rotate(-140deg);
-}
-#about #spend-time ul #read_feeds .subject {
-  background-color: #d84f5f;
-  border-color: #d84f5f;
-  -webkit-transform: rotate(40deg);
-  -moz-transform: rotate(40deg);
-  transform: rotate(40deg);
-}
-#about #spend-time ul #read_feeds .inner span,
-#about #spend-time ul #read_feeds .topic {
-  color: #d84f5f;
-}
-#about #spend-time ul #get_snacks .half-right {
-  -webkit-transform: rotate(-105deg);
-  -moz-transform: rotate(-105deg);
-  transform: rotate(-105deg);
-}
-#about #spend-time ul #get_snacks .subject {
-  background-color: #e8a240;
-  border-color: #e8a240;
-  -webkit-transform: rotate(75deg);
-  -moz-transform: rotate(75deg);
-  transform: rotate(75deg);
-}
-#about #spend-time ul #get_snacks .inner span,
-#about #spend-time ul #get_snacks .topic {
-  color: #e8a240;
-}
-#about #spend-time ul #check_gmail .half-right {
-  -webkit-transform: rotate(-140deg);
-  -moz-transform: rotate(-140deg);
-  transform: rotate(-140deg);
-}
-#about #spend-time ul #check_gmail .subject {
-  background-color: #97e87d;
-  border-color: #97e87d;
-  -webkit-transform: rotate(40deg);
-  -moz-transform: rotate(40deg);
-  transform: rotate(40deg);
-}
-#about #spend-time ul #check_gmail .inner span,
-#about #spend-time ul #check_gmail .topic {
-  color: #97e87d;
-}
-#about #spend-time ul #read_gmail .half-right {
-  -webkit-transform: rotate(-105deg);
-  -moz-transform: rotate(-105deg);
-  transform: rotate(-105deg);
-}
-#about #spend-time ul #read_gmail .subject {
-  background-color: #60bcd6;
-  border-color: #60bcd6;
-  -webkit-transform: rotate(75deg);
-  -moz-transform: rotate(75deg);
-  transform: rotate(75deg);
-}
-#about #spend-time ul #read_gmail .inner span,
-#about #spend-time ul #read_gmail .topic {
-  color: #60bcd6;
-}
-#about #spend-time ul #design_something .half-right {
-  -webkit-transform: rotate(-40deg);
-  -moz-transform: rotate(-40deg);
-  transform: rotate(-40deg);
-}
-#about #spend-time ul #design_something .subject {
-  background-color: #d84f5f;
-  border-color: #d84f5f;
-  -webkit-transform: rotate(140deg);
-  -moz-transform: rotate(140deg);
-  transform: rotate(140deg);
-}
-#about #spend-time ul #design_something .inner span,
-#about #spend-time ul #design_something .topic {
-  color: #d84f5f;
-}
-#about #spend-time ul #develop_something .half-right {
-  -webkit-transform: rotate(-40deg);
-  -moz-transform: rotate(-40deg);
-  transform: rotate(-40deg);
-}
-#about #spend-time ul #develop_something .subject {
-  background-color: #e8a240;
-  border-color: #e8a240;
-  -webkit-transform: rotate(140deg);
-  -moz-transform: rotate(140deg);
-  transform: rotate(140deg);
-}
-#about #spend-time ul #develop_something .inner span,
-#about #spend-time ul #develop_something .topic {
-  color: #e8a240;
-}
 #work {
   background: #f5eeed;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #dedede), color-stop(1, #f5eeed));
@@ -1304,6 +1093,14 @@ body {
   overflow: hidden;
   width: 140px;
   margin: 0 10px;
+}
+#work .section-nav li.up {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 #work #project_filter,
 #work #projects {

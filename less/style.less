@@ -268,7 +268,7 @@ body{
             h2 {
                 font-size: 42px;
                 line-height: 42px;
-                font-weight: 900;
+                font-weight: normal;
                 text-indent: 10px;
             }
 
@@ -504,7 +504,6 @@ body{
               li a.selected {
                   border-left: 1px solid @gray;
                   border-right: 1px solid @gray;
-                  .box-shadow(inset 0 -5px 5px @dark-gray);
                   color: @white;
                   background-color: @charcoal;
                   text-shadow: none;
@@ -513,20 +512,17 @@ body{
               li a#work_button.selected, li a#resources_button.selected {
                 color: @black;
                 background-color: @light-beige;
-                .box-shadow(inset 0 -30px 20px @dark-beige);
               }
 
               li a#welcome_button.selected {
                 color: @white;
                 text-shadow: 0 2px #090909;
                 background: url(/images/layout/grey.tile.bkg.jpg) repeat 0 0 transparent;
-                .box-shadow(0 0 0 @black);
               }
 
               li a#skills_button.selected {
                 color: @black;
                 background: url(/images/layout/bg_page-diamond.gif) repeat center center transparent;
-                .box-shadow(0 0 0 @black);
               }
 
           }
@@ -755,7 +751,7 @@ body{
     background: url(/images/layout/bg_page-diamond.gif) repeat center center transparent;
     border-bottom: 10px solid @dark-beige - #101010;
     border-top: 10px solid #eae4e3;
-    padding-bottom: 0;
+    /*padding-bottom: 0;*/
 
     header{
         .column(10);
@@ -909,195 +905,7 @@ body{
         }
     }
 
-    #spend-time {
 
-      ul{
-        .column(12);
-          .row(12);
-
-            li{
-              .column(6,12);
-              margin-bottom: 20px;
-
-              .topic {
-                float: left;
-                width: 350px;
-                text-indent: 20px;
-                padding-top: 35px;
-              }
-
-              .css-chart {
-                float: left;
-                position:relative;
-                width: 100px;
-                height: 100px;
-
-                .pie {
-                  background-color: @dark-gray;
-              		border-color: @dark-gray;
-                  position: absolute;
-                  width: 100px;
-                  height: 100px;
-                  clip: rect(0,50px,100px,0);
-                  border-radius:100px;
-                }
-
-                .pie.subject {
-                  left: 1px;
-                }
-
-                .half-left {
-                  -moz-transform:rotate(0deg) !important;
-                  -webkit-transform:rotate(0deg) !important;
-                  -o-transform:rotate(0deg) !important;
-                  transform:rotate(0deg) !important;
-                }
-
-                .inner {
-              		position: absolute;
-              		width: 50px;
-              		height: 50px;
-              		top: 25px;
-              		left: 25px;
-                }
-
-                .inner span {
-                  position: relative;
-                  top: 10px;
-                  font-size: 18px;
-                  text-align: center;
-                  display: block;
-                  text-transform: uppercase;
-                }
-
-                .pie.inner {
-                  background-color: @charcoal;
-                  border-color: @charcoal;
-                  border-radius:100px;
-                  clip: auto;
-                  width: 50px;
-                  height: 50px;
-                }
-
-              }
-
-            }
-
-            #post_social{
-              @chart-accent-color: @green;
-              .half-right{
-                .rotation(-178deg);
-              }
-              .subject{
-                background-color: @chart-accent-color;
-                border-color: @chart-accent-color;
-                .rotation(2deg);
-              }
-              .inner span, .topic{
-                color: @chart-accent-color;
-              }
-            }
-            #travel{
-              @chart-accent-color: @blue;
-              .half-right{
-                .rotation(-175deg);
-              }
-              .subject{
-                background-color: @chart-accent-color;
-                border-color: @chart-accent-color;
-                .rotation(5deg);
-              }
-              .inner span, .topic{
-                color: @chart-accent-color;
-              }
-            }
-            #read_feeds{
-              @chart-accent-color: @red;
-              .half-right{
-                .rotation(-140deg);
-              }
-              .subject{
-                background-color: @chart-accent-color;
-                border-color: @chart-accent-color;
-                .rotation(40deg);
-              }
-              .inner span, .topic{
-                color: @chart-accent-color;
-              }
-            }
-            #get_snacks{
-              @chart-accent-color: @orange;
-              .half-right{
-                .rotation(-105deg);
-              }
-              .subject{
-                background-color: @chart-accent-color;
-                border-color: @chart-accent-color;
-                .rotation(75deg);
-              }
-              .inner span, .topic{
-                color: @chart-accent-color;
-              }
-            }
-            #check_gmail{
-              @chart-accent-color: @green;
-              .half-right{
-                .rotation(-140deg);
-              }
-              .subject{
-                background-color: @chart-accent-color;
-                border-color: @chart-accent-color;
-                .rotation(40deg);
-              }
-              .inner span, .topic{
-                color: @chart-accent-color;
-              }
-            }
-            #read_gmail{
-              @chart-accent-color: @blue;
-              .half-right{
-                .rotation(-105deg);
-              }
-              .subject{
-                background-color: @chart-accent-color;
-                border-color: @chart-accent-color;
-                .rotation(75deg);
-              }
-              .inner span, .topic{
-                color: @chart-accent-color;
-              }
-            }
-            #design_something{
-              @chart-accent-color: @red;
-              .half-right{
-                .rotation(-40deg);
-              }
-              .subject{
-                background-color: @chart-accent-color;
-                border-color: @chart-accent-color;
-                .rotation(140deg);
-              }
-              .inner span, .topic{
-                color: @chart-accent-color;
-              }
-            }
-            #develop_something{
-              @chart-accent-color: @orange;
-              .half-right{
-                .rotation(-40deg);
-              }
-              .subject{
-                background-color: @chart-accent-color;
-                border-color: @chart-accent-color;
-                .rotation(140deg);
-              }
-              .inner span, .topic{
-                color: @chart-accent-color;
-              }
-            }
-
-      }
-    }
 }
   
 #work {
@@ -1110,6 +918,10 @@ body{
 
     .section-nav {
         .column(2);
+
+        li.up {
+          .rounded(5px);
+        }
     }
 
     #project_filter, #projects {
