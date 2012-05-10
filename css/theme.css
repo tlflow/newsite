@@ -1,0 +1,13 @@
+/* -------- COLORS --------- */
+/* -------- COLOR SCHEME --------- */
+/* -------- GLOBALCSS -------- */
+.iconic {
+  display: inline-block;
+  font-family: "IconicStroke";
+}
+hr {
+  border: none;
+  border-bottom: 1px solid #666666;
+  margin: 20px 0;
+  width: 100%;
+}
