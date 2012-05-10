@@ -102,7 +102,7 @@ $(document).ready(function() {
 
                  // get what sections are before and/or after (if any)
 
-                 var displayCurrent = self.closest('.display').attr("id");
+                 var displayCurrent = self.closest('.segment').attr("id");
 
                  var displayBefore, displayAfter, elementClick, destination;
 

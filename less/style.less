@@ -54,15 +54,6 @@ cursor: pointer;
 }
 
 
-.pill-button(@top-border: @gray, @background: @charcoal, @link: @white, @hover: @ming-blue){
-  .box-shadow(inset 0 -9px 9px @pale-black);
-  .cta-button();
-  border: 1px solid rgba(0,0,0,0.51);
-  border-top: 1px solid @top-border;
-  background-color: @background;
-  color: @gray + #333;
-}
-
 .inset-button(@background: #1a1a1a, @link: @white, @hover: @ming-blue){
   .cta-button();
   border: 1px solid #333;
@@ -262,7 +253,6 @@ body{
                 font-size: 64px;
                 line-height: 64px;
                 font-weight: 900;
-                line-height: 64px;
             }
 
             h2 {
@@ -750,7 +740,7 @@ body{
     .gradient(@light-beige, @dark-beige, @light-beige);
     background: url(/images/layout/bg_page-diamond.gif) repeat center center transparent;
     border-bottom: 10px solid @dark-beige - #101010;
-    border-top: 10px solid #eae4e3;
+    border-top: 10px solid @dark-beige;
     /*padding-bottom: 0;*/
 
     header{
@@ -777,6 +767,7 @@ body{
 
     article {
         .column(8);
+        font-size: 86%;
 
         * {
             width: 90%;
@@ -793,8 +784,10 @@ body{
             padding: 5px;
             background-color: #ccc;
             color: @gray;
+        }
 
-
+        h5 {
+          margin-bottom: -10px;
         }
 
             .row(8);
@@ -868,7 +861,10 @@ body{
         }
 
         a {
-              color: @orange;
+              color: @ming-blue;
+              background: @dark-gray;
+              text-decoration: none;
+              padding: 5px;
             }
 
         a:hover {
@@ -888,7 +884,7 @@ body{
                 margin-bottom: 20px;
 
                 h2 {
-                    color: #ccc;
+                    color: @gray;
                     text-shadow: 0 1px 1px #000;
                 }
 
@@ -897,7 +893,7 @@ body{
                 }
 
                 li {
-                    border-bottom: 1px dotted @white;
+                    border-bottom: 1px dotted @gray;
                     padding: 5px 0;
                 }
             }
@@ -910,6 +906,7 @@ body{
   
 #work {
     .gradient(@light-beige, @dark-beige, @light-beige);
+    /*background-color: #28292E;*/
     border-bottom: 10px solid @dark-beige - #101010;
 
     header {
@@ -1057,10 +1054,13 @@ body{
 }
 
 #page-footer {
-    .colorscheme(@smoke-gray, @gray, #BDB791, @white);
+    .colorscheme(@smoke-gray, @gray, @light-beige, @white);
     font: 12px/14px  Arial, sans-serif;
     padding: 0;
 
+    a {
+      text-decoration: none
+    }
 
     .page-summary {
         .column(12);

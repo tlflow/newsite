@@ -367,7 +367,6 @@ body {
   font-size: 64px;
   line-height: 64px;
   font-weight: 900;
-  line-height: 64px;
 }
 #navigation header h2,
 #intro header h2,
@@ -899,7 +898,7 @@ body {
   background: -moz-linear-gradient(center bottom, #dedede 0%, #f5eeed 100%);
   background: url(/images/layout/bg_page-diamond.gif) repeat center center transparent;
   border-bottom: 10px solid #cecece;
-  border-top: 10px solid #eae4e3;
+  border-top: 10px solid #dedede;
   /*padding-bottom: 0;*/
 
 }
@@ -938,6 +937,7 @@ body {
   overflow: hidden;
   width: 620px;
   margin: 0 10px;
+  font-size: 86%;
   display: inline-block;
   overflow: hidden;
   width: 660px;
@@ -958,6 +958,9 @@ body {
   padding: 5px;
   background-color: #ccc;
   color: #666666;
+}
+#skills article h5 {
+  margin-bottom: -10px;
 }
 #skills article div {
   display: inline;
@@ -1042,7 +1045,10 @@ body {
   background-clip: padding-box;
 }
 #about article a {
-  color: #e8a240;
+  color: #4c92d6;
+  background: #1a1a1a;
+  text-decoration: none;
+  padding: 5px;
 }
 #about article a:hover {
   color: #60bcd6;
@@ -1062,7 +1068,7 @@ body {
   margin-bottom: 20px;
 }
 #about aside .inner div h2 {
-  color: #ccc;
+  color: #666666;
   text-shadow: 0 1px 1px #000;
 }
 #about aside .inner div li,
@@ -1070,7 +1076,7 @@ body {
   font-size: 72.6%;
 }
 #about aside .inner div li {
-  border-bottom: 1px dotted #ffffff;
+  border-bottom: 1px dotted #666666;
   padding: 5px 0;
 }
 #work {
@@ -1078,6 +1084,8 @@ body {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #dedede), color-stop(1, #f5eeed));
   background: -ms-linear-gradient(bottom, #dedede, #f5eeed);
   background: -moz-linear-gradient(center bottom, #dedede 0%, #f5eeed 100%);
+  /*background-color: #28292E;*/
+
   border-bottom: 10px solid #cecece;
 }
 #work header {
@@ -1312,10 +1320,13 @@ body {
   padding: 0;
 }
 #page-footer a {
-  color: #bdb791;
+  color: #f5eeed;
 }
 #page-footer a:hover {
   color: #ffffff;
+}
+#page-footer a {
+  text-decoration: none;
 }
 #page-footer .page-summary {
   display: inline;
