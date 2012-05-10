@@ -218,7 +218,7 @@ nav#global {
 }
 nav#global ul {
   margin: 0 auto;
-  width: 960px;
+  width: 940px;
 }
 nav#global ul li.extra {
   float: right;
@@ -230,7 +230,7 @@ nav#local {
 }
 nav#local ul {
   margin: 0 auto;
-  width: 960px;
+  width: 940px;
 }
 nav.section {
   width: 155px;
@@ -372,6 +372,28 @@ footer .container .tagline {
 #intro header p {
   text-align: center;
 }
+#intro header h1 {
+  font: 7.2em/0.8em "proxima-nova", Arial, sans-serif;
+  text-shadow: 0 1px #ADADAD;
+  letter-spacing: -2px;
+  color: #242424;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+#intro header h1 span {
+  display: block;
+  font: 0.3em/0.6em "myriad-pro", Arial, sans-serif;
+  color: #fefefe;
+  font-weight: bold;
+  text-shadow: 0 2px #090909;
+  margin-bottom: 20px;
+}
+#intro header p {
+  font: 1.7em/1.2em "myriad-pro", Arial, sans-serif;
+  color: #fefefe;
+  font-weight: bold;
+  text-shadow: 0 2px #090909;
+}
 #intro #enjoys_design,
 #intro #enjoys_development {
   display: inline;
@@ -384,6 +406,12 @@ footer .container .tagline {
 #intro #enjoys_development * {
   width: 80%;
   text-align: center;
+}
+#intro #enjoys_design h2,
+#intro #enjoys_development h2 {
+  font: 1.8em/1.2em "myriad-pro", Arial, sans-serif;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 /* /// -- Expertise Section CSS -- /// */
 #expertise #bar_graph {
