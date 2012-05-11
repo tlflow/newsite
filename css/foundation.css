@@ -201,12 +201,15 @@ nav#social li {
 }
 nav#global {
   width: 100%;
-  height: 25px;
+  height: 35px;
   background-color: #ccc;
 }
 nav#global ul {
   margin: 0 auto;
   width: 940px;
+}
+nav#global ul li {
+  float: left;
 }
 nav#global ul li.extra {
   float: right;
