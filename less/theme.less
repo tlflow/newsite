@@ -24,8 +24,6 @@
 @text: @dark-gray;
 @link: @green;
 
-@footer-background: @smoke-gray;
-
 /* -------- GLOBALCSS -------- */
 
 .iconic { // load iconic webfonts
@@ -41,9 +39,41 @@ hr {
 }
 
 
+/* ------------ MIXINS ----------- */
+
+.arrow-settings(@arrow-size: 6px, @arrow-color: @ming-blue) {
+  display: block;
+  height: 0px;
+  width: 0px;
+  margin: 0 auto;
+  position: relative;
+  top: 10px;
+  border-left: @arrow-size solid transparent;
+  border-right: @arrow-size solid transparent;
+  border-top: @arrow-size solid @arrow-color;
+  border-bottom: @arrow-size solid @arrow-color;
+}
+
+.down-arrow {
+  .arrow-settings();
+  border-bottom: none;
+}
+
+.up-arrow {
+  .arrow-settings();
+  border-top: none;
+}
+
+/* ------------- NAV CSS ----------- */
+
 nav#global {
   .gradient(@flat-gray, #272727, @flat-gray);
   border-bottom: 1px solid @flat-gray;
+
+  ul {
+    position: relative;
+    left: -110px;
+  }
 
   li {
     a {
@@ -53,33 +83,148 @@ nav#global {
      height: 28px;
      border-right: 1px solid @dark-gray;
      border-left: 1px solid @flat-gray;
-     font-family: "myriad-pro", arial, sans-serif;
-     font-size: 86%;
+     font-family: "proxima-nova", arial, sans-serif;
+     text-transform: uppercase;
+     /*font-weight: bold;*/
+     font-size: 12px;
      color: @white;
 
      &.selected {
-      .gradient(#f7fbfc, #add9e4, #f7fbfc);
-
-      color: #333;
-      text-shadow: 0 1px 0 #FEFEFE;
-      font-weight: bold;
+      .gradient(#63b6db, #309dcf, #63b6db);
+      color: #FEFEFE;
+      text-shadow: 0 1px 0 #1a4b60;
      }
-
-    } // -- end selected a
-
-    &.extra {
-      a {
-        .rounded(3px);
-        border-right: none;
-        height: 20px;
-        background-color: #323339;
-        border: 1px solid rgba(0, 0, 0, 0.51);
-        -webkit-box-shadow: 0px 1px 0px rgba( 255,255,255,0.05 ), inset 0px 1px 0px rgba( 255,255,255,0.12), inset 0px -9px 9px rgba( 0,0,0,0.30 );
-      }
-
     }
 
+    &#logo {
+      height: 110px;
+      width: 90px;
+      background: url(/images/layout/new-tf-icon.png) no-repeat 0 0 transparent;
+      border-right: none;
+      z-index: 10000;
+    }
 
+    &.extra {
+      button {
+        .rounded(3px);
+        border-right: none;
+        height: 25px;
+        background-color: #323339;
+        border: 1px solid rgba(0, 0, 0, 0.51);
+        box-shadow: 0px 1px 0px rgba( 255,255,255,0.05 ), inset 0px 1px 0px rgba( 255,255,255,0.12), inset 0px -9px 9px rgba( 0,0,0,0.30 );
+        color: @white;
+        position: relative;
+        top: 6px;
+        left: 50px;
+
+        &:hover {
+          color: @ming-blue;
+          cursor: pointer;
+          .transition-duration(0.15s);
+        }
+      }
+
+    } // end extra
+
+  } // end li
+
+} // end global
+
+
+nav#local {
+  background-color: #3f3f3f;
+  border-top: 1px solid @dark-gray;
+  border-bottom: 1px solid @dark-gray;
+
+  li {
+    a {
+      display: block;
+      width: 80px;
+      padding-top: 5px;
+      height: 28px;
+      font-family: "myriad-pro", arial, sans-serif;
+      font-size: 12px;
+      color: @light-beige;
+      margin-top: 5px;
+
+      &.selected {
+        .gradient(#add9e4, #f7fbfc, #add9e4);
+        color: #333;
+        text-shadow: 0 1px 0 #FEFEFE;
+        font-weight: bold;
+        border-bottom: #fff;
+      }
+    }
+  }
+
+}
+
+nav.section {
+  li {
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05), 0 1px 0 rgba(255, 255, 255, 0.12) inset, 0 -9px 9px rgba(0, 0, 0, 0.3) inset;
+    font: .6em/1em "myriad-pro", arial, sans-serif;
+    border: 1px solid rgba(0, 0, 0, 0.51);
+
+
+    &.previous-section {.border-radius(0, 0, 5px, 5px);}
+    &.next-section {.border-radius(5px, 5px, 0, 0);}
+    &.content-top {
+      .rounded(5px);
+      text-transform: uppercase;
+      padding-top: 10px;
+      height: 18px;
+    }
+  }
+}
+
+nav#footer-global {
+  border-bottom: 1px solid #515151;
+
+  li {
+    height: 18px;
+    vertical-align: middle;
+  }
+
+  a {
+    color: @light-beige;
+
+    &:hover {
+      .transition-duration(0.15s);
+      color: @ming-blue;
+    }
+  }
+}
+
+#experience {
+  h3 {
+    margin-bottom: 20px;
+    font-size: 21px;
+    font-weight: bold;
+  }
+}
+
+#conclusion {
+  border-bottom: 10px solid #1C1D21;
+}
+
+footer {
+  background-color: #2C2E32;
+  border-top: 1px solid #515151;
+  color: @flat-gray + #333;
+
+  a {
+    color: #58B1D9 + #000;
+    text-decoration: none;
+
+    &:hover {
+      .transition-duration(0.15s);
+      color: @light-beige;
+    }
+  }
+
+  #rss {
+    background: url("/images/layout/rss.gif") no-repeat scroll 0 16px transparent;
+    text-indent: 50px;
   }
 
 }

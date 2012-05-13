@@ -16,14 +16,6 @@ p { margin-bottom: 15px; }
 
 /* -------- MIXINS --------- */
 
-.arrow(@arrow-border-top: 6px, @arrow-border-right: 6px, @arrow-border-bottom: 6px, @arrow-border-left: 6px) {
-  border-top: @arrow-border-top;
-  border-right: @arrow-border-top;
-  border-bottom: @arrow-border-top;
-  border-left: @arrow-border-top;
-  height: 0;
-  width: 0;
-}
 
 
 /* --------------------- FOR BROWSER SIZE < 768PX ------------------- */
@@ -32,7 +24,7 @@ p { margin-bottom: 15px; }
 
 #navigation {
   width: 100%;
-  position: absolute;
+  position: fixed;
   top:0;
 }
 
@@ -51,10 +43,9 @@ nav {
   &#footer-global {
     .column(12);
     padding: 20px 0;
-    border-bottom: 1px solid #999;
 
     li {
-      border-right: 1px solid #999;
+      border-right: 1px solid #515151;
       a {
         padding: 0 8px;
         font-size: 80%;
@@ -69,6 +60,11 @@ nav {
 
   &#social {
     .column(4);
+
+    ul {
+      position: relative;
+      left: 100px;
+    }
 
     li {
       display: block;
@@ -105,12 +101,13 @@ nav {
 
   &#local {
     width: 100%;
-    height: 25px;
+    margin: 0 auto;
+    height: 40px;
     background-color: #aaa;
 
     ul {
       margin:0 auto;
-      width: 940px;
+      width: 470px;
     }
 
   }
@@ -122,21 +119,14 @@ nav {
     right: 0;
 
     li {
-      box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05), 0 1px 0 rgba(255, 255, 255, 0.12) inset, 0 -9px 9px rgba(0, 0, 0, 0.3) inset;
-      font: .6em/1em "myriad-pro", arial, sans-serif;
-      border: 1px solid rgba(0, 0, 0, 0.51);
-      width: 40px;
-      padding-top: 8px;
-      height: 22px;
       text-align: center;
       cursor: pointer;
+      width: 28px;
+      height: 28px;
 
-      &.previous-section {.border-radius(0, 0, 5px, 5px);}
-      &.next-section {.border-radius(5px, 5px, 0, 0);}
       &.content-top {
-        .rounded(5px);
-        text-transform: uppercase;
         margin-left: 20px;
+        vertical-align: top;
       }
     }
   }
@@ -152,7 +142,7 @@ body {
   font: 1em/1.2em Arial,Helvetica,sans-serif;
 }
 
-#content { position: relative; top: 40px }
+#content { position: relative; top: 80px }
 
 section, footer {
   position: relative;
@@ -190,7 +180,6 @@ section, footer {
     }
 
     .tagline {
-      .column(12);
       text-align: center;
       margin-bottom: 20px;
       font-family: "myriad-pro", Arial, sans-serif;
@@ -252,6 +241,15 @@ section, footer {
       font-weight: bold;
     }
   }
+}
+
+/* /// -- Experience Section CSS -- /// */
+
+#experience {
+  #web, #print {
+    .column(6);
+  }
+
 }
 
 /* /// -- Expertise Section CSS -- /// */
@@ -321,7 +319,7 @@ section, footer {
 /* /// -- Footer CSS -- /// */
 
 footer {
-  top: 40px;
+  top: 80px;
   border-bottom: none;
 
   #summary {
