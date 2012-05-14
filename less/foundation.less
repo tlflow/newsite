@@ -148,9 +148,9 @@ section, footer {
   position: relative;
   float: left;
   width: 100%;
-  padding: 40px 0;
+  padding: 80px 0;
   background-color: #ddd;
-  border-bottom: 4px solid #ccc;
+  border-bottom: 1px solid #ccc;
 
   .section-anchor {
     position: absolute;
@@ -186,6 +186,8 @@ section, footer {
       font-weight: lighter;
       padding-bottom: 20px;
       border-bottom: 1px dotted #999;
+      font-size: 28px;
+      line-height: 1.2em;
     }
 
   }  // end container
@@ -310,8 +312,12 @@ section, footer {
 /* /// -- Conclusion Section CSS -- /// */
 
 #conclusion {
-  #time_spent, #skills, #abilities {
-    .column(4);
+  #time_spent {
+    display: none;
+  }
+
+  #skills, #abilities {
+    .column(6);
   }
 }
 

@@ -259,9 +259,9 @@ footer {
   position: relative;
   float: left;
   width: 100%;
-  padding: 40px 0;
+  padding: 80px 0;
   background-color: #ddd;
-  border-bottom: 4px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 section .section-anchor,
 footer .section-anchor {
@@ -311,6 +311,8 @@ footer .container .tagline {
   font-weight: lighter;
   padding-bottom: 20px;
   border-bottom: 1px dotted #999;
+  font-size: 28px;
+  line-height: 1.2em;
 }
 /* -------- PAGE SPECIFIC CSS --------- */
 /* /// -- Intro Section CSS -- /// */
@@ -438,13 +440,15 @@ footer .container .tagline {
   background-color: #999;
 }
 /* /// -- Conclusion Section CSS -- /// */
-#conclusion #time_spent,
+#conclusion #time_spent {
+  display: none;
+}
 #conclusion #skills,
 #conclusion #abilities {
   display: inline;
   float: left;
   overflow: hidden;
-  width: 300px;
+  width: 460px;
   margin: 0 10px;
 }
 /* /// -- Footer CSS -- /// */

@@ -28,7 +28,7 @@
           <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="139" column="16" selection-start="7786" selection-end="8459" vertical-scroll-proportion="-9.078431">
+                <state line="139" column="16" selection-start="7786" selection-end="8459" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -37,7 +37,7 @@
           <file leaf-file-name="index-new.html" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index-new.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="62" column="31" selection-start="2665" selection-end="2665" vertical-scroll-proportion="0.59641254">
+                <state line="74" column="47" selection-start="4123" selection-end="4123" vertical-scroll-proportion="0.7881773">
                   <folding />
                 </state>
               </provider>
@@ -55,7 +55,7 @@
           <file leaf-file-name="style.less" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/less/style.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="1132" column="103" selection-start="24322" selection-end="24405" vertical-scroll-proportion="-10.115385">
+                <state line="1132" column="103" selection-start="24322" selection-end="24405" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -67,10 +67,10 @@
         <splitter split-orientation="horizontal" split-proportion="0.5">
           <split-first>
             <leaf>
-              <file leaf-file-name="foundation.less" pinned="false" current="false" current-in-tab="true">
+              <file leaf-file-name="foundation.less" pinned="false" current="true" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/less/foundation.less">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="182" column="6" selection-start="2552" selection-end="2552" vertical-scroll-proportion="-2.047619">
+                    <state line="152" column="18" selection-start="2115" selection-end="2115" vertical-scroll-proportion="0.17948718">
                       <folding />
                     </state>
                   </provider>
@@ -80,10 +80,10 @@
           </split-first>
           <split-second>
             <leaf>
-              <file leaf-file-name="theme.less" pinned="false" current="true" current-in-tab="true">
+              <file leaf-file-name="theme.less" pinned="false" current="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/less/theme.less">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="201" column="22" selection-start="3974" selection-end="3974" vertical-scroll-proportion="0.7535014">
+                    <state line="176" column="19" selection-start="3647" selection-end="3647" vertical-scroll-proportion="0.5700197">
                       <folding />
                     </state>
                   </provider>
@@ -121,8 +121,8 @@
         <option value="$PROJECT_DIR$/less/styling.less" />
         <option value="$PROJECT_DIR$/less/style2.less" />
         <option value="$PROJECT_DIR$/index-new.html" />
-        <option value="$PROJECT_DIR$/less/foundation.less" />
         <option value="$PROJECT_DIR$/less/theme.less" />
+        <option value="$PROJECT_DIR$/less/foundation.less" />
       </list>
     </option>
   </component>
@@ -167,6 +167,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -209,13 +210,48 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="fonts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iconic_stroke" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newsite-development" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fonts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iconic_fill" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newsite-development" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -225,8 +261,8 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../testsite" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -278,7 +314,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="874" extended-state="6" />
+    <frame x="0" y="22" width="1920" height="1174" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -286,7 +322,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15456507" sideWeight="0.98978287" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15660074" sideWeight="0.98978287" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -296,8 +332,8 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32908913" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -380,14 +416,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/less/reset.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="22" selection-start="719" selection-end="719" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="25" column="22" selection-start="719" selection-end="719" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/foundation.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="227" column="8" selection-start="2963" selection-end="2968" vertical-scroll-proportion="-0.10622711" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="139" column="16" selection-start="7786" selection-end="8459" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/reset.css">
@@ -399,35 +440,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/less/style.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1132" column="103" selection-start="24322" selection-end="24405" vertical-scroll-proportion="-10.115385">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="139" column="16" selection-start="7786" selection-end="8459" vertical-scroll-proportion="-9.078431">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index-new.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="31" selection-start="2665" selection-end="2665" vertical-scroll-proportion="0.59641254">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/less/foundation.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="182" column="6" selection-start="2552" selection-end="2552" vertical-scroll-proportion="-2.047619">
+        <state line="1132" column="103" selection-start="24322" selection-end="24405" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/less/theme.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="201" column="22" selection-start="3974" selection-end="3974" vertical-scroll-proportion="0.7535014">
+        <state line="176" column="19" selection-start="3647" selection-end="3647" vertical-scroll-proportion="0.5700197">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index-new.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="47" selection-start="4123" selection-end="4123" vertical-scroll-proportion="0.7881773">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/less/foundation.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="152" column="18" selection-start="2115" selection-end="2115" vertical-scroll-proportion="0.17948718">
           <folding />
         </state>
       </provider>

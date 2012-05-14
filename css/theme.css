@@ -207,16 +207,29 @@ nav#footer-global a:hover {
   color: #4c92d6;
 }
 #experience h3 {
-  margin-bottom: 20px;
-  font-size: 21px;
+  margin: 40px 0;
+  font-size: 28px;
+  font-weight: normal;
+  font-family: "myriad-pro", arial, sans-serif;
+}
+#experience h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
   font-weight: bold;
 }
-#conclusion {
-  border-bottom: 10px solid #1C1D21;
+#expertise {
+  background-color: #EAE6E7;
+  border-top: 6px solid #DADBDE;
+  -webkit-box-shadow: inset 0 1px 0 #c3c3c3;
+  -moz-box-shadow: inset 0 1px 0 #c3c3c3;
+  box-shadow: inset 0 1px 0 #c3c3c3;
 }
 footer {
   background-color: #2C2E32;
-  border-top: 1px solid #515151;
+  border-top: 6px solid #1C1D21;
+  -webkit-box-shadow: inset 0 1px 0 #494949;
+  -moz-box-shadow: inset 0 1px 0 #494949;
+  box-shadow: inset 0 1px 0 #494949;
   color: #64676e;
 }
 footer a {
