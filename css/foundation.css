@@ -252,7 +252,7 @@ body {
 }
 #content {
   position: relative;
-  top: 80px;
+  top: 75px;
 }
 section,
 footer {
@@ -357,7 +357,7 @@ footer .container .tagline {
 }
 #intro #enjoys_design h2,
 #intro #enjoys_development h2 {
-  font: 1.8em/1.2em "myriad-pro", Arial, sans-serif;
+  font: 2em/1.2em "myriad-pro", Arial, sans-serif;
   margin-bottom: 5px;
   font-weight: bold;
 }
@@ -453,7 +453,7 @@ footer .container .tagline {
 }
 /* /// -- Footer CSS -- /// */
 footer {
-  top: 80px;
+  top: 75px;
   border-bottom: none;
 }
 footer #summary .photo {
