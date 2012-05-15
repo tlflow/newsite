@@ -34,10 +34,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index-new.html" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="index-new.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index-new.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="48" column="51" selection-start="2213" selection-end="2213" vertical-scroll-proportion="0.023021583">
+                <state line="50" column="18" selection-start="2349" selection-end="2349" vertical-scroll-proportion="-21.12">
                   <folding />
                 </state>
               </provider>
@@ -52,10 +52,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="style.less" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="style.less" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/less/style.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="1132" column="103" selection-start="24322" selection-end="24405" vertical-scroll-proportion="0.0">
+                <state line="586" column="42" selection-start="11862" selection-end="11862" vertical-scroll-proportion="0.6556196">
                   <folding />
                 </state>
               </provider>
@@ -70,7 +70,7 @@
               <file leaf-file-name="foundation.less" pinned="false" current="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/less/foundation.less">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="271" column="31" selection-start="4188" selection-end="4188" vertical-scroll-proportion="0.021621622">
+                    <state line="126" column="15" selection-start="1694" selection-end="1701" vertical-scroll-proportion="0.33333334">
                       <folding />
                     </state>
                   </provider>
@@ -83,7 +83,7 @@
               <file leaf-file-name="theme.less" pinned="false" current="true" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/less/theme.less">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="245" column="22" selection-start="4744" selection-end="4744" vertical-scroll-proportion="0.113513514">
+                    <state line="241" column="90" selection-start="4697" selection-end="4697" vertical-scroll-proportion="0.394958">
                       <folding />
                     </state>
                   </provider>
@@ -120,8 +120,8 @@
         <option value="$PROJECT_DIR$/less/style.less" />
         <option value="$PROJECT_DIR$/less/styling.less" />
         <option value="$PROJECT_DIR$/less/style2.less" />
-        <option value="$PROJECT_DIR$/index-new.html" />
         <option value="$PROJECT_DIR$/less/foundation.less" />
+        <option value="$PROJECT_DIR$/index-new.html" />
         <option value="$PROJECT_DIR$/less/theme.less" />
       </list>
     </option>
@@ -311,14 +311,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="874" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21711" sideWeight="0.98978287" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21711" sideWeight="0.98978287" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -421,33 +421,35 @@
         <state line="139" column="16" selection-start="7786" selection-end="8459" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index-new.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="51" selection-start="2213" selection-end="2213" vertical-scroll-proportion="0.023021583">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/reset.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="87" column="3" selection-start="623" selection-end="624" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/less/style.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1132" column="103" selection-start="24322" selection-end="24405" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/less/foundation.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="271" column="31" selection-start="4188" selection-end="4188" vertical-scroll-proportion="0.021621622">
+        <state line="126" column="15" selection-start="1694" selection-end="1701" vertical-scroll-proportion="0.33333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index-new.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="18" selection-start="2349" selection-end="2349" vertical-scroll-proportion="-21.12">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/less/style.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="586" column="42" selection-start="11862" selection-end="11862" vertical-scroll-proportion="0.6556196">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/less/theme.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="245" column="22" selection-start="4744" selection-end="4744" vertical-scroll-proportion="0.113513514">
+        <state line="241" column="90" selection-start="4697" selection-end="4697" vertical-scroll-proportion="0.394958">
           <folding />
         </state>
       </provider>

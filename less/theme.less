@@ -239,7 +239,9 @@ nav#footer-global {
 
 #intro {
   .colorscheme(@gray, @light-beige);
-  background: url("/images/layout/darkwood.jpg") repeat 0 0 transparent;
+  background-image: url("/images/layout/big-logo.png"), url("/images/layout/darkwood.jpg");
+  background-position: center center, 0 0;
+  background-repeat: no-repeat, repeat;
   border-bottom: none;
 
   header h1, h2 {

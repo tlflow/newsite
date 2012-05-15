@@ -330,11 +330,12 @@ footer .container .tagline {
 }
 #intro header h1 span {
   display: block;
-  font: 0.3em/0.6em "myriad-pro", Arial, sans-serif;
+  font: 0.3em/1em "corner-store", Arial, sans-serif;
   color: #fefefe;
   font-weight: bold;
   text-shadow: 0 2px #090909;
   margin-bottom: 20px;
+  text-transform: none;
 }
 #intro header p {
   font: 1.7em/1.2em "myriad-pro", Arial, sans-serif;
