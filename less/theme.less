@@ -77,36 +77,46 @@ hr {
 
 
 .section-colors(@background-color: #EAE6E7, @text-color: #191919, @border-color: #D3D3D3, @box-shadow-color: #bbb){
+  .box-shadow(inset 0px 1px 0 @box-shadow-color);
   border-top: 6px solid @border-color;
   background-color: @background-color;
   color: @text-color;
-  .box-shadow(inset 0px 1px 0 @box-shadow-color);
 }
 
 // default scheme
-.colorscheme_0(){ .section-colors(); }
-
+.colorscheme_0(){
+  .section-colors();
+  h2 {color: @smog;}
+  h3 {color: @orange;}
+}
 
 // light green scheme
 .colorscheme_1() {
   .section-colors(@decay, @smog, @android, @ebonics);
+  h2 {color: @smog;}
+  h3 {color: @orange;}
 }
 
 // dark gray (almost black) scheme
 .colorscheme_2(){
   .section-colors(@charcoal, @light-beige, #DBDBDB, #777);
+  h2 {color: @android;}
+  h3 {color: @pastel_green;}
 }
 
 // dark blue scheme
 .colorscheme_3(){
   .section-colors(@smog, @light-beige, #DBDBDB, @smog + #111);
+  h2 {color: @android;}
+  h3 {color: @pastel_green;}
 }
 
 // green scheme
 .colorscheme_4() {
-  .section-colors(@android, @ebonics, @decay, @pastel_green);
+  .section-colors(@android, @ebonics, @pastel_green, @decay);
+  h2 {color: @smog;}
+  h3 {color: @flat-gray}
 }
-
 
 // gray footer scheme
 .colorscheme_10(){
@@ -272,8 +282,9 @@ nav#footer-global {
   }
 }
 
-#experience, #recent_work {
+#experience {
   .colorscheme_1();
+  border-top: none;
 
   h3 {
     margin: 40px 0;
@@ -293,12 +304,7 @@ nav#footer-global {
 #expertise {
   .colorscheme_2();
 
-  h2 {
-    color: @android;
-  }
-
   h3 {
-    color: @pastel_green;
     font: 18px/28px "myriad pro", arial, sans-serif;
     font-style: italic;
 
@@ -315,24 +321,23 @@ nav#footer-global {
   .colorscheme_3();
 
   h2 {
-    color: @android;
     text-shadow: 0 1px 0 @charcoal;
   }
 
   h3 {
     font: 24px/28px "myriad pro", arial, sans-serif;
-    color: @pastel_green;
   }
 
   ul#diagram {padding-top: 15px}
 }
 
+#recent_work {
+  .colorscheme_1();
+}
+
+
 #conclusion {
   .colorscheme_4();
-
-  h2 {
-    color: @smog;
-  }
 }
 
 footer {

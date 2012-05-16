@@ -228,41 +228,47 @@ nav#footer-global a:hover {
   font-weight: lighter;
   font-family: "myriad-pro", arial, sans-serif;
 }
-#experience,
-#recent_work {
-  border-top: 6px solid #a4c639;
-  background-color: #e4ebce;
-  color: #464d5c;
+#experience {
   -webkit-box-shadow: inset 0px 1px 0 #f0f0f0;
   -moz-box-shadow: inset 0px 1px 0 #f0f0f0;
   box-shadow: inset 0px 1px 0 #f0f0f0;
+  border-top: 6px solid #a4c639;
+  background-color: #e4ebce;
+  color: #464d5c;
+  border-top: none;
 }
-#experience h3,
-#recent_work h3 {
+#experience h2 {
+  color: #464d5c;
+}
+#experience h3 {
+  color: #e8a240;
+}
+#experience h3 {
   margin: 40px 0;
   font-size: 28px;
   font-weight: normal;
   font-family: "myriad-pro", arial, sans-serif;
 }
-#experience h4,
-#recent_work h4 {
+#experience h4 {
   font-size: 18px;
   margin-bottom: 5px;
   font-weight: bold;
 }
 #expertise {
-  border-top: 6px solid #dbdbdb;
-  background-color: #222222;
-  color: #f5eeed;
   -webkit-box-shadow: inset 0px 1px 0 #777777;
   -moz-box-shadow: inset 0px 1px 0 #777777;
   box-shadow: inset 0px 1px 0 #777777;
+  border-top: 6px solid #dbdbdb;
+  background-color: #222222;
+  color: #f5eeed;
 }
 #expertise h2 {
   color: #a4c639;
 }
 #expertise h3 {
   color: #d1e29c;
+}
+#expertise h3 {
   font: 18px/28px "myriad pro", arial, sans-serif;
   font-style: italic;
 }
@@ -271,42 +277,63 @@ nav#footer-global a:hover {
   height: 130px;
 }
 #process {
-  border-top: 6px solid #dbdbdb;
-  background-color: #464d5c;
-  color: #f5eeed;
   -webkit-box-shadow: inset 0px 1px 0 #575e6d;
   -moz-box-shadow: inset 0px 1px 0 #575e6d;
   box-shadow: inset 0px 1px 0 #575e6d;
+  border-top: 6px solid #dbdbdb;
+  background-color: #464d5c;
+  color: #f5eeed;
 }
 #process h2 {
   color: #a4c639;
+}
+#process h3 {
+  color: #d1e29c;
+}
+#process h2 {
   text-shadow: 0 1px 0 #222222;
 }
 #process h3 {
   font: 24px/28px "myriad pro", arial, sans-serif;
-  color: #d1e29c;
 }
 #process ul#diagram {
   padding-top: 15px;
 }
+#recent_work {
+  -webkit-box-shadow: inset 0px 1px 0 #f0f0f0;
+  -moz-box-shadow: inset 0px 1px 0 #f0f0f0;
+  box-shadow: inset 0px 1px 0 #f0f0f0;
+  border-top: 6px solid #a4c639;
+  background-color: #e4ebce;
+  color: #464d5c;
+}
+#recent_work h2 {
+  color: #464d5c;
+}
+#recent_work h3 {
+  color: #e8a240;
+}
 #conclusion {
-  border-top: 6px solid #e4ebce;
+  -webkit-box-shadow: inset 0px 1px 0 #e4ebce;
+  -moz-box-shadow: inset 0px 1px 0 #e4ebce;
+  box-shadow: inset 0px 1px 0 #e4ebce;
+  border-top: 6px solid #d1e29c;
   background-color: #a4c639;
   color: #f0f0f0;
-  -webkit-box-shadow: inset 0px 1px 0 #d1e29c;
-  -moz-box-shadow: inset 0px 1px 0 #d1e29c;
-  box-shadow: inset 0px 1px 0 #d1e29c;
 }
 #conclusion h2 {
   color: #464d5c;
 }
+#conclusion h3 {
+  color: #31343b;
+}
 footer {
-  border-top: 6px solid #1c1d21;
-  background-color: #2c2e32;
-  color: #64676e;
   -webkit-box-shadow: inset 0px 1px 0 #494949;
   -moz-box-shadow: inset 0px 1px 0 #494949;
   box-shadow: inset 0px 1px 0 #494949;
+  border-top: 6px solid #1c1d21;
+  background-color: #2c2e32;
+  color: #64676e;
 }
 footer a {
   color: #58b1d9;

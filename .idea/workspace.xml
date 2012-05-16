@@ -37,7 +37,7 @@
           <file leaf-file-name="index-new.html" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index-new.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="280" column="24" selection-start="18272" selection-end="18272" vertical-scroll-proportion="0.67239636">
+                <state line="289" column="27" selection-start="18647" selection-end="18647" vertical-scroll-proportion="2.150739">
                   <folding />
                 </state>
               </provider>
@@ -70,7 +70,7 @@
               <file leaf-file-name="foundation.less" pinned="false" current="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/less/foundation.less">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="74" column="20" selection-start="1090" selection-end="1090" vertical-scroll-proportion="0.69625247">
+                    <state line="74" column="20" selection-start="1090" selection-end="1090" vertical-scroll-proportion="0.015384615">
                       <folding />
                     </state>
                   </provider>
@@ -83,7 +83,7 @@
               <file leaf-file-name="theme.less" pinned="false" current="true" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/less/theme.less">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="364" column="48" selection-start="6766" selection-end="6766" vertical-scroll-proportion="0.8106509">
+                    <state line="117" column="23" selection-start="2297" selection-end="2297" vertical-scroll-proportion="0.3806706">
                       <folding />
                     </state>
                   </provider>
@@ -257,8 +257,8 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../testsite" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -318,7 +318,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16622128" sideWeight="0.9537893" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16835916" sideWeight="0.9537893" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -328,8 +328,8 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32908913" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -433,23 +433,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index-new.html">
+    <entry file="file://$PROJECT_DIR$/less/foundation.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="280" column="24" selection-start="18272" selection-end="18272" vertical-scroll-proportion="0.67239636">
+        <state line="74" column="20" selection-start="1090" selection-end="1090" vertical-scroll-proportion="0.015384615">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/less/foundation.less">
+    <entry file="file://$PROJECT_DIR$/index-new.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="20" selection-start="1090" selection-end="1090" vertical-scroll-proportion="0.69625247">
+        <state line="289" column="27" selection-start="18647" selection-end="18647" vertical-scroll-proportion="2.150739">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/less/theme.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="364" column="48" selection-start="6766" selection-end="6766" vertical-scroll-proportion="0.8106509">
+        <state line="117" column="23" selection-start="2297" selection-end="2297" vertical-scroll-proportion="0.3806706">
           <folding />
         </state>
       </provider>
