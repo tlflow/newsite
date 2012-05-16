@@ -20,12 +20,11 @@
 @orange: #E8A240;
 
 
-@fluff: #ffce4e;
-@endron:	#ffaa4b;
-@embrace:	#eb7046;
-@goyo:	#5c606b;
-@poof: #a7b9d1;
-
+@smog: #464d5c;
+@android: #a4c639;
+@pastel_green: #D1E29C;
+@decay: #E4EBCE;
+@ebonics: #f0f0f0;
 
 /* -------- COLOR SCHEME --------- */
 
@@ -74,14 +73,46 @@ hr {
   border-top: none;
 }
 
-/* backgrounds and borders */
+/* -------Color Schemes ------- */
 
-.colorscheme(@background-color: #EAE6E7, @text-color: #191919, @border-bottom-color: #DADBDE){
-  color: @text-color;
+
+.section-colors(@background-color: #EAE6E7, @text-color: #191919, @border-color: #D3D3D3, @box-shadow-color: #bbb){
+  border-top: 6px solid @border-color;
   background-color: @background-color;
-  border-bottom: 6px solid @border-bottom-color;
-  .box-shadow(inset 0 1px 0 rgba(0,0,0,.51);
+  color: @text-color;
+  .box-shadow(inset 0px 1px 0 @box-shadow-color);
 }
+
+// default scheme
+.colorscheme_0(){ .section-colors(); }
+
+
+// light green scheme
+.colorscheme_1() {
+  .section-colors(@decay, @smog, @android, @ebonics);
+}
+
+// dark gray (almost black) scheme
+.colorscheme_2(){
+  .section-colors(@charcoal, @light-beige, #DBDBDB, #777);
+}
+
+// dark blue scheme
+.colorscheme_3(){
+  .section-colors(@smog, @light-beige, #DBDBDB, @smog + #111);
+}
+
+// green scheme
+.colorscheme_4() {
+  .section-colors(@android, @ebonics, @decay, @pastel_green);
+}
+
+
+// gray footer scheme
+.colorscheme_10(){
+  .section-colors(#2C2E32,@flat-gray + #333,#1C1D21,#494949);
+}
+
 
 /* ------------- NAV CSS ----------- */
 
@@ -222,7 +253,28 @@ nav#footer-global {
   }
 }
 
-#experience {
+
+#intro {
+  background-image: url("/images/layout/big-logo.png"), url("/images/layout/darkwood.jpg");
+  background-position: center center, 0 0;
+  background-repeat: no-repeat, repeat;
+  border-bottom: none;
+  color: @light-beige;
+
+  header h1, h2 {
+    color: @decay;
+    text-shadow: 0 2px 0 @charcoal;
+  }
+
+  p {
+    font-weight: lighter;
+    font-family: "myriad-pro", arial, sans-serif;
+  }
+}
+
+#experience, #recent_work {
+  .colorscheme_1();
+
   h3 {
     margin: 40px 0;
     font-size: 28px;
@@ -237,33 +289,47 @@ nav#footer-global {
   }
 }
 
-#intro {
-  .colorscheme(@gray, @light-beige);
-  background-image: url("/images/layout/big-logo.png"), url("/images/layout/darkwood.jpg");
-  background-position: center center, 0 0;
-  background-repeat: no-repeat, repeat;
-  border-bottom: none;
 
-  header h1, h2 {
-    color: @dark-beige;
-    text-shadow: 0 2px 0 @charcoal;
+#expertise {
+  .colorscheme_2();
+
+  h2 {
+    color: @android;
   }
 
-  p {
-    font-weight: lighter;
-    font-family: "myriad-pro", arial, sans-serif;
+  h3 {
+    color: @pastel_green;
+    font: 18px/28px "myriad pro", arial, sans-serif;
+    font-style: italic;
   }
 }
 
-#expertise {
-  .colorscheme();
+#process {
+  .colorscheme_3();
+
+  h2 {
+    color: @android;
+    text-shadow: 0 1px 0 @charcoal;
+  }
+
+  h3 {
+    font: 24px/28px "myriad pro", arial, sans-serif;
+    color: @pastel_green;
+  }
+
+  ul#diagram {padding-top: 15px}
+}
+
+#conclusion {
+  .colorscheme_4();
+
+  h2 {
+    color: @smog;
+  }
 }
 
 footer {
-  background-color: #2C2E32;
-  border-top: 6px solid #1C1D21;
-  color: @flat-gray + #333;
-  .box-shadow(inset 0 1px 0 #494949);
+  .colorscheme_10();
 
   a {
     color: #58B1D9 + #000;
