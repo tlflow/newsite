@@ -266,6 +266,10 @@ nav#footer-global a:hover {
   font: 18px/28px "myriad pro", arial, sans-serif;
   font-style: italic;
 }
+#expertise h3.html {
+  background: url("/images/layout/icons/html5_logo.png") no-repeat 0 40px transparent;
+  height: 130px;
+}
 #process {
   border-top: 6px solid #dbdbdb;
   background-color: #464d5c;
@@ -317,4 +321,50 @@ footer a:hover {
 footer #rss {
   background: url("/images/layout/rss.gif") no-repeat scroll 0 16px transparent;
   text-indent: 50px;
+}
+footer nav#footer-social ul li {
+  background: url("/images/layout/darkwood.jpg") no-repeat 0 0 transparent;
+}
+footer nav#footer-social ul li a {
+  color: #d1e29c;
+  font-size: 86%;
+  font-family: "myriad pro", arial, sans-serif;
+}
+footer nav#footer-social ul li a:hover {
+  color: #4c92d6;
+}
+footer nav#footer-social ul li:first-child {
+  -webkit-border-top-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+footer nav#footer-social ul li:last-child {
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  -moz-border-radius-topleft: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 }

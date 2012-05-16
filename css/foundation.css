@@ -183,18 +183,18 @@ nav#footer-global li a {
 nav#footer-global li.final {
   border-right: none;
 }
-nav#social {
+nav#footer-social {
   display: inline;
   float: left;
   overflow: hidden;
   width: 300px;
   margin: 0 10px;
 }
-nav#social ul {
+nav#footer-social ul {
   position: relative;
   left: 100px;
 }
-nav#social li {
+nav#footer-social li {
   display: block;
   height: 20px;
   width: 180px;
