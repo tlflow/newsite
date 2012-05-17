@@ -441,15 +441,32 @@ footer .container .tagline {
   background-color: #999;
 }
 /* /// -- Conclusion Section CSS -- /// */
+#conclusion {
+  /*#skills {margin-left: 20px}*/
+
+  /*#abilities {margin-left: 160px}*/
+
+}
 #conclusion #time_spent {
   display: none;
 }
+#conclusion #showoff {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 940px;
+  margin: 0 10px;
+  height: 300px;
+  background-color: #999;
+  margin-bottom: 20px;
+}
+#conclusion #knowledge,
 #conclusion #skills,
 #conclusion #abilities {
   display: inline;
   float: left;
   overflow: hidden;
-  width: 460px;
+  width: 300px;
   margin: 0 10px;
 }
 /* /// -- Footer CSS -- /// */

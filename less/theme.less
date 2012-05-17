@@ -87,14 +87,13 @@ hr {
 .colorscheme_0(){
   .section-colors();
   h2 {color: @smog;}
-  h3 {color: @orange;}
 }
 
 // light green scheme
 .colorscheme_1() {
   .section-colors(@decay, @smog, @android, @ebonics);
   h2 {color: @smog;}
-  h3 {color: @orange;}
+  h3 {color: @smog;}
 }
 
 // dark gray (almost black) scheme
@@ -115,7 +114,7 @@ hr {
 .colorscheme_4() {
   .section-colors(@android, @ebonics, @pastel_green, @decay);
   h2 {color: @smog;}
-  h3 {color: @flat-gray}
+  h3 {color: @white}
 }
 
 // gray footer scheme
@@ -338,6 +337,135 @@ nav#footer-global {
 
 #conclusion {
   .colorscheme_4();
+
+  color: @ebonics;
+
+  h2 {
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    margin-bottom: 30px;
+  }
+
+  h3 {
+    font: 28px/32px "myriad pro", arial, sans-serif;
+    text-shadow: 0 1px 0 @gray;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  #knowledge, #skills, #abilities {
+    ul li {
+      border-bottom: 1px dotted @pastel_green;
+      padding: 5px 0;
+      font-size: 14px;
+
+      span {
+        color: @pastel_green;
+        padding-right: 10px;
+      }
+    }
+  }
+}
+
+#contact {
+  .colorscheme_2();
+  border-top: none;
+  box-shadow: none;
+
+  #contact_form {
+    float: left;
+    .box-shadow(inset 0 -30px 100px rgba(0,0,0,.30));
+    border-top: 1px solid rgba(255,255,255,.81);
+    background-color: @gray + #333;
+    .rounded(10px);
+    width: 80%;
+
+    margin-left: 70px;
+    font-size: 14px;
+
+    .inner {
+      width: 86%;
+      margin: 20px auto;
+      min-height: 400px;
+
+
+      h2 {
+        font: 28px/32px "myriad pro", arial, sans-serif;
+        text-shadow: 0 1px 0 rgba(255,255,255,.25);
+        color: @charcoal;
+
+        span {
+          margin-left: 10px;
+          text-shadow: none;
+          color: #dedede;
+          font-size: 14px;
+        }
+      }
+
+      .note {
+        float: left;
+        width: 100%;
+        height: 25px;
+        color: @ebonics;
+        background-color: #a9a9a9;
+        border: 1px solid #c1c1c1;
+        margin-bottom: 15px;
+        padding: 5px 0;
+        text-indent: 15px;
+      }
+
+      .form-section {
+        float: left;
+        width: 50%;
+
+        li {
+          width: 100%;
+          height: 50px;
+          clear: both;
+
+          label {
+            width: 25%;
+          }
+        }
+      }
+
+      label, input {
+        float: left;
+        height: 30px;
+      }
+
+      label {
+        width: 81px;
+        padding-top: 10px;
+        text-shadow: 0 1px 0 rgba(255,255,255,.25);
+        font-family: "myriad pro", sans-serif;
+        color: @charcoal;
+        text-align: right;
+        padding-right: 10px;
+
+        &:after {
+          content: ":";
+        }
+      }
+
+      input {
+        width: 71%;
+      }
+
+      input, textarea {
+        background-color: #ececec;
+        border: 1px solid #888;
+        .box-shadow(inset 4px 4px rgba(0,0,0,.21));
+      }
+
+      textarea {
+        width: 562px;
+        height: 200px;
+      }
+
+    }
+
+  }
+
 }
 
 footer {
@@ -362,7 +490,8 @@ footer {
     ul {
 
       li {
-        background: url("/images/layout/darkwood.jpg") no-repeat 0 0 transparent;
+        background-color: @charcoal;
+        .box-shadow(inset 2px 0 5px rgba(0,0,0,.3));
 
         a {
           color: @pastel_green;
@@ -376,6 +505,7 @@ footer {
 
         &:first-child {
          .border-radius(10px, 0, 0, 10px);
+         .box-shadow(inset 0 2px 5px rgba(0,0,0,.3));
         }
         &:last-child {
          .border-radius(0, 10px, 10px, 0);

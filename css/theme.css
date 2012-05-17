@@ -241,7 +241,7 @@ nav#footer-global a:hover {
   color: #464d5c;
 }
 #experience h3 {
-  color: #e8a240;
+  color: #464d5c;
 }
 #experience h3 {
   margin: 40px 0;
@@ -311,7 +311,7 @@ nav#footer-global a:hover {
   color: #464d5c;
 }
 #recent_work h3 {
-  color: #e8a240;
+  color: #464d5c;
 }
 #conclusion {
   -webkit-box-shadow: inset 0px 1px 0 #e4ebce;
@@ -320,12 +320,140 @@ nav#footer-global a:hover {
   border-top: 6px solid #d1e29c;
   background-color: #a4c639;
   color: #f0f0f0;
+  color: #f0f0f0;
 }
 #conclusion h2 {
   color: #464d5c;
 }
 #conclusion h3 {
-  color: #31343b;
+  color: #ffffff;
+}
+#conclusion h2 {
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  margin-bottom: 30px;
+}
+#conclusion h3 {
+  font: 28px/32px "myriad pro", arial, sans-serif;
+  text-shadow: 0 1px 0 #666666;
+  margin-bottom: 10px;
+  text-align: center;
+}
+#conclusion #knowledge ul li,
+#conclusion #skills ul li,
+#conclusion #abilities ul li {
+  border-bottom: 1px dotted #d1e29c;
+  padding: 5px 0;
+  font-size: 14px;
+}
+#conclusion #knowledge ul li span,
+#conclusion #skills ul li span,
+#conclusion #abilities ul li span {
+  color: #d1e29c;
+  padding-right: 10px;
+}
+#contact {
+  -webkit-box-shadow: inset 0px 1px 0 #777777;
+  -moz-box-shadow: inset 0px 1px 0 #777777;
+  box-shadow: inset 0px 1px 0 #777777;
+  border-top: 6px solid #dbdbdb;
+  background-color: #222222;
+  color: #f5eeed;
+  border-top: none;
+  box-shadow: none;
+}
+#contact h2 {
+  color: #a4c639;
+}
+#contact h3 {
+  color: #d1e29c;
+}
+#contact #contact_form {
+  float: left;
+  -webkit-box-shadow: inset 0 -30px 100px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 -30px 100px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 -30px 100px rgba(0, 0, 0, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.81);
+  background-color: #999999;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  width: 80%;
+  margin-left: 70px;
+  font-size: 14px;
+}
+#contact #contact_form .inner {
+  width: 86%;
+  margin: 20px auto;
+  min-height: 400px;
+}
+#contact #contact_form .inner h2 {
+  font: 28px/32px "myriad pro", arial, sans-serif;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.25);
+  color: #222222;
+}
+#contact #contact_form .inner h2 span {
+  margin-left: 10px;
+  text-shadow: none;
+  color: #dedede;
+  font-size: 14px;
+}
+#contact #contact_form .inner .note {
+  float: left;
+  width: 100%;
+  height: 25px;
+  color: #f0f0f0;
+  background-color: #a9a9a9;
+  border: 1px solid #c1c1c1;
+  margin-bottom: 15px;
+  padding: 5px 0;
+  text-indent: 15px;
+}
+#contact #contact_form .inner .form-section {
+  float: left;
+  width: 50%;
+}
+#contact #contact_form .inner .form-section li {
+  width: 100%;
+  height: 50px;
+  clear: both;
+}
+#contact #contact_form .inner .form-section li label {
+  width: 25%;
+}
+#contact #contact_form .inner label,
+#contact #contact_form .inner input {
+  float: left;
+  height: 30px;
+}
+#contact #contact_form .inner label {
+  width: 81px;
+  padding-top: 10px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.25);
+  font-family: "myriad pro", sans-serif;
+  color: #222222;
+  text-align: right;
+  padding-right: 10px;
+}
+#contact #contact_form .inner label:after {
+  content: ":";
+}
+#contact #contact_form .inner input {
+  width: 71%;
+}
+#contact #contact_form .inner input,
+#contact #contact_form .inner textarea {
+  background-color: #ececec;
+  border: 1px solid #888;
+  -webkit-box-shadow: inset 4px 4px rgba(0, 0, 0, 0.21);
+  -moz-box-shadow: inset 4px 4px rgba(0, 0, 0, 0.21);
+  box-shadow: inset 4px 4px rgba(0, 0, 0, 0.21);
+}
+#contact #contact_form .inner textarea {
+  width: 562px;
+  height: 200px;
 }
 footer {
   -webkit-box-shadow: inset 0px 1px 0 #494949;
@@ -350,7 +478,10 @@ footer #rss {
   text-indent: 50px;
 }
 footer nav#footer-social ul li {
-  background: url("/images/layout/darkwood.jpg") no-repeat 0 0 transparent;
+  background-color: #222222;
+  -webkit-box-shadow: inset 2px 0 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 2px 0 5px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 2px 0 5px rgba(0, 0, 0, 0.3);
 }
 footer nav#footer-social ul li a {
   color: #d1e29c;
@@ -376,6 +507,9 @@ footer nav#footer-social ul li:first-child {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+  -webkit-box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 footer nav#footer-social ul li:last-child {
   -webkit-border-top-right-radius: 0;
