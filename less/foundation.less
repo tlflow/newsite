@@ -14,6 +14,74 @@ p { margin-bottom: 15px; }
 
 .hide { display: none; }
 
+form {
+  float: left;
+  width: 100%;
+
+  .form-section {
+    float: left;
+    width: 50%;
+
+      li {
+        width: 100%;
+        height: 50px;
+        clear: both;
+
+        label {
+          width: 25%;
+        }
+      }
+    }
+
+    label, input {
+      float: left;
+      height: 30px;
+    }
+
+    label {
+      width: 81px;
+      color: #fff;
+      padding: 8px 10px 0;
+
+      &:after {content: ":"}
+    }
+
+    input {
+      width: 71%;
+    }
+
+    input, textarea {
+      background-color: #ececec;
+      border: 1px solid #888;
+      .box-shadow(inset 4px 4px rgba(0,0,0,.15));
+    }
+
+    textarea {
+      width: 562px;
+      height: 200px;
+    }
+
+}
+
+
+.container {
+  margin: 0 auto;
+  width: 960px;
+  position: relative;
+}
+
+.tagline {
+  font-family: "myriad-pro", Arial, sans-serif;
+  border-bottom: 1px dotted #999;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 28px;
+  line-height: 1.2em;
+}
+
+
 /* -------- MIXINS --------- */
 
 
@@ -21,12 +89,6 @@ p { margin-bottom: 15px; }
 /* --------------------- FOR BROWSER SIZE < 768PX ------------------- */
 
 /* -------- NAVIGATION LAYOUT CSS --------- */
-
-#navigation {
-  width: 100%;
-  position: fixed;
-  top:0;
-}
 
 nav {
   ul {
@@ -138,15 +200,9 @@ body {
   font: 1em/1.5em Arial,Helvetica,sans-serif;
 }
 
-#content { position: relative; top: 75px }
-
-section, footer {
-  position: relative;
-  float: left;
-  width: 100%;
+section {
   padding: 80px 0;
   background-color: #ddd;
-  border-bottom: 1px solid #ccc;
 
   .section-anchor {
     position: absolute;
@@ -156,40 +212,21 @@ section, footer {
     height: 10px;
   }
 
-  .container {
-    margin: 0 auto;
-    width: 960px;
-    position: relative;
+  header {
+    .column(12);
+    margin: 0;
 
-    header {
-      .column(12);
-      margin: 0;
-
-      h1, h2, h3, h4, h5 {
-        margin-bottom: 20px;
-      }
-
-      h2 {
-        font-size: 36px;
-        line-height: 36px;
-      }
-    }
-
-    .tagline {
-      text-align: center;
+    h1, h2, h3, h4, h5 {
       margin-bottom: 20px;
-      font-family: "myriad-pro", Arial, sans-serif;
-      font-weight: lighter;
-      padding-bottom: 20px;
-      border-bottom: 1px dotted #999;
-      font-size: 28px;
-      line-height: 1.2em;
     }
 
-  }  // end container
+    h2 {
+      font-size: 36px;
+      line-height: 36px;
+    }
+  }
 
 } // end section
-
 
 /* -------- PAGE SPECIFIC CSS --------- */
 
@@ -324,16 +361,49 @@ section, footer {
     .column(4);
   }
 
-  /*#skills {margin-left: 20px}*/
-  /*#abilities {margin-left: 160px}*/
-
 }
 
+/* /// -- Messaging CSS -- /// */
+
+
+
+/* /// -- Contact CSS -- /// */
+
+#contact {
+  padding: 30px 0;
+
+  #contact_form {
+    width: 80%;
+    background-color: #333;
+    margin-left: 80px;
+
+    .inner {
+      width: 86%;
+      margin: 20px auto;
+      min-height: 400px;
+
+      h2 span {
+        text-indent: 10px;
+      }
+
+      .note {
+        float: left;
+        width: 100%;
+        height: 25px;
+        margin-bottom: 15px;
+        padding: 5px 0;
+        text-indent: 15px;
+      }
+    }
+
+  }
+
+}
 
 /* /// -- Footer CSS -- /// */
 
 footer {
-  top: 75px;
+  padding: 40px 0 20px;
   border-bottom: none;
 
   #summary {
@@ -364,6 +434,27 @@ footer {
     text-align: right;
   }
 
+}
+
+
+/* -- Without JavaScript Enable -- */
+
+#navigation, #messaging, #contact, #content, footer, section {
+  position: relative;
+  float: left;
+  width: 100%;
+  top: 75px;
+}
+
+#navigation, section { top: 0; }
+
+#navigation { position: fixed; }
+
+/* -- With JavaScript Enable -- */
+
+.js {
+
+  // do something
 
 }
 

@@ -24,6 +24,7 @@ hr {
   width: 100%;
 }
 /* ------------ MIXINS ----------- */
+/* buttons */
 /* arrows */
 .down-arrow {
   display: block;
@@ -136,6 +137,9 @@ nav#local li a {
   color: #f5eeed;
   margin-top: 5px;
 }
+nav#local li a:hover {
+  color: #d1e29c;
+}
 nav#local li a.selected {
   background: #add9e4;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f7fbfc), color-stop(1, #add9e4));
@@ -217,6 +221,7 @@ nav#footer-global a:hover {
   background-position: center center, 0 0;
   background-repeat: no-repeat, repeat;
   border-bottom: none;
+  box-shadow: none;
   color: #f5eeed;
 }
 #intro header h1,
@@ -368,26 +373,18 @@ nav#footer-global a:hover {
   color: #d1e29c;
 }
 #contact #contact_form {
-  float: left;
   -webkit-box-shadow: inset 0 -30px 100px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: inset 0 -30px 100px rgba(0, 0, 0, 0.3);
   box-shadow: inset 0 -30px 100px rgba(0, 0, 0, 0.3);
-  border-top: 1px solid rgba(255, 255, 255, 0.81);
-  background-color: #999999;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  width: 80%;
-  margin-left: 70px;
+  border-top: 1px solid rgba(255, 255, 255, 0.81);
+  background-color: #999999;
   font-size: 14px;
-}
-#contact #contact_form .inner {
-  width: 86%;
-  margin: 20px auto;
-  min-height: 400px;
 }
 #contact #contact_form .inner h2 {
   font: 28px/32px "myriad pro", arial, sans-serif;
@@ -395,65 +392,51 @@ nav#footer-global a:hover {
   color: #222222;
 }
 #contact #contact_form .inner h2 span {
-  margin-left: 10px;
   text-shadow: none;
   color: #dedede;
   font-size: 14px;
 }
 #contact #contact_form .inner .note {
-  float: left;
-  width: 100%;
-  height: 25px;
   color: #f0f0f0;
   background-color: #a9a9a9;
   border: 1px solid #c1c1c1;
-  margin-bottom: 15px;
-  padding: 5px 0;
-  text-indent: 15px;
-}
-#contact #contact_form .inner .form-section {
-  float: left;
-  width: 50%;
-}
-#contact #contact_form .inner .form-section li {
-  width: 100%;
-  height: 50px;
-  clear: both;
-}
-#contact #contact_form .inner .form-section li label {
-  width: 25%;
-}
-#contact #contact_form .inner label,
-#contact #contact_form .inner input {
-  float: left;
-  height: 30px;
 }
 #contact #contact_form .inner label {
-  width: 81px;
-  padding-top: 10px;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.25);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
   font-family: "myriad pro", sans-serif;
-  color: #222222;
+  color: #e4ebce;
   text-align: right;
-  padding-right: 10px;
-}
-#contact #contact_form .inner label:after {
-  content: ":";
-}
-#contact #contact_form .inner input {
-  width: 71%;
+  text-transform: uppercase;
 }
 #contact #contact_form .inner input,
 #contact #contact_form .inner textarea {
   background-color: #ececec;
   border: 1px solid #888;
-  -webkit-box-shadow: inset 4px 4px rgba(0, 0, 0, 0.21);
-  -moz-box-shadow: inset 4px 4px rgba(0, 0, 0, 0.21);
-  box-shadow: inset 4px 4px rgba(0, 0, 0, 0.21);
+  -webkit-box-shadow: inset 4px 4px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 4px 4px rgba(0, 0, 0, 0.15);
 }
-#contact #contact_form .inner textarea {
-  width: 562px;
-  height: 200px;
+#contact #contact_form button {
+  float: right;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  padding: 7px 10px;
+  background: #398235;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #398235), color-stop(1, #c9de96));
+  background: -ms-linear-gradient(bottom, #398235, #c9de96);
+  background: -moz-linear-gradient(center bottom, #398235 0%, #c9de96 100%);
+  color: #1a1a1a;
+  font-size: 12px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.75);
+  font-weight: bold;
+  margin: 10px 0 20px;
 }
 footer {
   -webkit-box-shadow: inset 0px 1px 0 #494949;

@@ -150,14 +150,68 @@ p {
 .hide {
   display: none;
 }
+form {
+  float: left;
+  width: 100%;
+}
+form .form-section {
+  float: left;
+  width: 50%;
+}
+form .form-section li {
+  width: 100%;
+  height: 50px;
+  clear: both;
+}
+form .form-section li label {
+  width: 25%;
+}
+form label,
+form input {
+  float: left;
+  height: 30px;
+}
+form label {
+  width: 81px;
+  color: #fff;
+  padding: 8px 10px 0;
+}
+form label:after {
+  content: ":";
+}
+form input {
+  width: 71%;
+}
+form input,
+form textarea {
+  background-color: #ececec;
+  border: 1px solid #888;
+  -webkit-box-shadow: inset 4px 4px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 4px 4px rgba(0, 0, 0, 0.15);
+}
+form textarea {
+  width: 562px;
+  height: 200px;
+}
+.container {
+  margin: 0 auto;
+  width: 960px;
+  position: relative;
+}
+.tagline {
+  font-family: "myriad-pro", Arial, sans-serif;
+  border-bottom: 1px dotted #999;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 28px;
+  line-height: 1.2em;
+}
 /* -------- MIXINS --------- */
 /* --------------------- FOR BROWSER SIZE < 768PX ------------------- */
 /* -------- NAVIGATION LAYOUT CSS --------- */
-#navigation {
-  width: 100%;
-  position: fixed;
-  top: 0;
-}
 nav ul li {
   display: inline-block;
 }
@@ -250,35 +304,18 @@ body {
   color: #000;
   font: 1em/1.5em Arial, Helvetica, sans-serif;
 }
-#content {
-  position: relative;
-  top: 75px;
-}
-section,
-footer {
-  position: relative;
-  float: left;
-  width: 100%;
+section {
   padding: 80px 0;
   background-color: #ddd;
-  border-bottom: 1px solid #ccc;
 }
-section .section-anchor,
-footer .section-anchor {
+section .section-anchor {
   position: absolute;
   margin-bottom: 20px;
   display: block;
   width: 10px;
   height: 10px;
 }
-section .container,
-footer .container {
-  margin: 0 auto;
-  width: 960px;
-  position: relative;
-}
-section .container header,
-footer .container header {
+section header {
   display: inline;
   float: left;
   overflow: hidden;
@@ -286,33 +323,16 @@ footer .container header {
   margin: 0 10px;
   margin: 0;
 }
-section .container header h1,
-footer .container header h1,
-section .container header h2,
-footer .container header h2,
-section .container header h3,
-footer .container header h3,
-section .container header h4,
-footer .container header h4,
-section .container header h5,
-footer .container header h5 {
+section header h1,
+section header h2,
+section header h3,
+section header h4,
+section header h5 {
   margin-bottom: 20px;
 }
-section .container header h2,
-footer .container header h2 {
+section header h2 {
   font-size: 36px;
   line-height: 36px;
-}
-section .container .tagline,
-footer .container .tagline {
-  text-align: center;
-  margin-bottom: 20px;
-  font-family: "myriad-pro", Arial, sans-serif;
-  font-weight: lighter;
-  padding-bottom: 20px;
-  border-bottom: 1px dotted #999;
-  font-size: 28px;
-  line-height: 1.2em;
 }
 /* -------- PAGE SPECIFIC CSS --------- */
 /* /// -- Intro Section CSS -- /// */
@@ -441,12 +461,6 @@ footer .container .tagline {
   background-color: #999;
 }
 /* /// -- Conclusion Section CSS -- /// */
-#conclusion {
-  /*#skills {margin-left: 20px}*/
-
-  /*#abilities {margin-left: 160px}*/
-
-}
 #conclusion #time_spent {
   display: none;
 }
@@ -469,9 +483,35 @@ footer .container .tagline {
   width: 300px;
   margin: 0 10px;
 }
+/* /// -- Messaging CSS -- /// */
+/* /// -- Contact CSS -- /// */
+#contact {
+  padding: 30px 0;
+}
+#contact #contact_form {
+  width: 80%;
+  background-color: #333;
+  margin-left: 80px;
+}
+#contact #contact_form .inner {
+  width: 86%;
+  margin: 20px auto;
+  min-height: 400px;
+}
+#contact #contact_form .inner h2 span {
+  text-indent: 10px;
+}
+#contact #contact_form .inner .note {
+  float: left;
+  width: 100%;
+  height: 25px;
+  margin-bottom: 15px;
+  padding: 5px 0;
+  text-indent: 15px;
+}
 /* /// -- Footer CSS -- /// */
 footer {
-  top: 75px;
+  padding: 40px 0 20px;
   border-bottom: none;
 }
 footer #summary .photo {
@@ -518,6 +558,26 @@ footer #validation {
   margin: 0 10px;
   text-align: right;
 }
+/* -- Without JavaScript Enable -- */
+#navigation,
+#messaging,
+#contact,
+#content,
+footer,
+section {
+  position: relative;
+  float: left;
+  width: 100%;
+  top: 75px;
+}
+#navigation,
+section {
+  top: 0;
+}
+#navigation {
+  position: fixed;
+}
+/* -- With JavaScript Enable -- */
 /* --------------------- FOR BROWSER SIZE > 768PX ------------------- */
 @media screen and (max-width: 768px) {
   #maincolumn,

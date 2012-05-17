@@ -1,0 +1,1 @@
+$(document).ready(function(){$("body").addClass("js");$("<li></li>",{"class":"extra",html:"<button>contact</button>"}).appendTo("#global ul")});

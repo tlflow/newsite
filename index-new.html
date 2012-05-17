@@ -18,12 +18,13 @@
 
         <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
         <script type="text/javascript" src="js/jquery-ui-1.8.18.custom.min.js"></script>
+        <!--<script type="text/javascript" src="js/site.js"></script>-->
         <!--<script type="text/javascript" src="js/nav.js"></script>-->
         <!--<script type="text/javascript" src="js/raphael-min.js"></script>-->
         <!--<script type="text/javascript" src="js/charts.js"></script>-->
         <!--<script type="text/javascript" src="js/intro-animation.js"></script>-->
-        <script type="text/javascript" src="http://use.typekit.com/gyh1cby.js"></script>
-        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+        <!--<script type="text/javascript" src="http://use.typekit.com/gyh1cby.js"></script>-->
+        <!--<script type="text/javascript">try{Typekit.load();}catch(e){}</script>-->
 </head>
 <body>
 
@@ -31,6 +32,7 @@
     <div id="pusher">
       <div id="content">
         <section id="intro">
+          <a name="intro" id="introAnchor" class="segment-anchor"></a>
           <div class="container">
             <header>
               <h1><span>i am a</span> designer &amp; developer</h1>
@@ -48,6 +50,7 @@
         </section> <!-- end intro -->
 
         <section id="experience">
+          <a name="experience" id="experienceAnchor" class="segment-anchor"></a>
           <div class="container">
             <article>
               <header>
@@ -80,6 +83,7 @@
         </section> <!-- end experience -->
 
         <section id="expertise">
+          <a name="expertise" id="expertiseAnchor" class="segment-anchor"></a>
           <div class="container">
             <article>
               <header>
@@ -121,6 +125,7 @@
         </section> <!-- end expertise -->
 
         <section id="process">
+          <a name="process" id="processAnchor" class="segment-anchor"></a>
           <div class="container">
             <article>
               <header>
@@ -167,6 +172,7 @@
         </section> <!-- end process -->
 
         <section id="recent_work">
+          <a name="work" id="workAnchor" class="segment-anchor"></a>
           <div class="container">
             <header>
               <h2>Recent Work</h2>
@@ -183,6 +189,7 @@
         </section> <!-- end recent work -->
 
         <section id="conclusion">
+          <a name="conclusion" id="conclusionAnchor" class="segment-anchor"></a>
           <div class="container">
             <article>
               <header>
@@ -237,32 +244,36 @@
             </nav>
           </div>
         </section> <!-- end conclusion -->
-        <section id="contact">
-          <div class="container">
-            <form id="contact_form">
-              <div class="inner">
-                <h2>Contact<span>please allow 24-48 hours for response.</span></h2>
-                <p>Feel free to contact me with any comment, request, joke, or criticism.</p>
-                <div class="note">All fields are required.</div>
+      </div><!-- end content -->
 
-                <div class="form-section">
-                  <ul>
-                    <li><label for="comment_name">Name</label><input name="comment_name" id="comment_name"></li>
-                    <li><label for="comment_phone">Phone</label><input name="comment_phone" id="comment_phone"></li>
-                  </ul>
-                </div>
-                <div class="form-section">
-                  <ul>
-                    <li><label for="comment_email">Subject</label><input name="comment_subject" id="comment_subject"></li>
-                    <li><label for="comment_subject">Subject</label><input name="comment_subject" id="comment_subject"></li>
-                  </ul>
-                </div>
-                <label for="comment_message">Comment</label><textarea name="comment_message" id="comment_message" cols="40" rows="6"></textarea>
+      <div id="message"></div>
+
+      <div id="contact">
+        <div class="container">
+          <form id="contact_form">
+            <div class="inner">
+              <h2>Contact<span>please allow 24-48 hours for response.</span></h2>
+              <p>Feel free to contact me with any comment, request, joke, or criticism.</p>
+              <div class="note">All fields are required.</div>
+
+              <div class="form-section">
+                <ul>
+                  <li><label for="comment_name">Name</label><input name="comment_name" id="comment_name"></li>
+                  <li><label for="comment_phone">Phone</label><input name="comment_phone" id="comment_phone"></li>
+                </ul>
               </div>
-            </form>
-          </div>
-        </section> <!-- end contact -->
-      </div>
+              <div class="form-section">
+                <ul>
+                  <li><label for="comment_email">E-mail</label><input name="comment_subject" id="comment_subject"></li>
+                  <li><label for="comment_subject">Subject</label><input name="comment_subject" id="comment_subject"></li>
+                </ul>
+              </div>
+              <label for="comment_message">Comment</label><textarea name="comment_message" id="comment_message" cols="40" rows="6"></textarea>
+              <button>send</button>
+            </div>
+          </form>
+        </div>
+      </div> <!-- end contact -->
 
       <div id="navigation">
         <nav id="global">
@@ -273,20 +284,20 @@
             <li><a href="#">portfolio</a></li>
             <li><a href="#">blog</a></li>
             <li class="final"><a href="#">about</a></li>
-            <li class="extra"><button><span class="iconic mail"></span></button></li>
-            <li class="extra"><button>co</button></li>
           </ul>
         </nav>
         <nav id="local">
           <ul>
-            <li><a href="#">experience</a></li>
-            <li><a href="#">expertise</a></li>
-            <li><a href="#">process</a></li>
-            <li><a href="#">recent work</a></li>
-            <li><a href="#">conclusion</a></li>
+            <li><a href="#experience">experience</a></li>
+            <li><a href="#expertise">expertise</a></li>
+            <li><a href="#process">process</a></li>
+            <li><a href="#work">recent work</a></li>
+            <li><a href="#conclusion">conclusion</a></li>
           </ul>
         </nav>
       </div>
+
+
     </div> <!-- // end pusher -->
     <footer id="page-footer">
       <div class="container">
