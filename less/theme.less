@@ -411,21 +411,41 @@ nav#footer-global {
           text-shadow: none;
           color: #dedede;
           font-size: 14px;
+          padding-left: 10px;
+        }
+      }
+
+      .note, label {
+        span.iconic {
+          font-size: 10px;
+          color: @android;
         }
       }
 
       .note {
         color: @ebonics;
-        background-color: #a9a9a9;
-        border: 1px solid #c1c1c1;
+        background-color: @flat-gray;
+        /*border: 1px solid #c1c1c1;*/
+
+        span {
+          text-shadow: 0 1px 0 rgba(0,0,0,.25);
+          vertical-align: top;
+        }
       }
 
       label {
-        text-shadow: 0 1px 0 rgba(0,0,0,.25);
+        /*text-shadow: 0 1px 0 rgba(0,0,0,.25);*/
+        text-shadow: 0 1px 0 rgba(255,255,255,.25);
+        /*font-weight: bold;*/
         font-family: "myriad pro", sans-serif;
-        color: @decay;
-        text-align: right;
+        color: @flat-gray;
         text-transform: uppercase;
+
+        span {
+          position: relative;
+          top: -2px;
+          margin-right: 5px;
+        }
 
       }
 
@@ -438,10 +458,9 @@ nav#footer-global {
     }
 
     button {
-      float: right;
-      .rounded(3px);
-      padding: 7px 10px;
       .gradient(#398235, #398235, #C9DE96);
+      .rounded(3px);
+
       color: @dark-gray;
       font-size: 12px;
       text-shadow: 0 1px 0 rgba(255,255,255,.50);

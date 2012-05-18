@@ -18,7 +18,7 @@
 
         <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
         <script type="text/javascript" src="js/jquery-ui-1.8.18.custom.min.js"></script>
-        <!--<script type="text/javascript" src="js/site.js"></script>-->
+        <script type="text/javascript" src="js/site.js"></script>
         <!--<script type="text/javascript" src="js/nav.js"></script>-->
         <!--<script type="text/javascript" src="js/raphael-min.js"></script>-->
         <!--<script type="text/javascript" src="js/charts.js"></script>-->
@@ -248,28 +248,26 @@
 
       <div id="message"></div>
 
-      <div id="contact">
+      <div id="contact" class="collapsed">
         <div class="container">
           <form id="contact_form">
             <div class="inner">
-              <h2>Contact<span>please allow 24-48 hours for response.</span></h2>
-              <p>Feel free to contact me with any comment, request, joke, or criticism.</p>
-              <div class="note">All fields are required.</div>
 
-              <div class="form-section">
-                <ul>
-                  <li><label for="comment_name">Name</label><input name="comment_name" id="comment_name"></li>
-                  <li><label for="comment_phone">Phone</label><input name="comment_phone" id="comment_phone"></li>
-                </ul>
-              </div>
-              <div class="form-section">
-                <ul>
-                  <li><label for="comment_email">E-mail</label><input name="comment_subject" id="comment_subject"></li>
-                  <li><label for="comment_subject">Subject</label><input name="comment_subject" id="comment_subject"></li>
-                </ul>
-              </div>
-              <label for="comment_message">Comment</label><textarea name="comment_message" id="comment_message" cols="40" rows="6"></textarea>
+              <h2>Contact<span>please allow 24-48 hours for response.</span></h2>
+              <div class="note">Fields with <span class="iconic star"></span> are required.</div>
+
+              <ul>
+                <li>
+                  <ul class="cols xx">
+                    <li><label for="comment_name"><span class="iconic star"></span>name</label><input name="comment_name" id="comment_name"></li>
+                    <li><label for="comment_email"><span class="iconic star"></span>e-mail</label><input name="comment_email" id="comment_email"></li>
+                  </ul>
+                </li>
+                <li><label for="comment_subject"><span class="iconic star"></span>subject</label><input name="comment_subject" id="comment_subject"></li>
+                <li><label for="comment_message"><span class="iconic star"></span>comment</label><textarea name="comment_message" id="comment_message" cols="40" rows="6"></textarea></li>
+              </ul>
               <button>send</button>
+
             </div>
           </form>
         </div>

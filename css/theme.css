@@ -395,18 +395,37 @@ nav#footer-global a:hover {
   text-shadow: none;
   color: #dedede;
   font-size: 14px;
+  padding-left: 10px;
+}
+#contact #contact_form .inner .note span.iconic,
+#contact #contact_form .inner label span.iconic {
+  font-size: 10px;
+  color: #a4c639;
 }
 #contact #contact_form .inner .note {
   color: #f0f0f0;
-  background-color: #a9a9a9;
-  border: 1px solid #c1c1c1;
+  background-color: #31343b;
+  /*border: 1px solid #c1c1c1;*/
+
+}
+#contact #contact_form .inner .note span {
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  vertical-align: top;
 }
 #contact #contact_form .inner label {
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  /*text-shadow: 0 1px 0 rgba(0,0,0,.25);*/
+
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.25);
+  /*font-weight: bold;*/
+
   font-family: "myriad pro", sans-serif;
-  color: #e4ebce;
-  text-align: right;
+  color: #31343b;
   text-transform: uppercase;
+}
+#contact #contact_form .inner label span {
+  position: relative;
+  top: -2px;
+  margin-right: 5px;
 }
 #contact #contact_form .inner input,
 #contact #contact_form .inner textarea {
@@ -417,18 +436,16 @@ nav#footer-global a:hover {
   box-shadow: inset 4px 4px rgba(0, 0, 0, 0.15);
 }
 #contact #contact_form button {
-  float: right;
+  background: #398235;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #398235), color-stop(1, #c9de96));
+  background: -ms-linear-gradient(bottom, #398235, #c9de96);
+  background: -moz-linear-gradient(center bottom, #398235 0%, #c9de96 100%);
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  padding: 7px 10px;
-  background: #398235;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #398235), color-stop(1, #c9de96));
-  background: -ms-linear-gradient(bottom, #398235, #c9de96);
-  background: -moz-linear-gradient(center bottom, #398235 0%, #c9de96 100%);
   color: #1a1a1a;
   font-size: 12px;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
