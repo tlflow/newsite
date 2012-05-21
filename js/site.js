@@ -1,10 +1,10 @@
 $(document).ready(function() {
 
-  // if javascript add class to body
+  // if javascript add .js class to body
 
   $("body").addClass('js');
 
-  // create contact button since js is being used
+  // Contact Button
 
   var contactForm = {
 
@@ -23,7 +23,6 @@ $(document).ready(function() {
           } else {
             contactForm.hideForm(myForm, myNav);
           }
-
         }
       );
     },
@@ -36,23 +35,21 @@ $(document).ready(function() {
             .fadeIn("slow")
       }
 
-      setTimeout(activateForm,1000);
-
       myForm
           .animate(
           {height: '610px'},{
-            duration: 500
+            duration: 1000
           })
           .removeClass('collapsed');
 
       myNav.animate(
           {top: '610px'},{
-            duration: 1000,
-            easing: 'easeInExpo'
+            duration: 950
+
           }
       );
 
-
+      setTimeout(activateForm,1000);
     },
 
     hideForm: function(myForm, myNav){
@@ -80,14 +77,53 @@ $(document).ready(function() {
     },
 
     init: function() {
-      var myForm = $("#contact");
-      var myNav = $("#navigation");
+      var myForm = $("#contact"),
+          myNav = $("#navigation");
 
       contactForm.createButton(myForm, myNav);
     }
   };
 
+  var localNavigation = {
+
+    showTab: function(anchortags, anchors){
+
+      $(window).scroll(function () {
+
+         var scroller,i,section, sectionTop, sectionBottom;
+
+         scroller = document.body.scrollTop;
+
+         for (i=0;i<anchors.length;i++){
+            section = anchors[i];
+
+            sectionTop = section.offsetTop;
+
+            sectionBottom = section.offsetTop + section.offsetHeight;
+
+            if (scroller > sectionTop && scroller < sectionBottom){
+                anchortags.removeClass("selected");
+                $("#"+section.id+"_tab").addClass("selected");
+            }
+         }
+
+     });
+
+
+    },
+
+    init: function() {
+
+      var anchortags = $("#local ul li a"),
+          anchors = $("section");
+
+      localNavigation.showTab(anchortags, anchors);
+    }
+  };
+
+
+localNavigation.init();
 contactForm.init();
 
-
 });
+
