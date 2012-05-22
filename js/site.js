@@ -45,7 +45,6 @@ $(document).ready(function() {
       myNav.animate(
           {top: '610px'},{
             duration: 950
-
           }
       );
 
@@ -84,42 +83,57 @@ $(document).ready(function() {
     }
   };
 
-  var localNavigation = {
+var localNavigation = {
 
     showTab: function(anchortags, anchors){
 
-      $(window).scroll(function () {
+        $(window).scroll(function () {
 
-         var scroller,i,section, sectionTop, sectionBottom;
+            anchors.each(function(){
 
-         scroller = document.body.scrollTop;
+                var self = this,
 
-         for (i=0;i<anchors.length;i++){
-            section = anchors[i];
+                    scroller,
+                    sectionTop, sectionBottom, sectionColor, sectionTextColor;
 
-            sectionTop = section.offsetTop;
+                scroller = $(window).scrollTop();
 
-            sectionBottom = section.offsetTop + section.offsetHeight;
+                sectionTop = self.offsetTop;
 
-            if (scroller > sectionTop && scroller < sectionBottom){
-                anchortags.removeClass("selected");
-                $("#"+section.id+"_tab").addClass("selected");
-            }
-         }
+                sectionBottom = self.offsetTop + self.offsetHeight;
 
-     });
+                if ((scroller > sectionTop) && (scroller < sectionBottom)) {
 
+                    sectionColor = $(self).css("background-color");
+                    sectionTextColor = $(self).css("color");
+
+                    $(anchortags)
+                        .removeClass("selected")
+                        .css({
+                            "background-color": "transparent",
+                            "color": "#f5eeed"
+                        });
+
+                    $("#"+self.id+"_tab")
+                        .addClass("selected")
+                        .css({
+                            "background-color": ""+sectionColor+"",
+                            "color": ""+sectionTextColor+""
+                        });
+                }
+            });
+        });
 
     },
 
     init: function() {
 
-      var anchortags = $("#local ul li a"),
-          anchors = $("section");
+        var anchortags = $("#local ul li a"),
+        anchors = $("section");
 
-      localNavigation.showTab(anchortags, anchors);
+        localNavigation.showTab(anchortags, anchors);
     }
-  };
+};
 
 
 localNavigation.init();

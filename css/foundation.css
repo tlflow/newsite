@@ -459,7 +459,7 @@ section header h2 {
   height: 250px;
 }
 /* /// -- Recent Work Section CSS -- /// */
-#recent_work #display {
+#work #display {
   display: inline;
   float: left;
   overflow: hidden;

@@ -127,28 +127,30 @@ nav#local {
   border-top: 1px solid #1a1a1a;
   border-bottom: 1px solid #1a1a1a;
 }
+nav#local ul {
+  margin-top: 3px;
+}
 nav#local li a {
   display: block;
-  width: 80px;
+  width: 90px;
   padding-top: 5px;
-  height: 28px;
+  height: 30px;
   font-family: "myriad-pro", arial, sans-serif;
   font-size: 12px;
   color: #f5eeed;
-  margin-top: 5px;
+  margin-top: 2px;
+  text-transform: capitalize;
+}
+nav#local li a:visited {
+  color: #f5eeed;
 }
 nav#local li a:hover {
   color: #d1e29c;
 }
 nav#local li a.selected {
-  background: #add9e4;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f7fbfc), color-stop(1, #add9e4));
-  background: -ms-linear-gradient(bottom, #f7fbfc, #add9e4);
-  background: -moz-linear-gradient(center bottom, #f7fbfc 0%, #add9e4 100%);
   color: #333;
-  text-shadow: 0 1px 0 #FEFEFE;
-  font-weight: bold;
-  border-bottom: #fff;
+  border: 1px solid #1a1a1a;
+  border-bottom: none;
 }
 nav.section li {
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05), 0 1px 0 rgba(255, 255, 255, 0.12) inset, 0 -9px 9px rgba(0, 0, 0, 0.3) inset;
@@ -304,7 +306,7 @@ nav#footer-global a:hover {
 #process ul#diagram {
   padding-top: 15px;
 }
-#recent_work {
+#work {
   -webkit-box-shadow: inset 0px 1px 0 #f0f0f0;
   -moz-box-shadow: inset 0px 1px 0 #f0f0f0;
   box-shadow: inset 0px 1px 0 #f0f0f0;
@@ -312,10 +314,10 @@ nav#footer-global a:hover {
   background-color: #e4ebce;
   color: #464d5c;
 }
-#recent_work h2 {
+#work h2 {
   color: #464d5c;
 }
-#recent_work h3 {
+#work h3 {
   color: #464d5c;
 }
 #conclusion {
@@ -324,8 +326,7 @@ nav#footer-global a:hover {
   box-shadow: inset 0px 1px 0 #e4ebce;
   border-top: 6px solid #d1e29c;
   background-color: #a4c639;
-  color: #f0f0f0;
-  color: #f0f0f0;
+  color: #1a1a1a;
 }
 #conclusion h2 {
   color: #464d5c;
