@@ -275,6 +275,9 @@ nav#footer-global a:hover {
 #expertise h3 {
   color: #d1e29c;
 }
+#expertise #chart_holder {
+  background: url(/images/layout/chart-background.png) no-repeat 290px bottom transparent;
+}
 #expertise h3 {
   font: 18px/28px "myriad pro", arial, sans-serif;
   font-style: italic;
