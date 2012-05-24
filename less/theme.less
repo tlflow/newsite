@@ -21,7 +21,8 @@
 
 
 @smog: #464d5c;
-@android: #a4c639;
+@bright_android: #a4c639;
+@android: #89B556;
 @pastel_green: #D1E29C;
 @decay: #E4EBCE;
 @ebonics: #f0f0f0;
@@ -93,9 +94,7 @@ hr {
 /* -------Color Schemes ------- */
 
 
-.section-colors(@background-color: #EAE6E7, @text-color: #191919, @border-color: #D3D3D3, @box-shadow-color: #bbb){
-  .box-shadow(inset 0px 1px 0 @box-shadow-color);
-  border-top: 6px solid @border-color;
+.section-colors(@background-color: #EAE6E7, @text-color: #191919){
   background-color: @background-color;
   color: @text-color;
 }
@@ -108,35 +107,35 @@ hr {
 
 // light green scheme
 .colorscheme_1() {
-  .section-colors(@decay, @smog, @android, @ebonics);
+  .section-colors(@decay, @smog);
   h2 {color: @smog;}
   h3 {color: @smog;}
 }
 
 // dark gray (almost black) scheme
 .colorscheme_2(){
-  .section-colors(@charcoal, @light-beige, #DBDBDB, #777);
+  .section-colors(@charcoal, @light-beige);
   h2 {color: @android;}
   h3 {color: @pastel_green;}
 }
 
 // dark blue scheme
 .colorscheme_3(){
-  .section-colors(@smog, @light-beige, #DBDBDB, @smog + #111);
+  .section-colors(@smog, @light-beige);
   h2 {color: @android;}
   h3 {color: @pastel_green;}
 }
 
 // green scheme
 .colorscheme_4() {
-  .section-colors(@android, @dark-gray, @pastel_green, @decay);
+  .section-colors(@android, @smog);
   h2 {color: @smog;}
   h3 {color: @white}
 }
 
 // gray footer scheme
 .colorscheme_10(){
-  .section-colors(#2C2E32,@flat-gray + #333,#1C1D21,#494949);
+  .section-colors(#2C2E32,@flat-gray + #333);
 }
 
 
@@ -244,6 +243,7 @@ nav#local {
 
       &.selected {
         color: #333;
+        .border-radius(5px, 0, 0, 5px);
         border: 1px solid @dark-gray;
         border-bottom: none;
       }
@@ -486,6 +486,8 @@ nav#footer-global {
 
 footer {
   .colorscheme_10();
+  .box-shadow(inset 0px 1px 0 #494949);
+  border-top: 6px solid #1c1d21;
 
   a {
     color: #58B1D9 + #000;
