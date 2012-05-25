@@ -104,20 +104,13 @@ $(document).ready(function() {
                 anchors.each(function(){
 
                     var self = this,
-
-                        scroller,
-                        sectionTop, sectionBottom, sectionColor, sectionTextColor;
-
-                    scroller = $(window).scrollTop();
-
-                    sectionTop = self.offsetTop;
-
-                    sectionBottom = self.offsetTop + self.offsetHeight;
+                        scroller = $(window).scrollTop(),
+                        sectionTop = self.offsetTop,
+                        sectionBottom = self.offsetTop + self.offsetHeight,
+                        sectionColor = $(self).css("background-color"),
+                        sectionTextColor = $(self).css("color");
 
                     if ((scroller > sectionTop) && (scroller < sectionBottom)) {
-
-                        sectionColor = $(self).css("background-color");
-                        sectionTextColor = $(self).css("color");
 
                         $(anchortags)
                             .removeClass("selected")
@@ -155,25 +148,19 @@ $(document).ready(function() {
 
         },
 
-        clickTab: function(anchortags){
+        localButton: function(anchortags){
 
             $(anchortags).each(function() {
 
-                var self;
-
-                self = $(this);
+                var self = $(this);
 
                 self.on(
                     "click", function(e){
                         e.preventDefault();
 
-                        var elementClick, destination, minimizeSpacing;
-
-                        minimizeSpacing = 50;
-
-                        elementClick = self.attr("href");
-
-                        destination = $(elementClick).offset().top - minimizeSpacing;
+                        var minimizeSpacing = 50,
+                            elementClick = self.attr("href"),
+                            destination = $(elementClick).offset().top - minimizeSpacing;
 
                         pageScroll.scrollAnimation(destination, elementClick);
                     }
@@ -181,14 +168,55 @@ $(document).ready(function() {
 
             });
         },
+        
+        sectionButton: function(anchors){
+
+            anchors.each(function(i){
+
+                var self = $(this);
+
+                self.find("nav.section li").on(
+                    "click", function(e){
+                        e.preventDefault();
+
+                        var thisButton = $(this);
+
+                        if (thisButton.attr("class")=="previous-section"){
+
+                            i=i-1;
+
+                            console.log("goes up to: "+anchors[i].id);
+
+                        } else if (thisButton.attr("class")=="next-section"){
+
+                            i=i+1;
+
+                            console.log("goes down to: "+anchors[i].id);
+
+                        } else if (thisButton.attr("class")=="content-top"){
+
+                            i = 0;
+
+                            console.log("goes to: "+anchors[i].id);
+
+                        }
+
+                    }
+
+                )
+
+            })
+
+        },
 
         init: function() {
 
             var anchortags = $("#local ul li a"),
-            anchors = $("section");
+                anchors = $("section");
 
             pageScroll.showTab(anchortags, anchors);
-            pageScroll.clickTab(anchortags);
+            pageScroll.localButton(anchortags);
+            pageScroll.sectionButton(anchors);
         }
     };
 
