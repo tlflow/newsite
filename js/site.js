@@ -95,7 +95,7 @@ $(document).ready(function() {
 
     // Local Navigation
 
-    var localNavigation = {
+    var pageScroll = {
 
         showTab: function(anchortags, anchors){
 
@@ -138,6 +138,23 @@ $(document).ready(function() {
 
         },
 
+        scrollAnimation: function(destination, elementClick){
+
+            $("html:not(:animated),body:not(:animated)")
+                .animate(
+                    {
+                        scrollTop: destination
+                    },
+                    {
+                        duration: 800,
+                        easing: 'easeOutCirc'
+                    },
+                    function() {
+                        window.location.hash = elementClick;
+                    });
+
+        },
+
         clickTab: function(anchortags){
 
             $(anchortags).each(function() {
@@ -150,24 +167,15 @@ $(document).ready(function() {
                     "click", function(e){
                         e.preventDefault();
 
-                        var tabClick, destination, minimizeSpacing;
+                        var elementClick, destination, minimizeSpacing;
 
                         minimizeSpacing = 50;
 
-                        tabClick = self.attr("href");
+                        elementClick = self.attr("href");
 
-                        destination = $(tabClick).offset().top - minimizeSpacing;
+                        destination = $(elementClick).offset().top - minimizeSpacing;
 
-                        // scrolling animation
-                        $("html:not(:animated),body:not(:animated)")
-                            .animate(
-                                {
-                                    scrollTop: destination
-                                },
-                                1000,
-                                function() {
-                                    window.location.hash = tabClick;
-                                });
+                        pageScroll.scrollAnimation(destination, elementClick);
                     }
                 );
 
@@ -179,15 +187,15 @@ $(document).ready(function() {
             var anchortags = $("#local ul li a"),
             anchors = $("section");
 
-            localNavigation.showTab(anchortags, anchors);
-            localNavigation.clickTab(anchortags);
+            pageScroll.showTab(anchortags, anchors);
+            pageScroll.clickTab(anchortags);
         }
     };
 
 
 // Start Initialization Functions
 
-localNavigation.init();
+pageScroll.init();
 contactForm.init();
 
 });
