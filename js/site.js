@@ -113,18 +113,22 @@ $(document).ready(function() {
                     if ((scroller > sectionTop) && (scroller < sectionBottom)) {
 
                         $(anchortags)
-                            .removeClass("selected")
+                            .removeClass("selected");
+                            /*
                             .css({
                                 "background-color": "transparent",
                                 "color": "#f5eeed"
                             });
+                            */
 
                         $("#"+self.id+"_tab")
-                            .addClass("selected")
+                            .addClass("selected");
+                            /*
                             .css({
                                 "background-color": ""+sectionColor+"",
                                 "color": ""+sectionTextColor+""
                             });
+                            */
                     }
                 });
             });
@@ -158,7 +162,7 @@ $(document).ready(function() {
                     "click", function(e){
                         e.preventDefault();
 
-                        var minimizeSpacing = 50,
+                        var minimizeSpacing = 45,
                             elementClick = self.attr("href"),
                             destination = $(elementClick).offset().top - minimizeSpacing;
 
