@@ -94,6 +94,57 @@ form {
   line-height: 1.4em;
 }
 
+#testimonials {
+  .column(12);
+  .row(12);
+  margin: 30px 0;
+  border-top: 1px dashed #999;
+  padding-top: 10px;
+}
+
+.testimony {
+  .column(4,12);
+
+  .quote-bubble {
+      .rounded(4px);
+      .box-shadow(0 2px 1px #999);
+      background: #fff;
+      width: 90%;
+      margin: 0 auto;
+
+      p {
+          width: 90%;
+          margin: 0 auto;
+          padding: 10px 0;
+          font: 14px/18px "myriad-pro", Arial, sans-serif;
+      }
+
+  }
+
+  .quote-arrow {
+      width: 0;
+      height: 0;
+      border-left: 0 solid transparent;
+      border-right: 12px solid transparent;
+      border-top: 12px solid #fff;
+      position: relative;
+      left: 55px;
+  }
+
+  .quoter {
+      margin-top: 10px;
+      font: 12px/18px Arial, sans-serif;
+
+      .company, .persons-name {
+        text-indent: 45px
+      }
+
+      .company {
+          font-weight: bold;
+      }
+  }
+
+}
 
 /* -------- MIXINS --------- */
 
@@ -351,8 +402,8 @@ section {
 #work {
   #display {
     .column(12);
-    height: 900px;
     background-color: #999;
+    height: 600px;
   }
 }
 

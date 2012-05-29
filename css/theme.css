@@ -35,8 +35,8 @@ hr {
   top: 10px;
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
-  border-top: 6px solid #f5eeed;
-  border-bottom: 6px solid #f5eeed;
+  border-top: 6px solid #999999;
+  border-bottom: 6px solid #999999;
   border-bottom: none;
 }
 .up-arrow {
@@ -48,8 +48,8 @@ hr {
   top: 10px;
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
-  border-top: 6px solid #f5eeed;
-  border-bottom: 6px solid #f5eeed;
+  border-top: 6px solid #999999;
+  border-bottom: 6px solid #999999;
   border-top: none;
 }
 /* -------Color Schemes ------- */
@@ -75,7 +75,7 @@ nav#global li a {
   font-family: "proxima-nova", arial, sans-serif;
   text-transform: uppercase;
   font-size: 12px;
-  color: #ffffff;
+  color: #ccc;
 }
 nav#global li a.selected {
   background: #63b6db;
@@ -142,11 +142,11 @@ nav#local li a {
   height: 27px;
   font-family: "myriad-pro", arial, sans-serif;
   font-size: 13px;
-  color: #f5eeed;
+  color: #333;
   text-transform: capitalize;
 }
 nav#local li a:visited {
-  color: #f5eeed;
+  color: #aeaeae;
 }
 nav#local li a:hover {
   color: #d1e29c;
@@ -156,12 +156,15 @@ nav#local li a.selected {
   background: url(/images/layout/grey.speckle.tab.bg.png) repeat-x 0 0 transparent;
 }
 nav.section li {
-  border-right: none;
-  background-color: #323339;
-  border: 1px solid rgba(0, 0, 0, 0.51);
-  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.12), inset 0px -9px 9px rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(0, 0, 0, 0.51);
-  color: #f5eeed;
+  background: #f2f2f2;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #cececf), color-stop(1, #f2f2f2));
+  background: -ms-linear-gradient(bottom, #cececf, #f2f2f2);
+  background: -moz-linear-gradient(center bottom, #cececf 0%, #f2f2f2 100%);
+  -webkit-box-shadow: inset 0 1px #ffffff;
+  -moz-box-shadow: inset 0 1px #ffffff;
+  box-shadow: inset 0 1px #ffffff;
+  border: 1px solid #c0c0c0;
+  color: #999;
 }
 nav.section li.previous-section {
   -webkit-border-top-right-radius: 0;
@@ -184,7 +187,7 @@ nav.section li.previous-section:hover span {
   -moz-transition-duration: 0.15s;
   -webkit-transition-duration: 0.15s;
   transition-duration: 0.15s;
-  border-bottom: 6px solid #d1e29c;
+  border-bottom: 6px solid #4c92d6;
 }
 nav.section li.next-section {
   -webkit-border-top-right-radius: 5px;
@@ -207,7 +210,7 @@ nav.section li.next-section:hover span {
   -moz-transition-duration: 0.15s;
   -webkit-transition-duration: 0.15s;
   transition-duration: 0.15s;
-  border-top: 6px solid #d1e29c;
+  border-top: 6px solid #4c92d6;
 }
 nav.section li.content-top {
   -webkit-border-radius: 5px;
@@ -227,7 +230,7 @@ nav.section li.content-top:hover {
   -moz-transition-duration: 0.15s;
   -webkit-transition-duration: 0.15s;
   transition-duration: 0.15s;
-  color: #d1e29c;
+  color: #4c92d6;
 }
 nav#footer-global {
   border-bottom: 1px solid #515151;
@@ -290,14 +293,27 @@ nav#footer-global a:hover {
   color: #1a1a1a;
 }
 #expertise #chart_holder {
-  background: url(/images/layout/chart-background.png) no-repeat 290px bottom transparent;
+  margin: 0 0 40px;
+  background: url(/images/layout/chart-background.png) no-repeat 290px 64px #f0f0ed;
+  padding-bottom: 40px;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 0 #ffffff, inset 1px 0 0 #ffffff, inset -1px 0 0 #ffffff;
+}
+#expertise #chart_holder svg {
+  left: 20px;
 }
 #expertise h3 {
   font: 18px/28px "myriad pro", arial, sans-serif;
   font-style: italic;
 }
 #expertise h3.html {
-  background: url("/images/layout/icons/html5_logo.png") no-repeat 0 40px transparent;
+  background-image: url("/images/layout/icons/html5_logo.png"), url("/images/layout/icons/css3_logo.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0 40px, 60px 40px;
+  height: 130px;
+}
+#expertise h3.jquery {
+  background: url("/images/layout/icons/jquery-logo.png") no-repeat 0 40px transparent;
   height: 130px;
 }
 #process {
@@ -324,6 +340,9 @@ nav#footer-global a:hover {
 }
 #work h2 {
   color: #1a1a1a;
+}
+#work #display {
+  background: url(/images/layout/display-work.bg.png) no-repeat 0 0 transparent;
 }
 #conclusion {
   background-color: #eae6e7;

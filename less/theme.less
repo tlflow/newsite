@@ -73,7 +73,7 @@ hr {
 
 /* arrows */
 
-.arrow-settings(@arrow-size: 6px, @arrow-color: @light-beige) {
+.arrow-settings(@arrow-size: 6px, @arrow-color: #999) {
   display: block;
   height: 0px;
   width: 0px;
@@ -173,7 +173,7 @@ nav#global {
      font-family: "proxima-nova", arial, sans-serif;
      text-transform: uppercase;
      font-size: 12px;
-     color: @white;
+     color: #ccc;
 
      &.selected {
       .gradient(#63b6db, #309dcf, #63b6db);
@@ -238,11 +238,11 @@ nav#local {
       height: 27px;
       font-family: "myriad-pro", arial, sans-serif;
       font-size: 13px;
-      color: @light-beige;
+      color: #333;
       text-transform: capitalize;
 
       &:visited {
-        color: @light-beige;
+        color: #aeaeae;
       }
 
       &:hover {
@@ -262,17 +262,17 @@ nav#local {
 
 nav.section {
   li {
-//    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05), 0 1px 0 rgba(255, 255, 255, 0.12) inset, 0 -9px 9px rgba(0, 0, 0, 0.3) inset;
-    .black-cta();
-    border: 1px solid rgba(0, 0, 0, 0.51);
-    color: @light-beige;
+    .gradient(#f2f2f2, #cececf, #f2f2f2);
+    .box-shadow(inset 0 1px #fff);
+    border: 1px solid #c0c0c0;
+    color: #999;
 
     &.previous-section {
       .border-radius(0, 0, 5px, 5px);
 
       &:hover span {
         .transition-duration(0.15s);
-        border-bottom: 6px solid @pastel_green;
+        border-bottom: 6px solid @ming-blue;
       }
     }
     &.next-section {
@@ -280,7 +280,7 @@ nav.section {
 
       &:hover span {
         .transition-duration(0.15s);
-        border-top: 6px solid @pastel_green;
+        border-top: 6px solid @ming-blue;
       }
     }
     &.content-top {
@@ -294,7 +294,7 @@ nav.section {
 
       &:hover {
         .transition-duration(0.15s);
-        color: @pastel_green;
+        color: @ming-blue;
       }
     }
   }
@@ -360,7 +360,15 @@ nav#footer-global {
   .colorscheme_speckle();
 
   #chart_holder {
-    background: url(/images/layout/chart-background.png) no-repeat 290px bottom transparent;
+    margin: 0 0 40px;
+    background: url(/images/layout/chart-background.png) no-repeat 290px 64px #F0F0ED;
+    padding-bottom: 40px;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 0 #fff, inset 1px 0 0 #fff, inset -1px 0 0 #fff;
+
+    svg {
+      left: 20px;
+    }
   }
 
 
@@ -369,7 +377,14 @@ nav#footer-global {
     font-style: italic;
 
     &.html {
-      background: url("/images/layout/icons/html5_logo.png") no-repeat 0 40px transparent;
+      background-image: url("/images/layout/icons/html5_logo.png"), url("/images/layout/icons/css3_logo.png");
+      background-repeat:  no-repeat, no-repeat;
+      background-position: 0 40px, 60px 40px;
+      height: 130px;
+    }
+
+    &.jquery {
+      background: url("/images/layout/icons/jquery-logo.png") no-repeat 0 40px transparent;
       height: 130px;
     }
   }
@@ -394,6 +409,9 @@ nav#footer-global {
 #work {
   .colorscheme_speckle();
 
+  #display {
+    background: url(/images/layout/display-work.bg.png) no-repeat 0 0 transparent;
+  }
 }
 
 
@@ -500,7 +518,6 @@ nav#footer-global {
     button {
       .gradient(#398235, #398235, #C9DE96);
       .rounded(3px);
-
       color: @dark-gray;
       font-size: 12px;
       text-shadow: 0 1px 0 rgba(255,255,255,.50);

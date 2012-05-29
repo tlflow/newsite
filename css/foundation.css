@@ -217,6 +217,67 @@ form textarea {
   font-size: 1.7em;
   line-height: 1.4em;
 }
+#testimonials {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 940px;
+  margin: 0 10px;
+  display: inline-block;
+  overflow: hidden;
+  width: 979.9999999999999px;
+  margin: 0 -10px;
+  margin: 30px 0;
+  border-top: 1px dashed #999;
+  padding-top: 10px;
+}
+.testimony {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 300px;
+  margin: 0 10px;
+}
+.testimony .quote-bubble {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-shadow: 0 2px 1px #999999;
+  -moz-box-shadow: 0 2px 1px #999999;
+  box-shadow: 0 2px 1px #999999;
+  background: #fff;
+  width: 90%;
+  margin: 0 auto;
+}
+.testimony .quote-bubble p {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px 0;
+  font: 14px/18px "myriad-pro", Arial, sans-serif;
+}
+.testimony .quote-arrow {
+  width: 0;
+  height: 0;
+  border-left: 0 solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 12px solid #fff;
+  position: relative;
+  left: 55px;
+}
+.testimony .quoter {
+  margin-top: 10px;
+  font: 12px/18px Arial, sans-serif;
+}
+.testimony .quoter .company,
+.testimony .quoter .persons-name {
+  text-indent: 45px;
+}
+.testimony .quoter .company {
+  font-weight: bold;
+}
 /* -------- MIXINS --------- */
 /* --------------------- FOR BROWSER SIZE < 768PX ------------------- */
 /* -------- NAVIGATION LAYOUT CSS --------- */
@@ -465,8 +526,8 @@ section header h2 {
   overflow: hidden;
   width: 940px;
   margin: 0 10px;
-  height: 900px;
   background-color: #999;
+  height: 600px;
 }
 /* /// -- Conclusion Section CSS -- /// */
 #conclusion #time_spent {
