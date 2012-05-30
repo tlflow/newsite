@@ -292,7 +292,7 @@ section {
 
 } // end section
 
-/* -------- PAGE SPECIFIC CSS --------- */
+/* -------- SECTION SPECIFIC CSS --------- */
 
 /* /// -- Intro Section CSS -- /// */
 
@@ -363,7 +363,7 @@ section {
     margin-bottom: 60px;
   }
 
-  ul#bar_graph_breakdown {
+  ul#chart_breakdown {
     .column(12);
      li {
       .row(12);
@@ -385,6 +385,15 @@ section {
 /* /// -- Process Section CSS -- /// */
 
 #process {
+
+  #process_steps {
+    .column(12);
+    background-color: #999;
+    height: 360px;
+    margin: 0 0 20px;
+  }
+
+
   ul#diagram {
     .column(12);
     .row(12);
@@ -403,7 +412,13 @@ section {
   #display {
     .column(12);
     background-color: #999;
-    height: 600px;
+    height: 512px;
+    margin: 0 0 20px;
+  }
+
+  p {
+    font: 1.3em/.5em "myriad-pro", arial, sans-serif;
+    font-style: italic;
   }
 }
 

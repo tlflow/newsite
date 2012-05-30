@@ -403,7 +403,7 @@ section header h2 {
   font-size: 36px;
   line-height: 36px;
 }
-/* -------- PAGE SPECIFIC CSS --------- */
+/* -------- SECTION SPECIFIC CSS --------- */
 /* /// -- Intro Section CSS -- /// */
 #intro header h1,
 #intro header p {
@@ -471,28 +471,28 @@ section header h2 {
   background-color: #999;
   margin-bottom: 60px;
 }
-#expertise ul#bar_graph_breakdown {
+#expertise ul#chart_breakdown {
   display: inline;
   float: left;
   overflow: hidden;
   width: 940px;
   margin: 0 10px;
 }
-#expertise ul#bar_graph_breakdown li {
+#expertise ul#chart_breakdown li {
   display: inline-block;
   overflow: hidden;
   width: 979.9999999999999px;
   margin: 0 -10px;
   margin-bottom: 10px;
 }
-#expertise ul#bar_graph_breakdown li h3 {
+#expertise ul#chart_breakdown li h3 {
   display: inline;
   float: left;
   overflow: hidden;
   width: 220px;
   margin: 0 10px;
 }
-#expertise ul#bar_graph_breakdown li p {
+#expertise ul#chart_breakdown li p {
   display: inline;
   float: left;
   overflow: hidden;
@@ -500,6 +500,16 @@ section header h2 {
   margin: 0 10px;
 }
 /* /// -- Process Section CSS -- /// */
+#process #process_steps {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 940px;
+  margin: 0 10px;
+  background-color: #999;
+  height: 360px;
+  margin: 0 0 20px;
+}
 #process ul#diagram {
   display: inline;
   float: left;
@@ -527,7 +537,12 @@ section header h2 {
   width: 940px;
   margin: 0 10px;
   background-color: #999;
-  height: 600px;
+  height: 512px;
+  margin: 0 0 20px;
+}
+#work p {
+  font: 1.3em/0.5em "myriad-pro", arial, sans-serif;
+  font-style: italic;
 }
 /* /// -- Conclusion Section CSS -- /// */
 #conclusion #time_spent {
