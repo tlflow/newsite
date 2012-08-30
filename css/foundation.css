@@ -374,8 +374,9 @@ body {
   font: 1em/1.5em Arial, Helvetica, sans-serif;
 }
 section {
-  padding: 80px 0;
+  padding: 40px 0;
   background-color: #ddd;
+  border-bottom: 6px solid #ddd;
 }
 section .section-anchor {
   position: absolute;

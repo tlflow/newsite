@@ -166,7 +166,7 @@ nav#global {
     a {
      display: block;
      width: 84px;
-     padding-top: 8px;
+     padding-top: 6px;
      height: 28px;
      border-right: 1px solid @dark-gray;
      border-left: 1px solid @flat-gray;
@@ -236,10 +236,11 @@ nav#local {
       width: 150px;
       padding-top: 3px;
       height: 27px;
-      font-family: "myriad-pro", arial, sans-serif;
-      font-size: 13px;
+      font-family: "proxima-nova", arial, sans-serif;
+      font-size: 12px;
       color: #333;
-      text-transform: capitalize;
+      text-transform: uppercase;
+      font-weight: lighter;
 
       &:visited {
         color: #aeaeae;
@@ -250,10 +251,9 @@ nav#local {
       }
 
       &.selected {
-//        .box-shadow(inset 0 4px 7px rgba(0,0,0,.30));
         color: #111;
         background: url(/images/layout/grey.speckle.tab.bg.png) repeat-x 0 0 transparent;
-
+        font-weight: normal;
       }
     }
   }
